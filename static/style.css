@@ -7,6 +7,10 @@ body { padding-top: 56px;
   -webkit-text-stroke: 1px black;
 }
 
+a {
+  text-decoration: underline;
+}
+
 /* Proxima nova font */
 @font-face { 
     font-family: "Proxima Nova";
