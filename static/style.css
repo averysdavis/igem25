@@ -3,7 +3,9 @@ body { padding-top: 56px;
 }
 .left-aligned { margin-left: auto; }
 .bg-dark { background-color: #982F44 !important; }
-.bg-hero { background-color: #C5B7B3; }
+.bg-hero { background-color: #C5B7B3; 
+  -webkit-text-stroke: 2px black;
+}
 
 /* Proxima nova font */
 @font-face { 
