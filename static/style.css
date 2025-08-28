@@ -7,10 +7,6 @@ body { padding-top: 56px;
   -webkit-text-stroke: 1px black;
 }
 
-a {
-  text-decoration: underline;
-}
-
 /* Proxima nova font */
 @font-face { 
     font-family: "Proxima Nova";
@@ -29,6 +25,69 @@ a {
 .bd-callout-info { border-left-color:#5bc0de }
 .bd-callout-warning { border-left-color:#f0ad4e }
 .bd-callout-danger { border-left-color:#d9534f }
+
+/* Team members page */
+
+/* Team Member Squares */
+.team-member-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.team-member-square {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.team-member-square img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.name-title-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.team-member-square:hover .overlay {
+  opacity: 1;
+}
+
+.team-member-square:hover {
+  transform: scale(1.05);
+}
+
 
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }
