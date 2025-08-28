@@ -88,34 +88,6 @@ body { padding-top: 56px;
   transform: scale(1.05);
 }
 
-/* style.css */
-.scrollable-content {
-  width: 300px;
-  height: 200px;
-  overflow-y: scroll; /* Enable vertical scrolling */
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-/* Styling for WebKit-based browsers (Chrome, Safari, Edge) */
-.scrollable-content::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
-}
-
-.scrollable-content::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Color of the scrollbar track */
-  border-radius: 5px;
-}
-
-.scrollable-content::-webkit-scrollbar-thumb {
-  background: #888; /* Color of the scrollbar thumb */
-  border-radius: 5px;
-}
-
-.scrollable-content::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color of the thumb on hover */
-}
-
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }
 footer a:hover { color: white; text-decoration: underline; }
