@@ -5,8 +5,36 @@
 
 {% block page_content %}
 
-<div class="row">
-    <p>Dummy text</p>
+<div class="container my-4">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">BioBrick</th>
+                <th scope="col">Description</th>
+                <th scope="col">Page</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--row 1-->
+            <tr>
+                <td>BBa_??? (don’t know till parts registry opens up) </td>
+                <td>Composite part. This part is the fusion protein of csgA + sazCA. </td>
+                <td>??? (again don’t know till parts registry opens up)</td>
+            </tr>
+            <!--row 2-->
+            <tr>
+                <td>BBa_???</td>
+                <td>Composite part. This part is the entirety of the csg operon and includes the fusion protein csgA + sazCA.</td>
+                <td>???</td>
+            </tr>
+            <!--row 3-->
+            <tr>
+                <td>BBa_???</td>
+                <td>Composite part. This part is the entirety of the csg + sazCA operon and the urease gene cluster from S. pasteurii DSM33.
+                <td>???</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 {% endblock %}
