@@ -91,7 +91,7 @@ body { padding-top: 56px;
 /*autoscroll*/
 .autoscroll { overflow: hidden; white-space: nowrap; position: relative; width: 80vw; margin: 20px; border-radius: 20px; }
 .autoscroll::after { content: ""; width: 80vw; height: 150px; background: linear-gradient(to right, #ffffff 0%, transparent 10%, transparent 90%, #ffffff 100%); display: flex; position: absolute; top: 0; }
-.scroll-container { display: inline-flex; align-items: center; animation: scroll 50s linear infinite; gap: 50px; transform: translateX(100%); justify-content: space-around; padding-right: 50px; }
+.scroll-container { display: inline-flex; align-items: center; animation: scroll 75s linear infinite; gap: 50px; transform: translateX(100%); justify-content: space-around; padding-right: 50px; }
 .autoscroll:hover .scroll-container { animation-play-state: paused; }
 .scroll-container img { display: inline-block; margin-right: 10px; height: 150px; background-color: white; border-radius: 20px; padding: 10px; }
 @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
