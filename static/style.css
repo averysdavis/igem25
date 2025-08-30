@@ -89,65 +89,66 @@ body { padding-top: 56px;
 }
 
 /*Autoscroll*/
-/* Wrapper for the scroll container */
-.autoscroll-wrapper .autoscroll {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  width: 80vw;  /* Width of the container */
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-/* Gradient overlay on top */
-.autoscroll-wrapper .autoscroll::after {
-  content: "";
-  width: 100%;
-  height: 150px;
-  background: linear-gradient(to right, #ffffff 0%, transparent 10%, transparent 90%, #ffffff 100%);
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-/* The scroll container that holds the images */
-.autoscroll-wrapper .scroll-container {
-  display: inline-flex;
-  align-items: center;
-  gap: 50px;
-  justify-content: space-around;
-  animation: scroll 20s linear infinite;  /* Adjust time for desired speed */
-  z-index: 0;
-  width: 200%;  /* To make it wide enough for two sets of images */
-  position: relative;
-}
-
-/* Pause animation on hover */
-.autoscroll-wrapper .autoscroll:hover .scroll-container {
-  animation-play-state: paused;
-}
-
-/* Keyframes to create a smooth scrolling loop */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);  /* Start at the beginning */
+  /* Wrapper for the scroll container */
+  .autoscroll-wrapper .autoscroll {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 80vw;  /* Width of the container */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
   }
-  100% {
-    transform: translateX(-50%);  /* Move the container to -50%, which is halfway */
-  }
-}
 
-/* Image styling */
-.autoscroll-wrapper .scroll-container img {
-  display: inline-block;
-  margin-right: 10px;
-  height: 150px;
-  background-color: white;
-  padding: 10px;
-}
+  /* Gradient overlay on top */
+  .autoscroll-wrapper .autoscroll::after {
+    content: "";
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to right, #ffffff 0%, transparent 10%, transparent 90%, #ffffff 100%);
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  /* The scroll container that holds the images */
+  .autoscroll-wrapper .scroll-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-around;
+    animation: scroll 20s linear infinite;  /* Adjust time for desired speed */
+    z-index: 0;
+    width: 200%;  /* To make it wide enough for two sets of images */
+    position: relative;
+  }
+
+  /* Pause animation on hover */
+  .autoscroll-wrapper .autoscroll:hover .scroll-container {
+    animation-play-state: paused;
+  }
+
+  /* Keyframes to create a smooth scrolling loop */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);  /* Start at the beginning */
+    }
+    100% {
+      transform: translateX(-50%);  /* Move the container to -50%, which is halfway */
+    }
+  }
+
+  /* Image styling */
+  .autoscroll-wrapper .scroll-container img {
+    display: inline-block;
+    margin-right: 10px;
+    height: 150px;
+    background-color: white;
+    padding: 10px;
+  }
+  /*End autoscroll*/
 
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }
