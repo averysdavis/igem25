@@ -150,6 +150,15 @@ body { padding-top: 56px;
   }
   /*End autoscroll*/
 
+/*Scrollspy*/
+#myScrollspy .nav-link.active{
+  color: rgb(255, 255, 255);
+  background-color: #982F44;
+}
+#myScrollspy .nav-link{
+  color: rgb(0, 0, 0);
+}
+
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }
 footer a:hover { color: white; text-decoration: underline; }
