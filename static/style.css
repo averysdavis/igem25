@@ -27,66 +27,66 @@ body { padding-top: 56px;
 .bd-callout-danger { border-left-color:#d9534f }
 
 /* Team members page */
+  /* Team Member Squares */
+  .team-member-section {
+    margin: 40px 0;
+    text-align: center;
+  }
 
-/* Team Member Squares */
-.team-member-section {
-  margin: 40px 0;
-  text-align: center;
-}
+  .team-member-square {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
 
-.team-member-square {
-  position: relative;
-  width: 300px;
-  height: 350px;
-  margin: 10px;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
+  .team-member-square img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
-.team-member-square img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+  .name-title-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
 
-.name-title-overlay {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  text-align: center;
-  border-radius: 10px;
-}
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+  }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-  transition: opacity 0.3s ease;
-  border-radius: 20px;
-}
+  .team-member-square:hover .overlay {
+    opacity: 1;
+  }
 
-.team-member-square:hover .overlay {
-  opacity: 1;
-}
-
-.team-member-square:hover {
-  transform: scale(1.05);
-}
+  .team-member-square:hover {
+    transform: scale(1.05);
+  }
+/*End members page*/
 
 /*Autoscroll*/
   /* Wrapper for the scroll container */
@@ -151,13 +151,72 @@ body { padding-top: 56px;
   /*End autoscroll*/
 
 /*Scrollspy*/
-#myScrollspy .nav-link.active{
-  color: rgb(255, 255, 255);
-  background-color: #982F44;
-}
-#myScrollspy .nav-link{
-  color: rgb(0, 0, 0);
-}
+  #myScrollspy {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;  /* Adjust based on your header height */
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+
+  /* Optional: If you want a smooth scroll effect on the sidebar */
+  #myScrollspy {
+    scroll-behavior: smooth;
+  }
+
+  /* Force default color for all nav links inside #myScrollspy */
+  #myScrollspy .nav-link {
+    color: rgb(0, 0, 0) !important;
+    background-color: transparent !important; /* Ensure background is transparent */
+  }
+
+  /* Make sure active state for all nav links inside #myScrollspy is correct */
+  #myScrollspy .nav-link.active {
+    color: rgb(255, 255, 255) !important;
+    background-color: #982F44 !important; /* Custom active background */
+  }
+
+  /* Force color for nav links inside collapsible submenu */
+  #project-ideation-submenu .nav-link {
+    color: rgb(0, 0, 0) !important;
+    background-color: transparent !important; /* Ensure background is transparent */
+  }
+
+  /* Active link in collapsible submenu */
+  #project-ideation-submenu .nav-link.active {
+    color: rgb(255, 255, 255) !important;
+    background-color: #982F44 !important;
+  }
+
+  /* Fixing any blue color on hover */
+  #myScrollspy .nav-link:hover, 
+  #project-ideation-submenu .nav-link:hover {
+    color: rgb(0, 0, 0) !important; /* Black on hover */
+    background-color: transparent !important; /* No background on hover */
+    text-decoration: none !important; /* No underline on hover */
+  }
+
+  /* Remove the blue color on focus state */
+  #myScrollspy .nav-link:focus, 
+  #project-ideation-submenu .nav-link:focus {
+    color: rgb(0, 0, 0) !important; /* Set color to black */
+    outline: none !important; /* Remove the outline (if not needed) */
+    background-color: transparent !important;
+  }
+
+  /* To fix Bootstrap's built-in active link background color */
+  #myScrollspy .nav-pills .nav-link.active,
+  #project-ideation-submenu .nav-pills .nav-link.active {
+    background-color: #982F44 !important;  /* Custom active background */
+    color: rgb(255, 255, 255) !important;
+  }
+/*End scrollspy*/
+
 
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }

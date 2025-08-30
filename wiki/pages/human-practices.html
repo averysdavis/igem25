@@ -212,6 +212,8 @@
   </div>
 </div>
 
+<hr/>
+
 <body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20">
 
   <div class="container">
@@ -221,31 +223,87 @@
       <nav class="col-sm-2" id="myScrollspy">
         <nav class="nav nav-pills flex-column">
           <a class="nav-link" href="#overview">Overview</a>
-          <a class="nav-link" href="#projectideation">Project Ideation</a>
-          <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#projectideation" data-bs-toggle="collapse" data-bs-target="#project-ideation-submenu">Project Ideation</a>
+          
+          <!--collapsible container-->
+          <div id="project-ideation-submenu" class="collapse">
             <a class="nav-link ml-3 my-1" href="#phillip">Dr. Phillip Kyriakakis</a>
             <a class="nav-link ml-3 my-1" href="#sukritsilas">Dr. Sukrit Silas</a>
-          </nav>
+            <a class="nav-link ml-3 my-1" href="#community">Community Integration and Lab Space</a>
+            <a class="nav-link ml-3 my-1" href="#poll">Team Poll</a>
+            <a class="nav-link ml-3 my-1" href="#select">Project Selection</a>
+          </div>
+          
         </nav>
       </nav>
-
+      
       <!-- Main Content -->
       <div class="col-md-10">
         <div id="overview" class="mb-5">
           <h1>Overview</h1>
+          <p>In developing our project, we sought to use research and expert outreach to tailor our project to the potential communities it would serve. We talked to stakeholders at each phase of the project, gaining valuable feedback on our ideas and prototypes. This process allowed us to discover the most practical path forward for our project and make sure we were using our time well.</p>
         </div>
         
         <div id="projectideation" class="mb-5">
           <h1>Project Ideation</h1>
+          <p>
+            To supplement our preliminary research, we contacted academics in [areas] we were interested in exploring. Our meeting with Dr. Phillip Kyriakaki and Dr. Sukri Silas, as well as a team poll and consultation with Dr. Chris Hernandez, our secondary PI, allowed us to finalize our project idea.
+          </p>
           <div id="phillip" class="mb-5">
             <h2>Dr. Phillip Kyriakakis</h2>
+            <p>February 14, 2025</p>
+            <p>Attendees: Ansh, Khushi, Avery, Paul, Nick, Anandita, Sameer, Zoya, Alisha</p>
+            <p>Phillip Kyriakakis, Ph.D. is a Senior Research Scientist in the Bioengineering Department at Stanford University and a member of the Wu Tsai Institute for Neuroscience.</p>
+            <h3>What We Learned</h3>
+            <p>Our team visited Dr. Kyriakakis’ lab at Stanford. He gave a presentation on his research in optogenetics, explaining how it enables scientists to use light to control neurons and other cells. After the presentation, we split into two groups to tour different areas of his lab, where we also had the chance to briefly meet a member of the Stanford iGEM team. Dr. Kyriakakis highlighted opportunities for collaboration and pointed us toward local resources and mentors who could support our work.</p>
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li><b>Seek local resources and mentorship</b>: Connect with nearby universities, labs, and experts for advice and potential collaboration.</li>
+              <li><b>Learn from peers</b>: Engaging with teams like Stanford iGEM can provide new perspectives and build community connections.</li>
+            </ul>
+            <h3>Implementation</h3>
+            <p>We looked for stakeholders in our local community</p>
           </div>
           <div id="sukritsilas" class="mb-5">
-            <h2>Dr. Sukrit Silas</h2>
+            <h2>Dr. Sukrit Silas</h2><p>April 18, 2025</p>
+            <p>Attendees: Ansh, Zoya, Avery, Khushi, Anandita, Nikhil, Sameer, Meghna, Alyssa, Alisha, Paul, Sara</p>
+            <p>Dr. Sukrit Silas is a Principal Investigator at the Gladstone Institutes and an expert in phage-bacteria dynamics and bacterial immune systems. His group is particularly interested in phage accessory genes—small proteins that allow phages to evade bacterial defenses.</p>
+            <h3>What We Learned</h3>
+            <p>Our team visited Dr. Silas’ lab at the Gladstone Institutes while exploring a possible phage-based iGEM project. He explained the challenges of phage therapy, particularly how phages tend to be effective only against very specific bacterial strains, and how defenses like receptor shielding can block infection even when receptors appear to match.
+              He also introduced his lab’s ongoing work testing accessory genes by expressing them in E. coli to map their role in infection. 
+              His postdoc discussed how AI and computational tools can predict host range, model resistance, and guide cocktail design. Importantly, Dr. Silas suggested a potential iGEM direction: testing phage cocktails—combinations of different phages—to broaden effectiveness against E. coli.
+              Ultimately, this idea was not feasible for us since community labs such as BioCurious prohibit phage use, and we lacked access to phage-dedicated containment facilities.</p>
+            <h3>Key Takeaways</h3>
+            <ul>
+              <li><b>Phage-host interactions</b> are highly strain-specific, unlike antibiotics.</li>
+              <li><b>Receptor shielding</b> is a key bacterial defense blocking many infections.</li>
+              <li>Dr. Silas’ lab is creating a <b>functional map of accessory genes</b> to understand how phages evade defenses.</li>
+              <li><b>AI modeling</b> can help predict phage-host interactions and optimize cocktails.</li>
+              <li>A strong project idea was to test <b>phage cocktails</b>, but this was not possible due to biosafety limits.</li>
+            </ul>
+            <h3>Implementation</h3>
+            <p>Our team researched if we could conduct the project Dr. Silas suggested. We looked into how to safely work with phages and discussed how we could use AI in our project.</p>      
+          </div>
+          <div id="community" class="mb-5">
+            <h2>Community Integration and Lab Space</h2>
+            <p>From the beginning, our team knew we wanted to integrate community projects and efforts into our project. Due to this, we decided to conduct wetlab work at BioCurious, a community biotech lab. Unfortunately, BioCurious has a policy against working with phages in order to protect other member’s work.</p>
+            <h3>Implementation</h3>
+            <p>We decided to not attempt a phage project in order to remain integrated with our community.</p>
+          </div>
+          <div id="poll" class="mb-5">
+            <h2>Team Poll</h2>
+            <p>April 2025</p>
+            <p>Simultaneously as discussing community labs, we polled our members on which project they would like to pursue. At this point we had narrowed down to three ideas: Phage therapy (ruled out), living houses, and grass water loss. Living Houses won with 58.8% of the vote, making it our official project.</p>
+            <img src="https://static.igem.wiki/teams/5761/humanpractices/ihp/votes.webp" alt="Pie chart of votes" style="width:1250px">
+          </div>
+          <div id="select" class="mb-4">
+            <h2>Project Selection</h2>
+            <p>May 2025</p>
+            <p>With our project decided, we met with our secondary investigator, Chris Hernandez, who is a professor at University of California, San Francisco. At this point the project idea was only defined as designing a “living” material that would grow or build itself (hence “living houses"). We discussed biomineralization, which is Chris’s specialty, and how to ensure our project helps the community. We discussed a variety of problems, including plastics and microplastics returning to the environment after capture. With Chris’s advice, we pivoted our project to address local problems.</p>
+            <h3>Implementation</h3>
+            <p>Our project “living houses” was redefined as “rock the plastics,” where we trap plastics with biomineralization.</p>
           </div>
         </div>
-        
-
       </div>
     </div>
   </div>
