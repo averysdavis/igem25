@@ -88,46 +88,60 @@ body { padding-top: 56px;
   transform: scale(1.05);
 }
 
-/*autoscroll*/
-/* Targeting only the .autoscroll inside the specific wrapper */
+/*Autoscroll*/
+/* Wrapper for the scroll container */
 .autoscroll-wrapper .autoscroll {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  width: 80vw;
+  width: 80vw;  /* Width of the container */
   margin: 20px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
 }
 
+/* Gradient overlay on top */
 .autoscroll-wrapper .autoscroll::after {
   content: "";
-  width: 100%; /* Ensure the gradient spans the full width of .autoscroll */
+  width: 100%;
   height: 150px;
   background: linear-gradient(to right, #ffffff 0%, transparent 10%, transparent 90%, #ffffff 100%);
   display: flex;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; /* Place it above the scroll container */
+  z-index: 1;
 }
 
+/* The scroll container that holds the images */
 .autoscroll-wrapper .scroll-container {
   display: inline-flex;
   align-items: center;
-  animation: scroll 75s linear infinite;
   gap: 50px;
-  transform: translateX(100%);
   justify-content: space-around;
-  padding-right: 50px;
-  z-index: 0; /* Make sure the scroll container stays below the gradient */
+  animation: scroll 20s linear infinite;  /* Adjust time for desired speed */
+  z-index: 0;
+  width: 200%;  /* To make it wide enough for two sets of images */
+  position: relative;
 }
 
+/* Pause animation on hover */
 .autoscroll-wrapper .autoscroll:hover .scroll-container {
   animation-play-state: paused;
 }
 
+/* Keyframes to create a smooth scrolling loop */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);  /* Start at the beginning */
+  }
+  100% {
+    transform: translateX(-50%);  /* Move the container to -50%, which is halfway */
+  }
+}
+
+/* Image styling */
 .autoscroll-wrapper .scroll-container img {
   display: inline-block;
   margin-right: 10px;
@@ -136,16 +150,6 @@ body { padding-top: 56px;
   border-radius: 20px;
   padding: 10px;
 }
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }
