@@ -151,70 +151,76 @@ body { padding-top: 56px;
   /*End autoscroll*/
 
 /*Scrollspy*/
-  #myScrollspy {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;  /* Adjust based on your header height */
-    overflow-y: auto;
-    z-index: 1000;
-  }
+/* Scrollspy */
+#myScrollspy {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Stick to the top of the page */
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px; /* Adjust based on your fixed header height */
+  overflow-y: auto;
+  z-index: 1000;
+}
 
+/* Optional: Smooth scroll effect */
+#myScrollspy {
+  scroll-behavior: smooth;
+}
 
-  /* Optional: If you want a smooth scroll effect on the sidebar */
-  #myScrollspy {
-    scroll-behavior: smooth;
-  }
+/* Force default color for all nav links inside #myScrollspy */
+#myScrollspy .nav-link {
+  color: rgb(0, 0, 0) !important;
+  background-color: transparent !important; /* Ensure background is transparent */
+}
 
-  /* Force default color for all nav links inside #myScrollspy */
-  #myScrollspy .nav-link {
-    color: rgb(0, 0, 0) !important;
-    background-color: transparent !important; /* Ensure background is transparent */
-  }
+/* Make sure active state for all nav links inside #myScrollspy is correct */
+#myScrollspy .nav-link.active {
+  color: rgb(255, 255, 255) !important;
+  background-color: #982F44 !important; /* Custom active background */
+}
 
-  /* Make sure active state for all nav links inside #myScrollspy is correct */
-  #myScrollspy .nav-link.active {
-    color: rgb(255, 255, 255) !important;
-    background-color: #982F44 !important; /* Custom active background */
-  }
+/* Force color for nav links inside collapsible submenu */
+#project-ideation-submenu .nav-link {
+  color: rgb(0, 0, 0) !important;
+  background-color: transparent !important; /* Ensure background is transparent */
+}
 
-  /* Force color for nav links inside collapsible submenu */
-  #project-ideation-submenu .nav-link {
-    color: rgb(0, 0, 0) !important;
-    background-color: transparent !important; /* Ensure background is transparent */
-  }
+/* Active link in collapsible submenu */
+#project-ideation-submenu .nav-link.active {
+  color: rgb(255, 255, 255) !important;
+  background-color: #982F44 !important;
+}
 
-  /* Active link in collapsible submenu */
-  #project-ideation-submenu .nav-link.active {
-    color: rgb(255, 255, 255) !important;
-    background-color: #982F44 !important;
-  }
+/* Fixing any blue color on hover */
+#myScrollspy .nav-link:hover, 
+#project-ideation-submenu .nav-link:hover {
+  color: rgb(0, 0, 0) !important; /* Black on hover */
+  background-color: transparent !important; /* No background on hover */
+  text-decoration: none !important; /* No underline on hover */
+}
 
-  /* Fixing any blue color on hover */
-  #myScrollspy .nav-link:hover, 
-  #project-ideation-submenu .nav-link:hover {
-    color: rgb(0, 0, 0) !important; /* Black on hover */
-    background-color: transparent !important; /* No background on hover */
-    text-decoration: none !important; /* No underline on hover */
-  }
+/* Remove the blue color on focus state */
+#myScrollspy .nav-link:focus, 
+#project-ideation-submenu .nav-link:focus {
+  color: rgb(0, 0, 0) !important; /* Set color to black */
+  outline: none !important; /* Remove the outline (if not needed) */
+  background-color: transparent !important;
+}
 
-  /* Remove the blue color on focus state */
-  #myScrollspy .nav-link:focus, 
-  #project-ideation-submenu .nav-link:focus {
-    color: rgb(0, 0, 0) !important; /* Set color to black */
-    outline: none !important; /* Remove the outline (if not needed) */
-    background-color: transparent !important;
-  }
+/* To fix Bootstrap's built-in active link background color */
+#myScrollspy .nav-pills .nav-link.active,
+#project-ideation-submenu .nav-pills .nav-link.active {
+  background-color: #982F44 !important;  /* Custom active background */
+  color: rgb(255, 255, 255) !important;
+}
 
-  /* To fix Bootstrap's built-in active link background color */
-  #myScrollspy .nav-pills .nav-link.active,
-  #project-ideation-submenu .nav-pills .nav-link.active {
-    background-color: #982F44 !important;  /* Custom active background */
-    color: rgb(255, 255, 255) !important;
-  }
+/* Fix overlap issue by adding scroll-margin-top */
+section {
+  scroll-margin-top: 60px; /* Adjust this value based on your header height */
+}
+
 /*End scrollspy*/
 
 
