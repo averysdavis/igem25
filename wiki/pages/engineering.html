@@ -5,27 +5,46 @@
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Silver Medal Criterion #1</h4>
-      <p>Demonstrate engineering success in a technical aspect of your project by going through at least one iteration of the engineering design cycle.</p>
-      <hr />
-      <p>Visit the <a href="https://competition.igem.org/judging/medals">Medals page</a> for more information.</p>
+<body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20">
+
+  <div class="container">
+    <div class="row">
+      <!-- Scrollspy Sidebar -->
+      <nav class="col-sm-2" id="myScrollspy">
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#section1">1</a>
+          <a class="nav-link" href="#section2">2</a>
+          <a class="nav-link" href="#section3">3</a>
+          <a class="nav-link" href="#section4">4</a>
+          <a class="nav-link" href="#section5">5</a>
+        </nav>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="col-md-10">
+        <div id="section1" class="mb-5">
+          <h1>1</h1>
+        </div>
+        
+        <div id="section2" class="mb-5">
+          <h1>2</h1>
+        </div>
+        
+        <div id="section3" class="mb-5">
+          <h1>3</h1>
+        </div>
+
+        <div id="section4" class="mb-5">
+          <h1>4</h1>
+        </div>
+
+        <div id="section5" class="mb-5">
+          <h1>5</h1>
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col">
-    <h2>Tips for Success</h2>
-    <hr />
-    <p>Engineering success can be achieved by documenting your effort to follow the engineering design cycle: Design → Build → Test → Learn</p>
-    <p>We invite you to think about ways to tackle and solve one or more of your project's problems and use synthetic biology tools and/or experimental techniques to generate expected results.</p>
-    <p>When you have completed the cycle once, think about and document what changes in design you would make for the next iteration(s) of the cycle.</p>
-    <p>For example, you can design and build a new Part, measure its performance, document whether it worked or not, and propose how the results would inform the next design or steps (documentation must be on the Part's Pages on the Registry).</p>
-    <p>Visit the <a href="https://technology.igem.org/engineering" target="_blank">Engineering pages</a> for additional guidance on engineering success.</p>
-  </div>
-</div>
+</body>
 
 {% endblock %}

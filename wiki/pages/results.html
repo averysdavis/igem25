@@ -5,40 +5,46 @@
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What Should this Page Contain?</h2>
-    <hr />
-    <ul>
-      <li>Clearly and objectively describe the results of your experiments and research.</li>
-      <li>Use tables, graphs, and images to visualize your data.</li>
-      <li>Discuss the implications of your findings in the context of your project goals.</li>
-      <li>Highlight any trends, patterns, or significant observations.</li>
-      <li>Include an analysis summary section to synthesize your findings and discuss their overall significance.</li>
-      <li>Outline your future plans for the project, including potential applications, further research, and development.</li>
-      <li>Explain what went wrong and what you learned from these experiences.</li>
-      <li>Discuss potential improvements or alternative approaches.</li>
-      <li>Emphasize the importance of scientific honesty and transparency.</li>
-    </ul>
-  </div>
+<body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20">
 
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr />
-    <ul>
-      <li><a href="https://2024.igem.wiki/heidelberg/results">2024 Heidelberg</a></li>
-      <li><a href="https://2024.igem.wiki/marburg/results">2024 Marburg</a></li>
-      <li><a href="https://2024.igem.wiki/epfl/results">2024 EPFL</a></li>
-      <li><a href="https://2024.igem.wiki/utoronto/results">2024 UToronto</a></li>
-      <li><a href="https://2024.igem.wiki/marburg/results">2024 Marburg</a></li>
-      <li><a href="https://2024.igem.wiki/sydney-australia/results">2024 Sydney-Australia</a></li>
-      <li><a href="https://2024.igem.wiki/toulouse-insa-ups/results">2024 Toulouse-INSA-UPS</a></li>
-      <li><a href="https://2024.igem.wiki/bnds-china/results">2024 BNDS-China</a></li>
-      <li><a href="https://2024.igem.wiki/vilnius-lithuania/results">2024 Vilnius-Lithuania</a></li>
-      <li><a href="https://2024.igem.wiki/xmu-china/results">2024 XMU-China</a></li>
-      <li><a href="https://2023.igem.wiki/estonia-tuit/results">2023 Estonia-TUIT</a></li>
-    </ul>
+  <div class="container">
+    <div class="row">
+      <!-- Scrollspy Sidebar -->
+      <nav class="col-sm-2" id="myScrollspy">
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#section1">1</a>
+          <a class="nav-link" href="#section2">2</a>
+          <a class="nav-link" href="#section3">3</a>
+          <a class="nav-link" href="#section4">4</a>
+          <a class="nav-link" href="#section5">5</a>
+        </nav>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="col-md-10">
+        <div id="section1" class="mb-5">
+          <h1>1</h1>
+        </div>
+        
+        <div id="section2" class="mb-5">
+          <h1>2</h1>
+        </div>
+        
+        <div id="section3" class="mb-5">
+          <h1>3</h1>
+        </div>
+
+        <div id="section4" class="mb-5">
+          <h1>4</h1>
+        </div>
+
+        <div id="section5" class="mb-5">
+          <h1>5</h1>
+        </div>
+
+      </div>
+    </div>
   </div>
-</div>
+</body>
 
 {% endblock %}

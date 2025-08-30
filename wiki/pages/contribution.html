@@ -5,30 +5,46 @@
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #3</h4>
-      <p>Make a useful contribution for future iGEM teams and document it on this page.</p>
-      <hr />
-      <p>Visit the <a href="https://competition.igem.org/judging/medals">Medals page</a> for more information.</p>
+<body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20">
+
+  <div class="container">
+    <div class="row">
+      <!-- Scrollspy Sidebar -->
+      <nav class="col-sm-2" id="myScrollspy">
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#section1">1</a>
+          <a class="nav-link" href="#section2">2</a>
+          <a class="nav-link" href="#section3">3</a>
+          <a class="nav-link" href="#section4">4</a>
+          <a class="nav-link" href="#section5">5</a>
+        </nav>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="col-md-10">
+        <div id="section1" class="mb-5">
+          <h1>1</h1>
+        </div>
+        
+        <div id="section2" class="mb-5">
+          <h1>2</h1>
+        </div>
+        
+        <div id="section3" class="mb-5">
+          <h1>3</h1>
+        </div>
+
+        <div id="section4" class="mb-5">
+          <h1>4</h1>
+        </div>
+
+        <div id="section5" class="mb-5">
+          <h1>5</h1>
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col">
-    <h2>What Should this Page Contain?</h2>
-    <hr />
-    <p>Teams must document their contribution and explain why their effort is a contribution to fellow iGEMers. There is no single definition of what a contribution should be. We invite teams to be creative and generous in the knowledge, data or tools they may provide to the community.</p>
-    <p>A few examples of contributions are:</p>
-    <ul>
-      <li>Creating a new BioBrick part or significantly improving an existing one in the iGEM Registry.</li>
-      <li>Developing software, tools, or resources that can considerably assist future iGEM teams.</li>
-      <li>Sharing optimized protocols, experimental techniques, or methodologies.</li>
-      <li>Any other contributions that provide a clear benefit to future iGEM teams.</li>
-    </ul>
-  </div>
-</div>
+</body>
 
 {% endblock %}
