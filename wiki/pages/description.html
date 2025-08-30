@@ -4,19 +4,50 @@
 {% block lead %}Describe how and why you chose your iGEM project.{% endblock %}
 
 {% block page_content %}
-<div class="row">
-  <h1>Abstract</h1>
-  <p>tbd</p>
-  <h1>Issue</h1>
-  <p>With microplastics now found in human bloodstreams, brains and the food chain, the need for synthetic biology solutions like ours has never been more urgent. Jambeck et al. finds that 5 to 12 million tons of plastic enter the ocean yearly, decomposing into microplastics and harming both the environment and humans. Efforts that recollect plastics from the environment often end up in landfills and waste water treatments, where the microplastics leak back into the environment (Illinois Sustainable Technology Center). At the same time, the U.S. Geological Survey reports that 1 billion tons of limestone are quarried yearly in the United States alone. </p>
-  <h1>Current solutions</h1>
-  <p>tbd</p>
-  <h1>Our Solution</h1>
-  <p>Our iGEM team is engineering E. coli to co-express plastic-binding curli fibers and a biomineralization pathway in order to capture microplastics in in situ limestone formations. In particular, we are using microbially induced calcite precipitation (MICP) for biomineralization, primarily experimenting with two different pathways: a carbonic anhydrase catalyzed pathway and a urease catalyzed pathway. 
-  </p>
-  <h1>Impacts</h1>
-  <p>tbd</p>
-  <h1>References</h1>
-  <p>Are we using apa or what???</p>
-</div>
+
+<body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20">
+
+  <div class="container">
+    <div class="row">
+      <!-- Scrollspy Sidebar -->
+      <nav class="col-sm-2" id="myScrollspy">
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#section1">Abstract</a>
+          <a class="nav-link" href="#section2">Issue</a>
+          <a class="nav-link" href="#section3">Our Solution</a>
+          <a class="nav-link" href="#section4">Impacts</a>
+          <a class="nav-link" href="#section5">References</a>
+        </nav>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="col-md-10">
+        <div id="section1" class="mb-5">
+          <h1>Abstract</h1>
+          <p>tbd</p>
+        </div>
+        
+        <div id="section2" class="mb-5">
+          <h1>Issue</h1>
+          <p>With microplastics now found in human bloodstreams, brains and the food chain, the need for synthetic biology solutions like ours has never been more urgent. Jambeck et al. finds that 5 to 12 million tons of plastic enter the ocean yearly, decomposing into microplastics and harming both the environment and humans. Efforts that recollect plastics from the environment often end up in landfills and waste water treatments, where the microplastics leak back into the environment (Illinois Sustainable Technology Center). At the same time, the U.S. Geological Survey reports that 1 billion tons of limestone are quarried yearly in the United States alone. </p>
+        </div>
+        
+        <div id="section3" class="mb-5">
+          <h1>Our Solution</h1>
+          <p>Our iGEM team is engineering E. coli to co-express plastic-binding curli fibers and a biomineralization pathway in order to capture microplastics in in situ limestone formations. In particular, we are using microbially induced calcite precipitation (MICP) for biomineralization, primarily experimenting with two different pathways: a carbonic anhydrase catalyzed pathway and a urease catalyzed pathway. 
+        </div>
+
+        <div id="section4" class="mb-5">
+          <h1>Impacts</h1>
+          <p>tbd</p>
+        </div>
+
+        <div id="section5" class="mb-5">
+          <h1>References</h1>
+          <p>tbd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 {% endblock %}
