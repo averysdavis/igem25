@@ -5,38 +5,40 @@
 
 {% block page_content %}
 
-<body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="80" tabindex="0">
+<div data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="80" tabindex="0">
 
   <div class="container">
     <div class="row">
       <!-- Scrollspy Sidebar -->
 
-      <nav class="col-sm-3" id="myScrollspy">
-        <nav class="nav nav-pills flex-column">
-          <a class="nav-link" href="#overview">Overview</a>
-          <a class="nav-link" href="#projectideation" data-bs-toggle="collapse" data-bs-target="#project-ideation-submenu">Project Ideation</a>
-            <a class="nav-link ms-3 my-1" href="#phillip">Dr. Phillip Kyriakakis</a>
-            <a class="nav-link ms-3 my-1" href="#sukritsilas">Dr. Sukrit Silas</a>
-            <a class="nav-link ms-3 my-1" href="#community">Community Integration and Lab Space</a>
-            <a class="nav-link ms-3 my-1" href="#poll">Team Poll</a>
-            <a class="nav-link ms-3 my-1" href="#select">Project Selection</a>
-          
-          <a class="nav-link" href="#concept" data-bs-toggle="collapse" data-bs-target="#concept-submenu">Concept Design</a>
-            <a class="nav-link ms-3 my-1" href="#berkeley">UC Berkeley Bioengineering Symposium</a>
-            <a class="nav-link ms-3 my-1" href="#brenda">Brenda Goeden</a>
-            <a class="nav-link ms-3 my-1" href="#caroylnn">Caroylnn Box</a>
-            <a class="nav-link ms-3 my-1" href="#win">Win Cowger</a>
+      <nav class="col-2" id="myScrollspy">
+        <div class="d-none d-lg-block sticky-lg-top">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#overview">Overview</a>
+            <a class="nav-link" href="#projectideation" data-bs-toggle="collapse" data-bs-target="#project-ideation-submenu">Project Ideation</a>
+              <a class="nav-link ms-3 my-1" href="#phillip">Dr. Phillip Kyriakakis</a>
+              <a class="nav-link ms-3 my-1" href="#sukritsilas">Dr. Sukrit Silas</a>
+              <a class="nav-link ms-3 my-1" href="#community">Community Integration and Lab Space</a>
+              <a class="nav-link ms-3 my-1" href="#poll">Team Poll</a>
+              <a class="nav-link ms-3 my-1" href="#select">Project Selection</a>
+            
+            <a class="nav-link" href="#concept" data-bs-toggle="collapse" data-bs-target="#concept-submenu">Concept Design</a>
+              <a class="nav-link ms-3 my-1" href="#berkeley">UC Berkeley Bioengineering Symposium</a>
+              <a class="nav-link ms-3 my-1" href="#brenda">Brenda Goeden</a>
+              <a class="nav-link ms-3 my-1" href="#caroylnn">Caroylnn Box</a>
+              <a class="nav-link ms-3 my-1" href="#win">Win Cowger</a>
 
-          <a class="nav-link" href="#verify" data-bs-toggle="collapse" data-bs-target="#verify-submenu">Verification</a>
-            <a class="nav-link ms-3 my-1" href="#kelsey">Dr. Kelsey Defrates</a>
-            <a class="nav-link ms-3 my-1" href="#brian">Dr. Brian Ross</a>
-            <a class="nav-link ms-3 my-1" href="#shanna">Shanna Bonnano</a>
-            <a class="nav-link ms-3 my-1" href="#shohreh">Shohreh Vanaei</a>
-        </nav>
+            <a class="nav-link" href="#verify" data-bs-toggle="collapse" data-bs-target="#verify-submenu">Verification</a>
+              <a class="nav-link ms-3 my-1" href="#kelsey">Dr. Kelsey Defrates</a>
+              <a class="nav-link ms-3 my-1" href="#brian">Dr. Brian Ross</a>
+              <a class="nav-link ms-3 my-1" href="#shanna">Shanna Bonnano</a>
+              <a class="nav-link ms-3 my-1" href="#shohreh">Shohreh Vanaei</a>
+          </nav>
+        </div>
       </nav>
       
       <!-- Main Content -->
-      <div class="col-md-9" id="bumper">
+      <div class="col-10" id="bumper">
         <div id="overview" class="mb-5">
           <h1>Overview</h1>
           <p>In developing our project, we sought to use research and expert outreach to tailor our project to the potential communities it would serve. We talked to stakeholders at each phase of the project, gaining valuable feedback on our ideas and prototypes. This process allowed us to discover the most practical path forward for our project and make sure we were using our time well.</p>
@@ -187,6 +189,7 @@
           </div>
           <!--Shanna Bonnano-->
           <div id="shanna" class="mb-5">
+            <h1>Shanno Bonnano</h1>
             <p>July 8, 2025</p>
             <p>Attendees:  Alyssa, Ansh, Khushi, Avery, Alexei, Alisha, Sameer, Rohan, Nikhil, Nick</p>
             <p>Shanna Bonnano is a graduate student at Neel Joshi’s Biologically Fabricated Materials Lab, working on curli secretion and responsive biofilm materials. She has previously investigated secretion trade-offs in E. coli and tunable living composites, and her current research focuses on developing engineered probiotics for targeted delivery and treatment of gastrointestinal diseases.
@@ -226,5 +229,5 @@
       </div>
     </div>
   </div>
-</body>
+</div>
 {% endblock %}
