@@ -23,7 +23,8 @@ body { padding-top: 56px;
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;   /* spans full viewport width */
-  margin-top: 9;
+  margin-top: 0;
+  padding-top: 0;
 }
 .fullwidth img {
   width: 100%;
