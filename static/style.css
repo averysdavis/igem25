@@ -16,6 +16,33 @@ body { padding-top: 56px;
       url(https://static.igem.wiki/teams/5761/other/proximanova-regular.ttf) format("truetype");
   }
 
+.fullwidth {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;   /* spans full viewport width */
+  margin-top: 0;
+  padding-top: 0;
+}
+.fullwidth img {
+  width: 100%;
+  display: block;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-right{
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -25%);
+}
 /* CALLOUT */
 .bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
 .bd-callout h4 { margin-bottom: 1.25rem }
