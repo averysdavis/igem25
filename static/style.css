@@ -27,17 +27,16 @@ body { padding-top: 56px;
   padding-top: 0;
 }
 
-.container {
+.homepage_top {
   position: relative;
   text-align: center;
   color: white;
 }
 
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 
