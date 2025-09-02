@@ -35,13 +35,14 @@ body { padding-top: 56px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(25%, 25%);
+  font-size: 300px;
 }
 
 .center-right{
   top: 50%;
   left: 50%;
-  transform: translate(15%, 15%);
+  transform: translate(-75%, -75%);
 }
 /* CALLOUT */
 .bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
