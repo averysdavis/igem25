@@ -50,6 +50,13 @@ body { padding-top: 56px;
   transform: translate(-50%, -50%);
   font-size: 50px;
 }
+.image-pos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(25%, 25%);
+}
+
 
 
 
