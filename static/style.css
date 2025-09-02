@@ -51,7 +51,7 @@ body { padding-top: 56px;
   left: 50%;         /* horizontally center */
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;      /* make text visible on banner */
+  color: rgb(0, 0, 0);      /* make text visible on banner */
 }
 
 .hero-banner .logo {
