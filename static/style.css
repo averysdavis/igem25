@@ -31,20 +31,20 @@ body { padding-top: 56px;
   display: block;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(25%, 25%);
-  font-size: 300px;
+
+.homepage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  align-items: center;
 }
 
-.center-right{
-  top: 50%;
-  left: 50%;
-  transform: translate(-75%, -75%);
+.homepage-grid .text {
+  text-align: right; /* or left */
 }
-/* CALLOUT */
+
+.homepage-grid .image img {
+  max-width: 100%;
+}
 .bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
 .bd-callout h4 { margin-bottom: 1.25rem }
 .bd-callout p:last-child { margin-bottom:0 }
