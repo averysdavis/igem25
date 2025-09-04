@@ -126,66 +126,34 @@ body { padding-top: 56px;
 /*End members
 
 /*Autoscroll*/
-  /* Wrapper for the scroll container */
-  .autoscroll-wrapper .autoscroll {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 80vw;  /* Width of the container */
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-  }
+.autoscroll { overflow: hidden; white-space: nowrap; position: relative; width: 80vw; margin: 20px; border-radius: 20px; }
 
-  /* Gradient overlay on top */
-  .autoscroll-wrapper .autoscroll::after {
-    content: "";
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(to right, #ffffff 0%, transparent 10%, transparent 90%, #ffffff 100%);
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
+.autoscroll::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    transparent 10%,
+    transparent 90%,
+    #ffffff 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
 
-  /* The scroll container that holds the images */
-  .autoscroll-wrapper .scroll-container {
-    display: inline-flex;
-    align-items: center;
-    gap: 50px;
-    justify-content: space-around;
-    animation: scroll 20s linear infinite;  /* Adjust time for desired speed */
-    z-index: 0;
-    width: 200%;  /* To make it wide enough for two sets of images */
-    position: relative;
-  }
+.scroll-container { display: inline-flex; align-items: center; 
+  animation: scroll 30s linear infinite; /*speed*/
+  gap: 50px; transform: translateX(100%); justify-content: space-around; padding-right: 50px; }
+.autoscroll:hover .scroll-container { animation-play-state: paused; }
+.scroll-container img { display: inline-block; margin-right: 10px; height: 150px; background-color: white; border-radius: 20px; padding: 10px; }
+@keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
 
-  /* Pause animation on hover */
-  .autoscroll-wrapper .autoscroll:hover .scroll-container {
-    animation-play-state: paused;
-  }
-
-  /* Keyframes to create a smooth scrolling loop */
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);  /* Start at the beginning */
-    }
-    100% {
-      transform: translateX(-50%);  /* Move the container to -50%, which is halfway */
-    }
-  }
-
-  /* Image styling */
-  .autoscroll-wrapper .scroll-container img {
-    display: inline-block;
-    margin-right: 10px;
-    height: 150px;
-    background-color: white;
-    padding: 10px;
-  }
-  /*End autoscroll*/
+/*End autoscroll*/
 
 /*Scrollspy*/
   #myScrollspy {
@@ -224,6 +192,7 @@ body { padding-top: 56px;
   }
 
 /*End scrollspy*/
+
 /*Carousel*/
 .carousel-item img {
   max-width: 100%;
@@ -237,10 +206,11 @@ body { padding-top: 56px;
   border-radius: 50%;
   padding: 10px;
 }
-
+/*end carousel*/
 
 
 
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }
 footer a:hover { color: white; text-decoration: underline; }
+/*end footer*/
