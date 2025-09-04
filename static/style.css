@@ -153,14 +153,12 @@ body { padding-top: 56px;
   z-index: 2;
 }
 
-<<<<<<< HEAD
 .scroll-container { display: inline-flex; align-items: center; 
   animation: scroll 30s linear infinite; /*speed*/
   gap: 50px; transform: translateX(100%); justify-content: space-around; padding-right: 50px; }
 .autoscroll:hover .scroll-container { animation-play-state: paused; }
 .scroll-container img { display: inline-block; margin-right: 10px; height: 150px; background-color: white; border-radius: 20px; padding: 10px; }
 @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
-=======
   /* The scroll container that holds the images */
   .autoscroll-wrapper .scroll-container {
     display: inline-flex;
@@ -172,7 +170,6 @@ body { padding-top: 56px;
     width: 200%;  /* To make it wide enough for two sets of images */
     position: relative;
   }
->>>>>>> 52eb252d7ba253632afe1c89ded2c1637809cc69
 
 /*End autoscroll*/
 
