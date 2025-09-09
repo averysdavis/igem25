@@ -35,6 +35,10 @@ body { padding-top: 56px;
   box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
+.rounded-square p{
+  text-align: left;
+  
+}
 /* Proxima nova font */
 @font-face { 
     font-family: "Proxima Nova";
