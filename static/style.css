@@ -27,8 +27,8 @@ body { padding-top: 56px;
 
 .rounded-square {
   width: 100%; /* Set the desired width */
-  height: 300px; /* Set the desired height */
-  background-color: lightblue; /* Choose a background color */
+  height: 450px; /* Set the desired height */
+  background-color: #E1E2E5; /* Choose a background color */
   border-radius: 20px; /* Adjust this value for more or less rounding */
   display: flex; /* Use flexbox for easy text centering */
   justify-content: center; /* Center text horizontally */
