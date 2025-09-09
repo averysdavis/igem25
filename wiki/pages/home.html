@@ -1,13 +1,44 @@
 {% extends "layout.html" %}
 
-{% block title %}<h1 style = "font-size: 100px, color = white, ">ROCK THE PLASTICS</h1>{% endblock %}
+{% block title %}<h1 style = "font-size: 100px; color: white">ROCK THE PLASTICS</h1>{% endblock %}
 {% block lead %}{% endblock %}
 
 {% block page_content %}
 
 <div class="row">
   <div class="col">
-    <h2>Essential First Steps</h2>
+    <h2 style = "font-size:100px; color: black; text-align: center;">Plastics is a</h2>
+    <h2 style = "font-size:100px; color: black; text-align: center;">Big <span style = "color: #982F44">Problem</span></h2>
+    <p class="hidden-text" style = "text-align: center;">...especially when its tiny</p>
+
+    <div class="rounded-square">
+      <p style = "font-size: 100px; text-align: left;">100 - 1000<br>Years</p>
+      <p>It takes plastic 100-1000s years to decompose. While sitting in landfills and oceans they leech microplastics...</p>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+      const hiddenElements = document.querySelectorAll('.hidden-text');
+
+      const observerOptions = {
+        threshold: 0.5 // Trigger when 50% of the element is visible
+      };
+
+      const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show'); // Add 'show' class to reveal
+            observer.unobserve(entry.target); // Stop observing after reveal (optional)
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+      hiddenElements.forEach(element => {
+        observer.observe(element); // Observe each hidden text element
+      });
+    });
+    </script>
     <hr />
     <p>Familiarize yourself with the official iGEM competition rules, policies, and judging criteria:</p>
     <ul>
