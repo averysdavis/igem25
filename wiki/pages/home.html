@@ -7,7 +7,33 @@
 
 <div class="row">
   <div class="col">
-    <h2 style = "font-size:100px; color: black; text-align: center; ">Plastics is a Big <span style = "color: #982F44">Problem</span></h2>
+    <h2 style = "font-size:100px; color: black; text-align: center; ">Plastics is a</h2>
+    <h2 style = "font-size:100px; color: black; text-align: center; "></h2>Big <span style = "color: #982F44">Problem</span></h2>
+    <p class="hidden-text">...especially when its tiny</p>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+      const hiddenElements = document.querySelectorAll('.hidden-text');
+
+      const observerOptions = {
+        threshold: 0.5 // Trigger when 50% of the element is visible
+      };
+
+      const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show'); // Add 'show' class to reveal
+            observer.unobserve(entry.target); // Stop observing after reveal (optional)
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+      hiddenElements.forEach(element => {
+        observer.observe(element); // Observe each hidden text element
+      });
+    });
+    </script>
     <hr />
     <p>Familiarize yourself with the official iGEM competition rules, policies, and judging criteria:</p>
     <ul>
