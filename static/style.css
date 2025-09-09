@@ -25,6 +25,19 @@ body { padding-top: 56px;
   transform: translateY(0); /* Return to original position */
 }
 
+.rounded-square {
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  background-color: lightblue; /* Choose a background color */
+  border-radius: 20px; /* Adjust this value for more or less rounding */
+  display: flex; /* Use flexbox for easy text centering */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  text-align: center; /* Ensure text alignment within the flex container */
+  padding: 10px; /* Add some padding around the text */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
 /* Proxima nova font */
 @font-face { 
     font-family: "Proxima Nova";
