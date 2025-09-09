@@ -31,7 +31,6 @@ body { padding-top: 56px;
   background-color: #E1E2E5; /* Choose a background color */
   border-radius: 20px; /* Adjust this value for more or less rounding */
   display: flex; /* Use flexbox for easy text centering */
-  justify-content: center; /* Center text horizontally */
   padding: 10px; /* Add some padding around the text */
   box-sizing: border-box; /* Include padding in the element's total width and height */
 }
