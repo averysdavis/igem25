@@ -78,6 +78,10 @@ body {
   text-align: left;
 }
 
+p + p {
+  margin-top: 1em; /* Adjust this value as needed */
+}
+
 
 /* Proxima nova font */
 @font-face { 
