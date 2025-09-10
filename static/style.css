@@ -65,7 +65,7 @@ body {
 }
 
 .card h1 span {
-  font-size: 1rem;
+  font-size: 115px;
   display: block;
   margin-top: 0.5rem;
   font-weight: 700;
@@ -73,7 +73,7 @@ body {
 
 .card p {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 30px;
   color: #333;
   line-height: 1.5;
   text-align: left;
