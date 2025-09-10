@@ -75,9 +75,8 @@ body {
   margin-top: 1rem;
   font-size: 30px;
   color: #333;
-  line-height: 1.5;
-  text-align: left;
   line-height: 1;
+  text-align: left;
 }
 /* Proxima nova font */
 @font-face { 
