@@ -75,9 +75,14 @@ body {
   margin-top: 1rem;
   font-size: 30px;
   color: #333;
-  line-height: 1;
   text-align: left;
 }
+
+p + p {
+  margin-top: 1em; /* Adjust this value as needed */
+}
+
+
 /* Proxima nova font */
 @font-face { 
     font-family: "Proxima Nova";
