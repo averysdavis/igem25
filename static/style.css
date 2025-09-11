@@ -310,9 +310,14 @@ p + p {
 
 /* Block quotes*/
 blockquote {
-  margin-left: 10;
+  background: #f9f9f9;
+  border-left: 3px solid #AF737C;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
 }
-/* todo: block quote*/
+blockquote p {
+  display: inline-block;
+}
 
 /*Video*/
 .video-container {
