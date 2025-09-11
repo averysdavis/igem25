@@ -308,6 +308,12 @@ p + p {
 }
 /*end carousel*/
 
+/* Block quotes*/
+blockquote {
+  margin-left: 10;
+}
+/* todo: block quote*/
+
 /*Video*/
 .video-container {
   position: relative;
