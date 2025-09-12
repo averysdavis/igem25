@@ -73,21 +73,20 @@ font-weight: 700;
 }
 
 .card p {
-margin-top: 1rem;
+margin-bottom: 0px;
 font-size: 30px;
 color: #333;
 text-align: left;
 }
 
-.card p + p {
-margin-top: 8px;
-}
-
 .card img {
-width: 20%;
-height: 20%;
-margin-left: 50px;
-margin-top: 20px;
+margin-right: 3rem;
+position: absolute;
+bottom: 90px; 
+right: 300px; 
+width:350px; 
+height:auto;
+
 }
 
 
