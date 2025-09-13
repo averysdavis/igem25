@@ -11,32 +11,9 @@
     <h2 style = "font-size:100px; color: black; text-align: center;">Big <span style = "color: #982F44">Problem</span></h2>
     <p class="hidden-text" style = "text-align: center;">...especially when its tiny</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-      const hiddenElements = document.querySelectorAll('.hidden-text');
 
-      const observerOptions = {
-        threshold: 0.5 // Trigger when 50% of the element is visible
-      };
-
-      const observerCallback = (entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show'); // Add 'show' class to reveal
-            observer.unobserve(entry.target); // Stop observing after reveal (optional)
-          }
-        });
-      };
-
-      const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-      hiddenElements.forEach(element => {
-        observer.observe(element); // Observe each hidden text element
-      });
-    });
-    </script>
     <div class = "card">
-      <img src = "https://static.igem.wiki/teams/5761/home/t-khanlabbayarea-rockmascot.webp" width = 20%, height = 20%>
+      <img style = "position: absolute; top: 900px; right: 40px" src = "https://static.igem.wiki/teams/5761/home/t-khanlabbayarea-rockmascot.webp" width = 20%, height = 20%>
       <h1>100-1000</h1>
       <h1>YEARS</h1>
       <p>It takes plastic 100-1000s years</p>
@@ -71,6 +48,30 @@
     <hr />
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const hiddenElements = document.querySelectorAll('.hidden-text');
+
+  const observerOptions = {
+    threshold: 0.5 // Trigger when 50% of the element is visible
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show'); // Add 'show' class to reveal
+        observer.unobserve(entry.target); // Stop observing after reveal (optional)
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  hiddenElements.forEach(element => {
+    observer.observe(element); // Observe each hidden text element
+  });
+});
+</script>
 <div class="row mt-4">
   <div class="col">
     <hr />
