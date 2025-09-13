@@ -49,6 +49,47 @@ align-items: center;
 height: 100vh;
 }
 */
+
+
+
+/* Create a 2x2 grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Each "title + card" */
+.octo-cont {
+  text-align: center;
+}
+
+/* The octagon shape */
+.octo {
+  width: 180px;
+  height: 130px;
+  background: #d3d3d3;
+  clip-path: polygon(
+    30% 0%, 70% 0%, 100% 30%, 100% 70%,
+    70% 100%, 30% 100%, 0% 70%, 0% 30%
+  );
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  margin: 0 auto;
+}
+
+/* Title text */
+.octo-cont h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+
 .card {
 background: #e5e6e9; /* light gray */
 border-radius: 12px;
@@ -73,20 +114,21 @@ font-weight: 700;
 }
 
 .card p {
-margin-bottom: 0px;
+margin-top: 1rem;
 font-size: 30px;
 color: #333;
 text-align: left;
 }
 
-.card img {
-margin-right: 3rem;
-position: absolute;
-bottom: 90px; 
-right: 300px; 
-width:350px; 
-height:auto;
+.card p + p {
+margin-top: 8px;
+}
 
+.card img {
+width: 20%;
+height: 20%;
+margin-left: 50px;
+margin-top: 20px;
 }
 
 
