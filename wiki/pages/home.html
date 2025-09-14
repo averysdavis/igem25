@@ -11,31 +11,9 @@
     <h2 style = "font-size:100px; color: black; text-align: center;">Big <span style = "color: #982F44">Problem</span></h2>
     <p class="hidden-text" style = "text-align: center;">...especially when its tiny</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-      const hiddenElements = document.querySelectorAll('.hidden-text');
 
-      const observerOptions = {
-        threshold: 0.5 // Trigger when 50% of the element is visible
-      };
-
-      const observerCallback = (entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show'); // Add 'show' class to reveal
-            observer.unobserve(entry.target); // Stop observing after reveal (optional)
-          }
-        });
-      };
-
-      const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-      hiddenElements.forEach(element => {
-        observer.observe(element); // Observe each hidden text element
-      });
-    });
-    </script>
     <div class = "card">
+      <img style = "position: absolute; top: 100px; right: 75px" src = "https://static.igem.wiki/teams/5761/home/t-khanlabbayarea-rockmascot.webp">
       <h1>100-1000</h1>
       <h1>YEARS</h1>
       <p>It takes plastic 100-1000s years</p>
@@ -43,60 +21,68 @@
       <p>sitting in landfills and oceans</p> 
       <p>they leech microplastics...</p>
     </div>
+    <div class = "card">
+      <h1>Micro-</h1>
+      <h1>plastics</h1>
+      <p>Plastic bits smaller than 5</p>
+      <p>mm that enter the</p>
+      <p>environment, water sources,</p> 
+      <p>animals, and humans.</p>
+    </div>
+    <div class = "card">
+      <h1>Micro-</h1>
+      <h1>plastics</h1>
+      <p>Studies have found   placentas</p>
+      <p>microplastics in human</p>
+      <p>brains, livers, kidneys,</p> 
+      <p>and more.</p>
+    </div>
+    <div class = "card">
+      <h1>170 Trillion</h1>
+      <p>It is estimated (include source)</p>
+      <p>that there are over 170 trillion microplastic</p>
+      <p>particles in the ocean, where they</p> 
+      <p>harm marine life and contain toxins</p>
+      <p>that get magnified up the food chain.</p>
+    </div>
     <hr />
-    <p>Familiarize yourself with the official iGEM competition rules, policies, and judging criteria:</p>
-    <ul>
-      <li>Carefully review the <a href="https://competition.igem.org/deliverables/team-wiki" target="_blank">Wiki Requirements page</a> to ensure your wiki meets all necessary standards for judging and awards.</li>
-      <li>Understand the criteria and required wiki pages for Gold, Silver, and Bronze Medals on the <a href="https://competition.igem.org/judging/medals" target="_blank">Medals page</a>.</li>
-      <li>Explore the various Project Prizes and their corresponding wiki requirements on the <a href="https://competition.igem.org/judging/project-prizes" target="_blank">Project Prizes Page</a>.</li>
-      <li>Discover the eligibility criteria and wiki requirements for Special Prizes on the <a href="https://competition.igem.org/judging/special-prizes" target="_blank">Special Prizes Page</a>.</li>
-    </ul>
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const hiddenElements = document.querySelectorAll('.hidden-text');
+
+  const observerOptions = {
+    threshold: 0.5 // Trigger when 50% of the element is visible
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show'); // Add 'show' class to reveal
+        observer.unobserve(entry.target); // Stop observing after reveal (optional)
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  hiddenElements.forEach(element => {
+    observer.observe(element); // Observe each hidden text element
+  });
+});
+</script>
 <div class="row mt-4">
   <div class="col">
-    <h2>Building Your Wiki</h2>
     <hr />
-    <ul>
-      <li><b>Content First, Design Second</b>: Focus on clearly documenting your project, research, and activities. Design can be refined later.</li>
-      <li><b>Navigation is Key</b>: Structure your wiki with clear and intuitive navigation. Visitors should easily find information.</li>
-      <li><b>Accessibility Matters</b>: Use readable fonts, appropriate color contrast, and ensure your wiki is mobile-friendly.</li>
-      <li><b>Media Optimization</b>: Compress images and videos to reduce file sizes and improve loading times.</li>
-      <li><b>Document Early & Often</b>: Start documenting your project from day one. Don't wait until the Wiki Freeze.</li>
-      <li><b>Prepare for Deadlines</b>: Stay up-to-date with important deadlines and events by checking the <a href="https://competition.igem.org/calendar" target="_blank">iGEM Competition Calendar</a>.</li>
-    </ul>
   </div>
 </div>
 <div class="row mt-4">
   <div class="col-lg-8">
-    <h2>Tips for Success</h2>
-    <hr />
-    <ul>
-      <li><b>Clearly Define Your Project</b>: Explain your project's goals, methodology, and expected outcomes in a clear and concise manner.</li>
-      <li><b>Show Your Progress</b>: Regularly update your wiki with your team's progress, experiments, and results.</li>
-      <li><b>Engage Your Audience</b>: Consider your global audience and use language that is accessible to everyone.</li>
-      <li><b>Human Practices & Safety</b>: Thoroughly document your team's human practices activities and safety considerations.</li>
-      <li><b>Collaborate & Share</b>: Highlight collaborations with other teams and institutions.</li>
-      <li><b>Have Fun and Learn!</b> iGEM is a unique opportunity to learn, grow, and contribute to synthetic biology.</li>
-    </ul>
   </div>
   <div class="col-lg-4">
-    <h2>Inspiration</h2>
-    <hr />
-    <p>You can also view other team wikis for inspiration! Here are some examples:</p>
-    <ul>
-      <li><a href="https://2024.igem.wiki/ju-krakow">2024 JU-Krakow</a></li>
-      <li><a href="https://2024.igem.wiki/gems-taiwan">2024 GEMS-Taiwan</a></li>
-      <li><a href="https://2024.igem.wiki/heidelberg">2024 Heidelberg</a></li>
-      <li><a href="https://2024.igem.wiki/marburg">2024 Marburg</a></li>
-      <li><a href="https://2024.igem.wiki/sydney-australia">2024 Sydney-Australia</a></li>
-      <li><a href="https://2024.igem.wiki/toulouse-insa-ups">2024 Toulouse-INSA-UPS</a></li>
-      <li><a href="https://2024.igem.wiki/bnds-china">2024 BNDS-China</a></li>
-      <li><a href="https://2024.igem.wiki/vilnius-lithuania">2024 Vilnius-Lithuania</a></li>
-      <li><a href="https://2024.igem.wiki/bnuzh-china">2024 BNUZH-China</a></li>
-      <li><a href="https://2024.igem.wiki/xmu-china">2024 XMU-China</a></li>
-    </ul>
   </div>
 </div>
 
 {% endblock %}
+

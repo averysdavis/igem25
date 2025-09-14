@@ -1,131 +1,174 @@
 body { padding-top: 56px; 
-    font-family:"Proxima Nova";
+  font-family:"Proxima Nova";
 }
 .left-aligned { margin-left: auto; }
 .bg-dark { background-color: #982F44 !important; }
 .bg-hero { background-color: #C5B7B3; /*redundant*/
-  background-image:url("https://static.igem.wiki/teams/5761/home/rock-background.webp");
-  -webkit-text-stroke: 1px black;
+background-image:url("https://static.igem.wiki/teams/5761/home/rock-background.webp");
+-webkit-text-stroke: 1px black;
 }
 
 /*Header text size*/
 .display-4.text-white.mt-5.mb-2{
-  font-size:100px;
+font-size:100px;
 }
 
 
 .hidden-text {
-  opacity: 0; /* Initially hidden */
-  transform: translateY(20px); /* Slightly moved down for a subtle animation */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+opacity: 0; /* Initially hidden */
+transform: translateY(20px); /* Slightly moved down for a subtle animation */
+transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
 }
 
 .hidden-text.show {
-  opacity: 1; /* Fully visible */
-  transform: translateY(0); /* Return to original position */
+opacity: 1; /* Fully visible */
+transform: translateY(0); /* Return to original position */
 }
 
 .rounded-square {
-  width: 100%; /* Set the desired width */
-  height: 450px; /* Set the desired height */
-  background-color: #E1E2E5; /* Choose a background color */
-  border-radius: 20px; /* Adjust this value for more or less rounding */
-  display: flex; /* Use flexbox for easy text centering */
-  padding: 10px; /* Add some padding around the text */
-  box-sizing: border-box; /* Include padding in the element's total width and height */
+width: 100%; /* Set the desired width */
+height: 450px; /* Set the desired height */
+background-color: #E1E2E5; /* Choose a background color */
+border-radius: 20px; /* Adjust this value for more or less rounding */
+display: flex; /* Use flexbox for easy text centering */
+padding: 10px; /* Add some padding around the text */
+box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 .rounded-square p{
-  text-align: left;
+text-align: left;
 }
 
 /* This is the css that is breaking everything and causing the footer + header to be vertical
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+font-family: Arial, sans-serif;
+background: #f5f5f5;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
 }
 */
+
+
+
+/* Create a 2x2 grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Each "title + card" */
+.octo-cont {
+  text-align: center;
+}
+
+/* The octagon shape */
+.octo {
+  width: 180px;
+  height: 130px;
+  background: #d3d3d3;
+  clip-path: polygon(
+    30% 0%, 70% 0%, 100% 30%, 100% 70%,
+    70% 100%, 30% 100%, 0% 70%, 0% 30%
+  );
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  margin: 0 auto;
+}
+
+/* Title text */
+.octo-cont h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+
 .card {
-  background: #e5e6e9; /* light gray */
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  width: 100%;
+background: #e5e6e9; /* light gray */
+border-radius: 12px;
+padding: 2rem;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+width: 100%;
+margin-bottom: 30px;
 }
 
 .card h1 {
-  font-size: 115px;
-  font-weight: 800;
-  margin: 0;
-  text-align: left;
+font-size: 115px;
+font-weight: 800;
+margin: 0;
+text-align: left;
 }
 
 .card h1 span {
-  font-size: 115px;
-  display: block;
-  margin-top: 0.5rem;
-  font-weight: 700;
+font-size: 115px;
+display: block;
+margin-top: 0.5rem;
+font-weight: 700;
 }
 
 .card p {
-  margin-top: 1rem;
-  font-size: 30px;
-  color: #333;
-  text-align: left;
+margin-top: 1rem;
+font-size: 30px;
+color: #333;
+text-align: left;
 }
 
-p + p {
-  margin-top: 1em; /* Adjust this value as needed */
+.card p + p {
+margin-top: 8px;
 }
+
 
 
 /* Proxima nova font */
 @font-face { 
-    font-family: "Proxima Nova";
-    font-style: normal;
-    font-weight: 400;
-    src: 
-      url(https://static.igem.wiki/teams/5761/other/proximanova-regular.ttf) format("truetype");
-  }
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: 
+    url(https://static.igem.wiki/teams/5761/other/proximanova-regular.ttf) format("truetype");
+}
 
 .fullwidth {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;   /* spans full viewport width */
-  margin-top: 0;
-  padding-top: 0;
+position: relative;
+left: 50%;
+right: 50%;
+margin-left: -50vw;
+margin-right: -50vw;
+width: 100vw;   /* spans full viewport width */
+margin-top: 0;
+padding-top: 0;
 }
 .fullwidth img {
-  width: 100%;
-  display: block;
+width: 100%;
+display: block;
 }
 
 .homebanner {
-  position: relative;
-  text-align: center;
-  color: white;
+position: relative;
+text-align: center;
+color: white;
 }
 
 
 .text-pos {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 50px;
 }
 .image-pos {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(25%, 25%);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(25%, 25%);
 }
 
 
@@ -142,197 +185,190 @@ p + p {
 
 /* Team members page */
 
-  /* Team Member Squares */
-  .team-member-section {
-    margin: 40px 0;
-    text-align: center;
-  }
+/* Team Member Squares */
+.team-member-section {
+  margin: 40px 0;
+  text-align: center;
+}
 
-  .team-member-square {
-    position: relative;
-    width: 300px;
-    height: 350px;
-    margin: 10px;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
+.team-member-square {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
 
-  .team-member-square img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+.team-member-square img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-  .name-title-overlay {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-  }
+.name-title-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    transition: opacity 0.3s ease;
-    border-radius: 20px;
-  }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
 
-  .team-member-square:hover .overlay {
-    opacity: 1;
-  }
+.team-member-square:hover .overlay {
+  opacity: 1;
+}
 
-  .team-member-square:hover {
-    transform: scale(1.05);
-  }
+.team-member-square:hover {
+  transform: scale(1.05);
+}
 /*End members
 
 /*Autoscroll*/
 .autoscroll {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  width: 80vw;
-  margin: 20px;
-  border-radius: 20px;
+overflow: hidden;
+white-space: nowrap;
+position: relative;
+width: 80vw;
+margin: 20px;
+border-radius: 20px;
 }
 
 .autoscroll::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 150px;
-  background: linear-gradient(to right, #ffffff 0%, transparent 10%, transparent 90%, #ffffff 100%);
-  pointer-events: none;
-  z-index: 2;
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 150px;
+background: linear-gradient(to right, #ffffff 0%, transparent 10%, transparent 90%, #ffffff 100%);
+pointer-events: none;
+z-index: 2;
 }
 
 .scroll-container {
-  display: inline-flex;
-  align-items: center;
-  gap: 50px;
-  animation: scroll 20s linear infinite;
-  width: max-content;
+display: inline-flex;
+align-items: center;
+gap: 50px;
+animation: scroll 20s linear infinite;
+width: max-content;
 }
 
 .scroll-container img {
-  height: 150px;
-  background-color: white;
-  border-radius: 20px;
-  padding: 10px;
+height: 150px;
+background-color: white;
+border-radius: 20px;
+padding: 10px;
 }
 
 .autoscroll:hover .scroll-container {
-  animation-play-state: paused;
+animation-play-state: paused;
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+0% {
+  transform: translateX(0);
+}
+100% {
+  transform: translateX(-50%);
+}
 }
 
 /*End autoscroll*/
 
 /*Scrollspy*/
-  #myScrollspy {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;  /* Adjust based on your header height */
-    overflow-y: auto;
-    z-index: 1000;
-    scroll-behavior: smooth;
-  }
+#myScrollspy {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;  /* Adjust based on your header height */
+  overflow-y: auto;
+  z-index: 1000;
+  scroll-behavior: smooth;
+}
 
-  /* Force default color for all nav links inside #myScrollspy */
-  #myScrollspy .nav-link {
-    color: rgb(0, 0, 0) !important;
-    background-color: transparent !important; /* Ensure background is transparent */
-  }
+/* Force default color for all nav links inside #myScrollspy */
+#myScrollspy .nav-link {
+  color: rgb(0, 0, 0) !important;
+  background-color: transparent !important; /* Ensure background is transparent */
+}
 
-  /* Make sure active state for all nav links inside #myScrollspy is correct */
-  #myScrollspy .nav-link.active {
-    color: rgb(255, 255, 255) !important;
-    background-color: #982F44 !important; /* Custom active background */
-  }
+/* Make sure active state for all nav links inside #myScrollspy is correct */
+#myScrollspy .nav-link.active {
+  color: rgb(255, 255, 255) !important;
+  background-color: #982F44 !important; /* Custom active background */
+}
 
-  #bumper h1::before,
-  #bumper h2::before {
-    content: "";
-    display: block;
-    height: 70px;
-    margin-top: -70px;
-    visibility: hidden;
-    pointer-events: none;
-  }
+#bumper h1::before,
+#bumper h2::before {
+  content: "";
+  display: block;
+  height: 70px;
+  margin-top: -70px;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 /*End scrollspy*/
 
 /*Carousel*/
 .carousel-item img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  border-radius:25px;
+max-width: 100%;
+height: auto;
+margin: 0 auto;
+border-radius:25px;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 50%;
-  padding: 10px;
+background-color: rgba(0, 0, 0, 0.6);
+border-radius: 50%;
+padding: 10px;
 }
 /*end carousel*/
 
-/* Block quotes*/
-blockquote {
-  background: #f9f9f9;
-  border-left: 3px solid #AF737C;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-}
-blockquote p {
-  display: inline-block;
-}
-
 /*Video*/
 .video-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
-  overflow: hidden;
+position: relative;
+width: 100%;
+max-width: 800px;
+min-width: 320px;
+height: 0;
+padding-bottom: 56.25%; /* 16:9 aspect ratio */
+margin: 0 auto;
 }
 .video-container iframe {
-  width: 100%;
-  height: 450px; /* Fixed height for larger screens */
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+min-height: 180px;
+max-height: 450px;
 }
 /*End video*/
 
