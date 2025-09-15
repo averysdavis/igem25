@@ -4,17 +4,20 @@
 
 {% block page_content %}
 
-<body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20">
+<div data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20">
 
   <div class="container">
     <div class="row">
       <!-- Scrollspy Sidebar -->
-      <nav class="col-sm-2" id="myScrollspy">
-        <nav class="nav nav-pills flex-column">
-          <a class="nav-link" href="#our-team">Our Team</a>
-          <a class="nav-link" href="#community-engagement">Community Engagement</a>
-          <a class="nav-link" href="#lab">Lab Accessibility</a>
-        </nav>
+      
+      <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy">
+        <div class="d-none d-lg-block sticky-lg-top">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#our-team">Our Team</a>
+            <a class="nav-link" href="#community-engagement">Community Engagement</a>
+            <a class="nav-link" href="#lab">Lab Accessibility</a>
+          </nav>
+        </div>
       </nav>
 
       <!-- Main Content -->
@@ -44,6 +47,6 @@
       </div>
     </div>
   </div>
-</body>
+</div>
 
 {% endblock %}
