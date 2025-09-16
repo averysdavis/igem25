@@ -113,7 +113,7 @@ text-align: left;
 }
 
 .card p + p {
-margin-top: 8px;
+margin-top: 0px;
 }
 
 
