@@ -66,6 +66,9 @@ height: 100vh;
 /* Each "title + card" */
 .octo-cont {
   text-align: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 /* The octagon shape */
@@ -79,9 +82,9 @@ height: 100vh;
   );
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   margin: 0 auto;
-  display: flex; /* Enable Flexbox for the body */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 /* Title text */
