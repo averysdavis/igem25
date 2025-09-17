@@ -52,7 +52,7 @@ height: 100vh;
 
 
 
-/* Create a 2x2 grid */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -63,13 +63,8 @@ height: 100vh;
   margin: 0 auto;
 }
 
-/* Each "title + card" */
-.octo-cont {
-  text-align: center;
-}
-
-/* The octagon shape */
-.octo {
+/* Octagon card */
+.label {
   width: 180px;
   height: 130px;
   background: #d3d3d3;
@@ -77,18 +72,15 @@ height: 100vh;
     30% 0%, 70% 0%, 100% 30%, 100% 70%,
     70% 100%, 30% 100%, 0% 70%, 0% 30%
   );
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-  margin: 0 auto;
-}
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
 
-/* Title text */
-.octo-cont h2 {
-  margin-bottom: 0.5rem;
+  display: flex;              /* Center text inside */
+  justify-content: center;
+  align-items: center;
+
   font-size: 1.5rem;
   font-weight: bold;
 }
-
-
 
 .card {
 background: #e5e6e9; /* light gray */
@@ -114,14 +106,13 @@ font-weight: 700;
 }
 
 .card p {
-margin-top: 1rem;
 font-size: 30px;
 color: #333;
 text-align: left;
 }
 
 .card p + p {
-margin-top: 8px;
+margin-top: 0px;
 }
 
 
@@ -354,8 +345,6 @@ padding: 10px;
 .video-container {
 position: relative;
 width: 100%;
-max-width: 800px;
-min-width: 320px;
 height: 0;
 padding-bottom: 56.25%; /* 16:9 aspect ratio */
 margin: 0 auto;
@@ -367,9 +356,26 @@ left: 0;
 width: 100%;
 height: 100%;
 min-height: 180px;
-max-height: 450px;
 }
 /*End video*/
+
+/*block quote*/
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #AF737C;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+blockquote:before {
+  color: #ccc;
+  font-size: 4em; /*todo probably want to make smaller */
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
 
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }
