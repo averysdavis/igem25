@@ -306,7 +306,6 @@ animation-play-state: paused;
 #myScrollspy .nav-link {
   color: rgb(0, 0, 0) !important;
   background-color: transparent !important; /* Ensure background is transparent */
-  word-break: break-word;
 }
 
 /* Make sure active state for all nav links inside #myScrollspy is correct */
