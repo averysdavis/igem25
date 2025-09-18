@@ -4,6 +4,104 @@
 
 {% block page_content %}
 
-<p>need text</p>
+<div class="row mt-4">
+    <div class="col-md-9">
+      <img src="https://static.igem.wiki/teams/5761/humanpractices/education/2nd-presented-schools.webp" alt="Map of locations of our educational intiatives." class="img-fluid">
+    </div>
+    <div class="col-md-3">
+      <img src="https://static.igem.wiki/teams/5761/humanpractices/education/salkhan.webp" alt="Sal Khan photo" class="img-fluid">
+      <h3 class="py-2" style="font-size:large"><b>Sal Khan, Founder of Khan Academy and Khan Lab School</b></h3>
+      <p> “Whoever you are, wherever you are, you only need to know one thing.  You can learn anything.” — Sal Khan</p>
+    </div>
+  </div>
+  <div class="row mt-4 justify-content-center">
+    <div class="video-container">
+      <iframe title="KhanLab-BayArea: Sal Khan on Education in Science (2025) [English]" width="560" height="315" src="https://video.igem.org/videos/embed/q7ZT5Fv4YzLrTf3mYz3HAF" style="border: 0px;" allow="fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+    </div>
+  </div>
+  <hr/>
+  
+  <div data-bs-spy="scroll" data-bs-target="#myScrollspy"  data-bs-offset="80" tabindex="0">
+    <div class="container">
+      <div class="row">
+        <!-- Scrollspy Sidebar -->
+        <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy">
+          <div class="d-none d-lg-block sticky-lg-top">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#Initial Considerations/Overview/Abstract">Initial Considerations/Overview/Abstract</a>
+              <a class="nav-link" href="#DBTL Cycle 1">DBTL Cycle 1/a>
+              <a class="nav-link" href="#DBTL Cycle 2">DBTL Cycle 2</a>
+              <a class="nav-link" href="#DBTL Cycle 3">DBTL Cycle 3</a>
+            </nav>
+          </div>
+        </nav>
+    
+        <!-- Main Content -->
+        <div class="col-12 col-md-9" id="bumper">
+          <div id="overview" class="mb-5 row">
+            <h1>Overview</h1>
+            <div class="col-10">
+              <p>Our goal was to design bacteria that would simultaneously produce curli fiber and induce biomineralization. Neel Joshi’s Biologically Fabricated Materials Lab has designed and successfully expressed a fusion protein between csgA, the primary curli fiber monomer, and the enzyme amylase. As such, we wished 
+                There are a multitude of biomineralization pathways, but the most efficient monomeric enzyme catalyzing this pathway was carbonic anhydrase. We chose to use E. coli to hijack their natural functions, as E. coli naturally produces biofilm under cold conditions and naturally produces carbonic anhydrase. 
+                </p>
+            </div>
+            <div class="col-2">
+            </div>
+          </div>
+          <hr/>
+            
+            <!--synbio class-->
+            <div id="DBTL Cycle 1" class="mb-5">
+              <h1>DBTL Cycle 1</h1>
+              <h3>Overview of part: curli + sazCA</h3>
+              <p>To simultaneously produce curli fiber and induce biomineralization, we designed a part that will express a fusion protein of csgA and carbonic anhydrase. 
+            </p>
+              <h3>Design</h3>
+              <ul>
+                <li>Insert our part to Twist vector pET_blank (Amp) at site (x)</li>
+                <li>Chose this vector because it has lac operon with iPTG</li>
+                <li>Our part is derived from Neel Joshi Lab and xyz iGEM team</li>
+                <li>Added biobrick suffix to potentially add urease later</li>
+              </ul>
+            <div id="DBTL Cycle 2" class="mb-5">
+              <h1>DBTL Cycle 2</h1>
+              <h2>Design:</h2>
+              <p>Based off our previous mistake we adapted a competent cell prep protocol</p>
+              <h2>Build:</h2>
+              <p>Lab Work</p>
+              <h2>Test:</h2>
+              <p>We got transformants verified by sequencing, but not protein expression </p>
+                <p>We plugged into alphafold and found protein folding issues.</p>
+                <p>Confirmed RNA transcription</p>
+              <h2>Learn:</h2>
+              <p>We need to be more careful of</p>
+              <p>Results and how iGEM can use it</p>
+            </div>
+            <hr/>
+    
+            <!-- Add when write ups are done-->
+            <!-- <div id="DBTL Cycle 3" class="mb-5">
+              <h1>DBTL Cycle 3</h1>
+              <h2>Overview of part: urease</h2>
+              <h3>Design:</h3>
+              <p> Construct designed to fold better, choose urease for faster mineralization</p>
+              <h2>Build:</h2>
+              <p>Lab Work</p>
+              <h2>Test:</h2>
+              <p>Did it work</p>
+              <h2>Learn:</h2>
+              <p>How this part can help iGEM</p>
+            </div> -->
+    
+            <hr/>
+           
+  
+            <hr/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 {% endblock %}
