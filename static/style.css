@@ -17,6 +17,21 @@ embed{
 font-size:100px;
 }
 
+.card-w-info{
+  background: grey; /* light gray */
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 50%;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.card-w-info p{
+  text-align: center;
+  color:#E1E2E5;
+}
+
 
 .hidden-text {
 opacity: 0; /* Initially hidden */
