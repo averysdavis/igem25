@@ -87,6 +87,9 @@ text-align: left;
   font-size: 1.5rem;
   font-weight: bold;
 }
+figcaption{
+  text-align:center;
+}
 
 .card {
 background: #e5e6e9; /* light gray */
