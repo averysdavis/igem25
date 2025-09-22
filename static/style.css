@@ -320,16 +320,12 @@ animation-play-state: paused;
 
 /*Scrollspy*/
 #myScrollspy {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100vh;
-  padding-top: 50px; /* Adjust based on your header height */
-  scroll-behavior: smooth;
-  z-index: 1000;
+  pointer-events:auto;
 }
+.scrollspy-offset {
+  top: 70px !important; /* adjust to your header height */
+  margin-bottom:2.5%;
+} 
 
 /* Force default color for all nav links inside #myScrollspy */
 #myScrollspy .nav-link {
