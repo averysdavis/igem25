@@ -1,9 +1,12 @@
 {% extends "layout.html" %}
   
-{% block title %}Integrated Human Practices{% endblock %}
+{% block title %}Human Practices{% endblock %}
 
 {% block page_content %}
 
+<h1>Silver medal stuff</h1>
+
+<hr/>
 <div data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="80" tabindex="0">
 
   <div class="container">
@@ -15,24 +18,8 @@
           <nav class="nav nav-pills flex-column">
             <a class="nav-link" href="#overview">Overview</a>
             <a class="nav-link" href="#projectideation">Project Ideation</a>
-              <a class="nav-link ms-3 my-1" href="#phillip">Dr. Phillip Kyriakakis</a>
-              <a class="nav-link ms-3 my-1" href="#sukritsilas">Dr. Sukrit Silas</a>
-              <a class="nav-link ms-3 my-1" href="#community">Community Integration and Lab Space</a>
-              <a class="nav-link ms-3 my-1" href="#poll">Team Poll</a>
-              <a class="nav-link ms-3 my-1" href="#select">Project Selection</a>
-            
             <a class="nav-link" href="#concept">Concept Design</a>
-              <a class="nav-link ms-3 my-1" href="#berkeley">UC Berkeley Bioengineering Symposium</a>
-              <a class="nav-link ms-3 my-1" href="#brenda">Brenda Goeden</a>
-              <a class="nav-link ms-3 my-1" href="#caroylnn">Caroylnn Box</a>
-              <a class="nav-link ms-3 my-1" href="#win">Win Cowger</a>
-
             <a class="nav-link" href="#verify">Verification</a>
-              <a class="nav-link ms-3 my-1" href="#kelsey">Dr. Kelsey Defrates</a>
-              <a class="nav-link ms-3 my-1" href="#brian">Dr. Brian Ross</a>
-              <a class="nav-link ms-3 my-1" href="#shanna">Shanna Bonnano</a>
-              <a class="nav-link ms-3 my-1" href="#shohreh">Shohreh Vanaei</a>
-              <a class="nav-link ms-3 my-1" href="#ucsc">UCSC iGEM</a>
           </nav>
         </div>
       </nav>
@@ -288,24 +275,35 @@
           <hr/>
 
           <!--Shohreh Vanaei-->
-          <div id="shohreh" class="mb-5">
-            <h2>Shohreh Vanaei</h2>
-            <p>July 27, 2025</p>
-            <p>Attendees: Ansh, Khushi</p>
-            <p>Shohreh Vanaei is a PhD student at  Dr. Neel Joshi’s Biologically Fabricated Materials lab. At Northeastern University, her current research centers on the development of engineered microbial systems for rapid and accessible detection of chemical & biological compounds.
-            </p>
-            <h3>Advice</h3>
-            <p>We met Shohreh when visiting Joshi lab in person at Northeastern University. She prepared and provided us with a E.coli Mach1 strain transformed with pBbB8k-csg-NbGFP, a plasmid which the Joshi lab had confirmed expresses Curli fibers and showed us around the lab. She also brought to our attention the concern of protein aggregate formation when using Congo red assays. While in the lab, Shohreh described how they may use PDMS microfluidic devices, noting that they had to use specialized molds since 3d prints did not have high enough resolution. However, when we mentioned how large our mold was, Shohreh mentioned that should be okay.
-            </p>
-            <h3>Key Feedback</h3>
-            <ul>
-              <li>Congo red can form aggregates with curli fibers leading to inconsistent spec readings.</li>
-              <li>3d printed inverse molds should be sufficient for us to make PDMS devices of the size we are making.
-              </li>
-            </ul>
-            <h3>Implementation</h3>
-            <p>We were able to utilize the strain Shoreh provided us to act as a positive control in our biofilm formation assays. Further, to counteract the issue of aggregate formation, we utilized a strategy Shoreh mentioned was used in Joshi lab—taking a grid of measurements in a plate reader.</p>
+          <h2>Shohreh Vanaei</h2>
+          <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseShohreh" role="button" aria-expanded="false" aria-controls="collapse Shohreh Vanaei">
+              Learn More
+            </a>
+          </p>
+          <div class="collapse" id="collapseShohreh">
+            <div class="card card-body">
+              <b>
+                <p>July 27, 2025</p>
+                <p>Attendees: Ansh, Khushi</p>
+              </b>
+              <!--todo add shohreh photo-->
+              <p>Shohreh Vanaei is a PhD student at  Dr. Neel Joshi’s Biologically Fabricated Materials lab. At Northeastern University, her current research centers on the development of engineered microbial systems for rapid and accessible detection of chemical & biological compounds.
+              </p>
+              <h3>Advice</h3>
+              <p>We met Shohreh when visiting Joshi lab in person at Northeastern University. She prepared and provided us with a E.coli Mach1 strain transformed with pBbB8k-csg-NbGFP, a plasmid which the Joshi lab had confirmed expresses Curli fibers and showed us around the lab. She also brought to our attention the concern of protein aggregate formation when using Congo red assays. While in the lab, Shohreh described how they may use PDMS microfluidic devices, noting that they had to use specialized molds since 3d prints did not have high enough resolution. However, when we mentioned how large our mold was, Shohreh mentioned that should be okay.
+              </p>
+              <h3>Key Feedback</h3>
+              <ul>
+                <li>Congo red can form aggregates with curli fibers leading to inconsistent spec readings.</li>
+                <li>3d printed inverse molds should be sufficient for us to make PDMS devices of the size we are making.
+                </li>
+              </ul></div>
           </div>
+          <h3>Implementation</h3>
+          <p>We were able to utilize the strain Shoreh provided us to act as a positive control in our biofilm formation assays. Further, to counteract the issue of aggregate formation, we utilized a strategy Shoreh mentioned was used in Joshi lab—taking a grid of measurements in a plate reader.</p>
+            
+          
           <hr/>
 
           <!--todo ucsc igem-->

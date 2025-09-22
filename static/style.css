@@ -58,19 +58,6 @@ box-sizing: border-box; /* Include padding in the element's total width and heig
 text-align: left;
 }
 
-/* This is the css that is breaking everything and causing the footer + header to be vertical
-body {
-font-family: Arial, sans-serif;
-background: #f5f5f5;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-}
-*/
-
-
-
 
 .grid {
   display: grid;
@@ -192,6 +179,16 @@ transform: translate(25%, 25%);
 .bd-callout-info { border-left-color:#5bc0de }
 .bd-callout-warning { border-left-color:#f0ad4e }
 .bd-callout-danger { border-left-color:#d9534f }
+
+/*collapsibles (bootstrap */
+.card-body p{
+  font-size:medium;
+}
+
+.btn-primary{
+  background-color:#982F44;
+}
+
 
 /* Team members page */
 
