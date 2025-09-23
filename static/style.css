@@ -25,6 +25,8 @@ font-size:100px;
   width: 50%;
   margin-bottom: 30px;
   align-items: center;
+  justify-items: center;
+  margin: 0 auto;
 }
 
 .card-w-info p{
