@@ -55,9 +55,9 @@
               <p>Phillip Kyriakakis, Ph.D. is a Senior Research Scientist in the Bioengineering Department at Stanford University and a member of the Wu Tsai Institute for Neuroscience.</p>
               <!--Photo carousel-->
               <div class="d-flex justify-content-center py-5">
-                <div id="carouselExampleControlsPhil" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px;">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div id="carouselExampleControlsPhil" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px;" aria-lab="Image carousel of our team visiting Dr. Kyriakakis's lab.">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" aria-current="true">
                       <img src="https://static.igem.wiki/teams/5761/humanpractices/ihp/phil1.webp" class="d-block w-100" alt="Dr. Kyriakakis presenting slides">
                     </div>
                     <div class="carousel-item">
@@ -67,11 +67,11 @@
                       <img src="https://static.igem.wiki/teams/5761/humanpractices/ihp/phil3.webp" class="d-block w-100" alt="Dr. Kyriakakis giving a tour of his lab">
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsPhil" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsPhil" data-bs-slide="prev" aria-label="Previous image">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsPhil" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsPhil" data-bs-slide="next" aria-label="Next image">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
@@ -115,9 +115,9 @@
               </p>
               <!--Photo carousel-->
               <div class="d-flex justify-content-center py-5">
-                <div id="carouselExampleControlsSil" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px;">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div id="carouselExampleControlsSil" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px;" aria-label="Image carousel showing our team visiting Dr. Sila's lab.">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" aria-current="true">
                       <img src="https://static.igem.wiki/teams/5761/humanpractices/ihp/silas1.webp" class="d-block w-100" alt="Our team standing together with Dr. Silas and his team.">
                     </div>
                     <div class="carousel-item">                        
@@ -130,11 +130,11 @@
                       <img src="https://static.igem.wiki/teams/5761/humanpractices/ihp/silas4.webp" class="d-block w-100" alt="Dr. Sila's lab with christmas decorations.">
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsSil" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsSil" data-bs-slide="prev" aria-label="Previous image">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>                    
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsSil" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsSil" data-bs-slide="next" aria-label="Next image">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
@@ -455,12 +455,6 @@
                 The UCSC team presented their project on their solution to detoxifying contaminated solutions 
                 and gave feedback on our team’s work and presentation.
               </p>
-              <h3>Key Feedback</h3>>
-              <p>
-                The UCSC team was very impressed by all the work our team accomplished. 
-                In terms of research, they recommended using RNA sequencing to check if our construct was working correctly. 
-                In terms of presentation, they advised us to have a clear goal when presenting to communicate clearly.
-              </p>
               <!--images-->
               <div class="d-flex justify-content-center py-5">
                 <div id="carouselExampleControlsUCSC" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px;" aria-label="Image carousel showing our collaboration with UCSC iGEM.">
@@ -475,24 +469,31 @@
                       <img src="https://static.igem.wiki/teams/5761/humanpractices/ihp/ucsc-khan.webp" class="d-block w-100" alt="Our team presenting a slideshow.">
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsUCSC" data-bs-slide="prev" aria-hidden="true">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>                    
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsUCSC" data-bs-slide="next" aria-hidden="true">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsUCSC" data-bs-slide="prev" aria-label="Previous image">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>                    
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsUCSC" data-bs-slide="next" aria-label="Next image">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <h3>Key Feedback</h3>
+              <p>
+                The UCSC team was very impressed by all the work our team accomplished. 
+                In terms of research, they recommended using RNA sequencing to check if our construct was working correctly. 
+                In terms of presentation, they advised us to have a clear goal when presenting to communicate clearly.
+              </p>
             </div>
           </div>
-          <h3>Implementation</h3>
-          <p>
-            We began working to see if we could use RNA sequencing to confirm our results 
-            and made it a point to have a clear goal when working on presentations.
-          </p>
-
         </div>
+        <h3>Implementation</h3>
+        <p>
+          We began working to see if we could use RNA sequencing to confirm our results 
+          and made it a point to have a clear goal when working on presentations.
+        </p>
+
       </div>
     </div>
   </div>
