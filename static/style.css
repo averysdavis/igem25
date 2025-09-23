@@ -72,15 +72,18 @@ text-align: left;
 }
 
 /* Octagon card */
-.label {
-  width: 180px;
-  height: 130px;
+.octo{
+  width: 360px;
+  height: 260px;
   background: #d3d3d3;
   clip-path: polygon(
     30% 0%, 70% 0%, 100% 30%, 100% 70%,
     70% 100%, 30% 100%, 0% 70%, 0% 30%
   );
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+.octo h1 {
 
   display: flex;              /* Center text inside */
   justify-content: center;
@@ -88,6 +91,7 @@ text-align: left;
 
   font-size: 1.5rem;
   font-weight: bold;
+  z-index: 2;
 }
 figcaption{
   text-align:center;
@@ -117,13 +121,14 @@ font-weight: 700;
 }
 
 .card p {
-font-size: 30px;
+font-size: 25px;
 color: #333;
 text-align: left;
+margin-bottom:0px;
 }
 
 .card p + p {
-margin-top: 0px;
+margin:0px;
 }
 
 
