@@ -324,7 +324,6 @@ animation-play-state: paused;
 }
 .scrollspy-offset {
   top: 70px !important; /* adjust to your header height */
-  margin-bottom:2.5%;
 } 
 
 /* Force default color for all nav links inside #myScrollspy */
