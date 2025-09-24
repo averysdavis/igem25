@@ -270,54 +270,42 @@ transform: translate(25%, 25%);
 
 /*Autoscroll*/
 .autoscroll {
-overflow: hidden;
-white-space: nowrap;
-position: relative;
-width: 80vw;
-margin: 20px;
-border-radius: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 80vw;
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .autoscroll::after {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-height: 150px;
-background: linear-gradient(to right, #ffffff 0%, transparent 10%, transparent 90%, #ffffff 100%);
-pointer-events: none;
-z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to right, #ffffff 0%, transparent 10%, transparent 90%, #ffffff 100%);
+  pointer-events: none;
+  z-index: 2;
 }
 
 .scroll-container {
-display: inline-flex;
-align-items: center;
-gap: 50px;
-animation: scroll 20s linear infinite;
-width: max-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 50px;
+  width: max-content;
+  /* Animation removed - handled by JS */
 }
 
 .scroll-container img {
-height: 150px;
-background-color: white;
-border-radius: 20px;
-padding: 10px;
+  height: 150px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  flex-shrink: 0; /* Prevent images from shrinking */
 }
-
-.autoscroll:hover .scroll-container {
-animation-play-state: paused;
-}
-
-@keyframes scroll {
-0% {
-  transform: translateX(0);
-}
-100% {
-  transform: translateX(-50%);
-}
-}
-
 /*End autoscroll*/
 
 /*Scrollspy*/

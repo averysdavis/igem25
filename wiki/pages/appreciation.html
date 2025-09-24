@@ -53,5 +53,54 @@
         </div>
     </div>
 </div>
+<script>
+    const autoscroll = document.querySelector('.autoscroll');
+    const scrollContainer = document.querySelector('.scroll-container');
 
+    let isPaused = false;
+    let scrollPosition = 0;
+    let animationId = null;
+    const scrollSpeed = 2.5; // Adjust this value to control speed (higher = faster)
+
+    function animateScroll() {
+        if (!isPaused) {
+            scrollPosition -= scrollSpeed;
+            
+            // Reset position when we've scrolled one complete set of images
+            const containerWidth = scrollContainer.scrollWidth / 2; // Since we have duplicates
+            if (-scrollPosition >= containerWidth) {
+                scrollPosition += containerWidth;
+            }
+            
+            scrollContainer.style.transform = `translateX(${scrollPosition}px)`;
+        }
+        
+        animationId = requestAnimationFrame(animateScroll);
+    }
+
+    // Start the animation
+    animateScroll();
+
+    // Toggle pause/resume on click
+    autoscroll.addEventListener('click', () => {
+        isPaused = !isPaused;
+        
+        // Visual feedback
+        if (isPaused) {
+        } else {
+        }
+    });
+
+    // Prevent image dragging
+    document.querySelectorAll('.scroll-container img').forEach(img => {
+        img.addEventListener('dragstart', (e) => e.preventDefault());
+    });
+
+    // Clean up animation when leaving page
+    window.addEventListener('beforeunload', () => {
+        if (animationId) {
+            cancelAnimationFrame(animationId);
+        }
+    });
+</script>
 {% endblock %}
