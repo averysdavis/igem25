@@ -412,11 +412,8 @@ footer a:hover { color: white; text-decoration: underline; }
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
-  margin:0%;
-  padding:0%;
 }
 
 #home-header{
   background-image: url("https://static.igem.wiki/teams/5761/team/members/christopher-hernandez.webp");
-
 }
