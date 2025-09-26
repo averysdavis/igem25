@@ -190,6 +190,14 @@ transform: translate(25%, 25%);
 .bd-callout-warning { border-left-color:#f0ad4e }
 .bd-callout-danger { border-left-color:#d9534f }
 
+/* wcag 1.4.10 reflow (break up links vertically) */
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens:auto;
+}
+
+
 /*collapsibles (bootstrap */
 .card-body p{
   font-size:medium;
@@ -387,7 +395,7 @@ blockquote {
 }
 blockquote:before {
   color: #ccc;
-  font-size: 4em; /*todo probably want to make smaller */
+  font-size: 4em; /*todo probably want to make smaller | tried adjusting - didn't work for some reason?*/
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
