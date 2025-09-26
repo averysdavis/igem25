@@ -21,6 +21,9 @@
   {% include 'menu.html' %}
 
   <!-- Header - using custom ones for each page-->
+  <header class="page-header">
+    {% block lead %}{% endblock %}
+  </header>
 
   <!-- Page Content -->
   <div class="container">
