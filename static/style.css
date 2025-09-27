@@ -406,6 +406,7 @@ blockquote p {
   aspect-ratio: 16/9;
 }
 .full-pdf{
+  width:100%;
   aspect-ratio:216/200;
 }
 
