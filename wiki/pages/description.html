@@ -1,18 +1,22 @@
 {% extends "layout.html" %}
-  
-{% block title %}Project Description{% endblock %}
 
+{% block title %}Project Description{% endblock %}
+{% block lead %}
+  <div class="page-header" id="home-header"><!--todo change header id-->
+      <h1>Description</h1>
+  </div>
+{% endblock %}
 {% block page_content %}
 
-<body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20">
+<body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="80" tabindex="0">
 
   <div class="container">
     <div class="row">
       <!-- Scrollspy Sidebar -->
       
-      <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy">
+      <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
         <div class="sticky-lg-top scrollspy-offset">
-          <nav class="nav nav-pills flex-column">
+          <nav class="nav nav-pills flex-column" role="navigation">
             <a class="nav-link" href="#section1">Abstract</a>
             <a class="nav-link" href="#section2">Issue</a>
             <a class="nav-link" href="#section3">Our Solution</a>
