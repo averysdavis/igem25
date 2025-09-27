@@ -400,6 +400,15 @@ blockquote p {
   display: inline;
 }
 
+/*pdf embeds*/
+.slides-pdf{
+  width:100%;
+  aspect-ratio: 16/9;
+}
+.full-pdf{
+  aspect-ratio:216/200;
+}
+
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }
 footer a:hover { color: white; text-decoration: underline; }
