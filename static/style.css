@@ -8,9 +8,22 @@ embed{
   margin-bottom:2em;
 }
 
-/*Header text size*/
-.display-4.text-white.mt-5.mb-2{
-font-size:100px;
+/*dashed hr*/
+.dash{
+  border-top:dashed;
+}
+/*hp h3 headers*/
+#hp h3{
+  font-size:2.25rem;
+}
+#hp h2{
+  padding-top:2.5%;
+  font-size:xxx-large;
+}
+#thickerhr{
+  height: 5px;
+  background-color: black;
+  border: none;
 }
 
 .card-w-info{

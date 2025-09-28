@@ -8,42 +8,69 @@
 {% endblock %}
 {% block page_content %}
 
-<!--silver medal stuff-->
+<figure>
+  <img width="100%" src="https://static.igem.wiki/teams/5761/humanpractices/ihp/hpcover.webp" alt="team members standing in front of a room presenting material on a tv">
+  <figcaption>Our team presenting our work to our community.</figcaption>
+</figure>
 
-<hr/>
+<!--silver medal stuff-->
+<p>
+  From the beginning, Rock the Plastics aimed to be a community project. 
+  Our major objective was to ensure our project delivered a real-world solution. 
+  Throughout our process, we involved stakeholders to ensure our solution truly met their needs.
+</p>
+<p>
+  Our team realized there are already great efforts focused on capturing plastics, but once captured the plastic usually ends up in landfills where they leak back into the environment [1]. 
+  Additionally, the United States alone quarries 1.5 billion tons of stone annually [2].
+</p>
+<p>
+  Our project aims to address these two main: plastics and microplastics re-entering the environment after capture and the use of non-renewable rocks.
+</p>
+<h1>Methodology</h1>
+<p>
+  Our team divided our human practices efforts into three phases. 
+  Our first phase, project ideation, ensured our project idea would be relevant to our local community and benefit stakeholders. 
+  Our second phase, concept design, refined our project idea to address exactly what our stakeholders needed. 
+  Finally, our third and final phase, verification, validated that our technical work in both wetlab and drylab was effective in meeting our objectives.
+  Throughout all three phases, we talked to a number of stakeholders and experts and made sure to integrate their feedback into our project.
+</p>
+
+
+<hr style="border-top:double;">
+<div class="justify-content-center text-center py-3">
+  <b>
+    <h1 style="font-size:5em;color:#982F44;-webkit-text-stroke: black 1px;">Integrated Human Practices</h1>
+    <p>All our different efforts in integrating our human practices feedback:</p>
+  </b>
+</div>
+
 <div data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="80" tabindex="0">
 
-  <div class="container">
+  <div class="container" id="hp">
     <div class="row">
       <!-- Scrollspy Sidebar -->
 
       <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
         <div class="sticky-lg-top scrollspy-offset">
           <nav class="nav nav-pills flex-column" role="navigation">
-            <a class="nav-link" href="#overview" aria-current="false">Overview</a>
             <a class="nav-link" href="#projectideation" aria-current="false">Project Ideation</a>
             <a class="nav-link" href="#concept" aria-current="false">Concept Design</a>
             <a class="nav-link" href="#verify" aria-current="false">Verification</a>
+            <a class="nav-link" href="#references" aria-current="false">References</a>
           </nav>
         </div>
       </nav>
       
       <!-- Main Content -->
       <div class="col-12 col-md-9" id="bumper">
-        <div id="overview" class="mb-5">
-          <h1>Overview</h1>
-          <p>In developing our project, we sought to use research and expert outreach to tailor our project to the potential communities it would serve. We talked to stakeholders at each phase of the project, gaining valuable feedback on our ideas and prototypes. This process allowed us to discover the most practical path forward for our project and make sure we were using our time well.</p>
-        </div>
-        <hr/>
         <!--Project ideation-->
         <div id="projectideation" class="mb-5">
-          <h1>Project Ideation</h1>
+          <h2>Project Ideation</h2>
           <p>
-            To supplement our preliminary research, we contacted academics in various areas we were interested in exploring. Our meeting with Dr. Phillip Kyriakakis and Dr. Sukri Silas, as well as a team poll and consultation with Dr. Chris Hernandez, our secondary PI, allowed us to finalize our project idea.
+            To supplement our preliminary research, we contacted academics in various areas we were interested in exploring. Our meeting with Dr. Phillip Kyriakakis and Dr. Sukrit Silas, discussion about community integration, a team poll, and consultation with Dr. Chris Hernandez, our secondary investigator, allowed us to finalize our project idea.
           </p>
-          <!--todo update-->
-          
-          <h2>Dr. Phillip Kyriakakis</h2>
+          <hr class="dash"/>
+          <h3>Dr. Phillip Kyriakakis</h3>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsePhillip" role="button" aria-expanded="false" aria-controls="collapsePhillip" aria-label="Toggle additional information about Phillip Kyriakakis">
               Read more about Dr. Kyriakakis
@@ -82,22 +109,22 @@
                 </div>
               </div>
               
-              <h3>What We Learned</h3>
+              <h4>What We Learned</h4>
               <p>Our team visited Dr. Kyriakakis’ lab at Stanford. He gave a presentation on his research in optogenetics, explaining how it enables scientists to use light to control neurons and other cells. After the presentation, we split into two groups to tour different areas of his lab, where we also had the chance to briefly meet a member of the Stanford iGEM team. Dr. Kyriakakis highlighted opportunities for collaboration and pointed us toward local resources and mentors who could support our work.</p>
             
-              <h3>Key Takeaways</h3>
+              <h4>Key Takeaways</h4>
               <ul>
                 <li><b>Seek local resources and mentorship</b>: Connect with nearby universities, labs, and experts for advice and potential collaboration.</li>
                 <li><b>Learn from peers</b>: Engaging with teams like Stanford iGEM can provide new perspectives and build community connections.</li>
               </ul>
             </div>
           </div>
-          <h3>Implementation</h3>
+          <h4>Implementation</h4>
           <p>We looked for community at Stanford University, which is what inspired us to collaborate with Stanford's Stanley Qi Lab's CRISPR Kit intiative.</p>
           <p>See the <a href="https://2025.igem.wiki/khanlab-bayarea/education#kit">education page</a> for more information.</p>
-          <hr/>
+          <hr class="dash"/>
 
-          <h2>Dr. Sukrit Silas</h2>
+          <h3>Dr. Sukrit Silas</h3>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseSukrit" role="button" aria-expanded="false" aria-controls="collapseSukrit" aria-label="Toggle additional information about Sukrit Silas">
               Read more about Dr. Silas
@@ -111,7 +138,7 @@
                 <p>Attendees: Ansh, Zoya, Avery, Khushi, Anandita, Nikhil, Sameer, Meghna, Alyssa, Alisha, Paul, Sara</p>
               </b>
               <p>Dr. Sukrit Silas is a Principal Investigator at the Gladstone Institutes and an expert in phage-bacteria dynamics and bacterial immune systems. His group is particularly interested in phage accessory genes—small proteins that allow phages to evade bacterial defenses.</p>
-              <h3>What We Learned</h3>
+              <h4>What We Learned</h4>
               <p>Our team visited Dr. Silas’ lab at the Gladstone Institutes while exploring a possible phage-based iGEM project. He explained the challenges of phage therapy, particularly how phages tend to be effective only against very specific bacterial strains, and how defenses like receptor shielding can block infection even when receptors appear to match.
                   He also introduced his lab’s ongoing work testing accessory genes by expressing them in E. coli to map their role in infection. 
                   His postdoc discussed how AI and computational tools can predict host range, model resistance, and guide cocktail design. Importantly, Dr. Silas suggested a potential iGEM direction: testing phage cocktails—combinations of different phages—to broaden effectiveness against E. coli.
@@ -145,7 +172,7 @@
                 </div>
               </div>
                 
-              <h3>Key Takeaways</h3>
+              <h4>Key Takeaways</h4>
               <ul>
                 <li><b>Phage-host interactions</b> are highly strain-specific, unlike antibiotics.</li>
                 <li><b>Receptor shielding</b> is a key bacterial defense blocking many infections.</li>
@@ -155,12 +182,12 @@
               </ul>
             </div>
           </div>
-          <h3>Implementation</h3>
+          <h4>Implementation</h4>
           <p>Our team researched if we could conduct the project Dr. Silas suggested. We looked into how to safely work with phages and discussed how we could use AI in our project.</p>      
-          <hr/>
+          <hr class="dash"/>
 
 
-          <h2>Community Integration and Lab Space</h2>
+          <h3>Community Integration and Lab Space</h3>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseLab" role="button" aria-expanded="false" aria-controls="collapseLab" aria-label="Toggle additional information about community integration and lab space">
               Read more about community integration and lab space
@@ -172,11 +199,11 @@
               <p>From the beginning, our team knew we wanted to integrate community projects and efforts into our project. Due to this, we decided to conduct wetlab work at BioCurious, a community biotech lab. Unfortunately, BioCurious has a policy against working with phages in order to protect other member’s work.</p>
             </div>
           </div>
-          <h3>Implementation</h3>
+          <h4>Implementation</h4>
           <p>We decided to not attempt a phage project in order to remain integrated with our community.</p>
-          <hr/>
+          <hr class="dash"/>
 
-          <h2>Team Poll</h2>
+          <h3>Team Poll</h3>
           <img src="https://static.igem.wiki/teams/5761/humanpractices/ihp/votes.webp" alt="Pie chart of votes, with 11.8% of votes for grass water loss, 29.4% of votes for phage therapy, and 58.8% for living houses." class="img-fluid max-width:1250px">
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsePoll" role="button" aria-expanded="false" aria-controls="collapsePoll" aria-label="Toggle additional information about the team poll">              
@@ -190,10 +217,10 @@
                 <p>Simultaneously as discussing community labs, we polled our members on which project they would like to pursue. At this point we had narrowed down to three ideas: Phage therapy (ruled out), living houses, and grass water loss. Living Houses won with 58.8% of the vote, making it our official project.</p>
             </div>
           </div>
-          <hr/>
         </div>
-
-        <h2>Project Selection</h2>
+        
+        <hr class="dash"/>
+        <h3>Project Selection</h3>
         <p class="d-inline-flex gap-1">
           <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseSelect" role="button" aria-expanded="false" aria-controls="collapseSelect" aria-label="Toggle additional information about project selection">
             Read more about project selection
@@ -208,16 +235,15 @@
             <p>With our project decided, we met with our secondary investigator, Dr. Christopher Hernandez, who is a professor at University of California, San Francisco. At this point the project idea was only defined as designing a “living” material that would grow or build itself (hence “living houses"). We discussed biomineralization, which is Dr. Hernandez’s specialty, and how to ensure our project helps the community. We discussed a variety of problems, including plastics and microplastics returning to the environment after capture. With Dr. Hernandez's advice, we pivoted our project to address local problems.</p>
           </div>
         </div>
-        <h3>Implementation</h3>
+        <h4>Implementation</h4>
         <p>Our project “living houses” was redefined as “rock the plastics,” where we trap plastics with biomineralization.</p>
-        <hr/>
-
+        
+        <hr id="thickerhr"/>
         <!--Concept design-->
-        <h1 id="concept">Concept Design</h1>
-        <!--todo update-->
-        <p>For the concept design phase, we attended the Bay Area Bioengineering Symposium (UC Berkeley), spoke to Brenda Goeden, Carolynn Box, and Win Cowger.</p>
-          
-          <h2>UC Berkeley Bioengineering Symposium</h2>
+        <h2 id="concept">Concept Design</h2>
+        <p>Our concept design phase refined our project idea and gave insight into what we needed to focus on. This included attending the Bay Area Bioengineering Symposium (UC Berkeley), speaking to Brenda Goeden, Carolynn Box, and Dr. Win Cowger.</p>
+        <hr class="dash"/>
+          <h3>UC Berkeley Bioengineering Symposium</h3>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseBerkeley" role="button" aria-expanded="false" aria-controls="collapseBerkeley" aria-label="Toggle additional information about the UC Berkeley Bioengineering Symposium">
               Read more the symposium
@@ -234,7 +260,7 @@
               <p>
                 Our team attended a symposium hosted by iGEM at Berkeley, University of California Berkeley’s only hands-on genetic engineering club for undergraduates. Many speakers gave keynote addresses, including Dr. Leah Guthrie, Priyam Baruah, and Vishnu Rajan Tejus. Many iGEM at Berkeley teams presented their projects including CheRMiT: Chemical Reactions Mining via Transformers, de novo Design of Inhibitory Peptide for Protein-Protein Interactions, CRISPR-Based One-Step Plasmid Assembly in Vivo, One-Step Self-Clearing CRISPR-Based Gene Knockout System, Engineering TEM-1 beta-Lactamase with de novo Scaffolds, and Engineering L. Lactis to Express Antifungals that Inhibit Mold Growth. The event also included poster presentations and networking opportunities.
               </p>
-              <h3>Key Feedback:</h3>
+              <h4>Key Feedback:</h4>
               <ul>
                 <li>Contact with other synthetic biology teams and researchers.</li>
                 <li>Advice on reaching out to sponsors and partnerships.</li>
@@ -242,12 +268,12 @@
               </ul>
             </div>
           </div>
-          <h3>Implementation</h3>
+          <h4>Implementation</h4>
           <p>We discussed the importance of accessible language to avoid confusion and increase understanding when explaining scientific ideas to the public and others.</p>
-          <hr/>
+          <hr class="dash"/>
 
           <!--Brenda Goeden-->
-          <h2>Brenda Goeden</h2>
+          <h3>Brenda Goeden</h3>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseBrenda" role="button" aria-expanded="false" aria-controls="collapseBrenda" aria-label="Toggle additional information about Brenda Goeden">
               Read more Brenda Goeden
@@ -263,7 +289,7 @@
               </b>
               <p>Brenda Goeden is the Sediment Program Manager at San Francisco Bay Conservation and Development Commission, a government commission dedicated to the protection, enhancement and responsible use of the San Francisco Bay. She has over 25 years of experience in sediment work, working with dredging in the San Francisco bay and sand mining. She explained the various issues conservationists face when working with dredging and sand mining, including disrupting local wildlife and using up nonrenewable resources. She suggested that our biomineralized material would be most useful in replacing layers of sand or gravel used in backfilling foundations.
               </p>
-              <h3>Key Feedback</h3>
+              <h4>Key Feedback</h4>
               <ul>
                 <li>Replace backfill gravel or sand layers with calcium carbonate from microplastics.</li>
                 <li>Look at SFEI, 5 Gyres (Carolynn Box).</li>
@@ -271,12 +297,12 @@
               </ul>
             </div>
           </div>
-          <h3>Implementation</h3>
+          <h4>Implementation</h4>
           <p>Because dredging and backfilling is a major issue in  the San Francisco Bay Area, we decided we wanted to address it to protect our community. We decided to use our material to replace non renewable materials used in backfilling. This became the primary application of the material we designed.
           </p>
-          <hr/>
+          <hr class="dash"/>
 
-          <h2>Carolynn Box</h2>
+          <h3>Carolynn Box</h3>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCarolynn" role="button" aria-expanded="false" aria-controls="collapseCarolynn" aria-label="Toggle additional information about Carolynn Box">
               Read more Carolynn Box
@@ -291,18 +317,18 @@
                 <p>Attendees: Paul, Ansh, Zoya, Khushi, Baxter</p>
               </b>
               <p>Carolynn Box is a private-sector microplastics researcher and oceanic consultant who has worked with 5Gyres, a microplastics primary research group, and many other places. She has over twenty years of experience as a conservationist and has spent the last ten years as a microplastics activist. She started her own plastic-free grocery company which has partnered with four others to form a collective.</p>
-              <h3>Key Feedback</h3>
+              <h4>Key Feedback</h4>
               <p>Although Ms. Box didn’t have expertise with microplastic sequestration and removal, her advice was still helpful for understanding how microplastics enter the Bay. She also talked about networking opportunities (people we could get in touch with for more information about the things she wasn’t so sure about). She told us that there was little legal action that could be taken to mitigate microplastic pollution because there are very few laws regulating it.</p>
             </div>
           </div>
-          <h3>Implementation</h3>
+          <h4>Implementation</h4>
           <p>We talked with Win Cowger on the advice of Ms. Box. Ms. Box also echoed Ms. Goeden’s idea to use our biomaterial for road infilling, confirming what was already a pretty well-formed concept</p>
-          <hr/>
+          <hr class="dash"/>
 
-        <h2>Dr. Win Cowger</h2>
+        <h3>Dr. Win Cowger</h3>
         <p class="d-inline-flex gap-1">
           <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseWin" role="button" aria-expanded="false" aria-controls="collapseWin" aria-label="Toggle additional information about Win Cowger">
-            Read more Dr. Cowger
+            Read more about Dr. Cowger
           </a>
         </p>
         <div class="collapse" id="collapseWin">
@@ -314,22 +340,22 @@
               <p>Attendees: Ansh, Paul, Khushi</p>
             </b>  
             <p>Win Cowger (A.K.A Dr. Trash) is the director of the Moore Plastics Center. He has published multiple research papers cataloguing microplastic types and their patterns of movement in the San Francisco Bay and other areas in California that are polluted by microplastics. He works with multiple nonprofit organizations in order to put innovative microplastics mitigation strategies into practice. </p>
-            <h3>Key Feedback</h3>
+            <h4>Key Feedback</h4>
             <p>Dr. Cowger advised that we should focus on capturing only fluorescent spheres for two reasons: because it would be easier to verify results on a fluorescent material and it’s less complicated to test our protocol on only one carefully controlled type of microplastic than on an assortment of plastics of various different compositions. He also said that it would be difficult to ensure that our biomineralization process captures only plastics. </p>
           </div>
         </div>
-        <h3>Implementation</h3>
+        <h4>Implementation</h4>
         <p>We decided to implement our project on filtered water only to remove the issue of non-plastic capture. In addition, we’ll be testing on only one form of common microplastic because of Win’s advice.
-        <hr/>
+        <hr id="thickerhr"/>
 
         <!--Verification-->
         <div id="verify" class="mb-5">
-          <h1>Verification Phase</h1>
-          <!--todo update-->
-          <p>In order to make sure our work and research would actually fix microplastic leaching and replacing backfilling resources, we spoke to a number of experts to verify and supplement our work.</p>
-          
+          <h2>Verification</h2>
+          <p>In order to make sure our work and research would actually fix plastic re-entry and replace backfilling resources, we spoke to a number of experts to verify and supplement our work. This included Dr. Kelsey Defrates, Dr. Brian Ross, Shanna Bonnano, Shohreh Vanaei, and the UC Santa Cruz iGEM team.</p>
+          <!--todo add abby-->
+          <hr class="dash"/>
           <!--Kelsey DeFrates-->
-          <h2>Dr. Kelsey Defrates</h2>
+          <h3>Dr. Kelsey Defrates</h3>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseKelsey" role="button" aria-expanded="false" aria-controls="collapseKelsey" aria-label="Toggle additional information about Dr. Kelsey Defrates">
               Read more about Dr. Defrates
@@ -346,20 +372,20 @@
               <p>Dr. Kelsey Defrates is a postdoc at Dr. Hernandez’s lab at UCSF. She focuses on materials characterization, particularly working with materials created using protein polymerization. She also works with S.pastuerii based biomineralization.</p>
               <p>We met with Kelsey twice over video call, and discussed further over email. During that time, Kelsey has provided us with the protocols, media, and S. pasteurii needed to do biomineralization, as we are using S. pasteurii as a biomineralization positive control in our project.
               </p>
-              <h3>Key Feedback</h3>
+              <h4>Key Feedback</h4>
               <p>CMM- acts as negative control, add CaCl2 to create CMM+ (the precipitation media). We should use fine-grain beach-like sand if possible, but playground sand will still work. Dr. Defrates also provided protocols, media, S. pasteurii, media protocols, growing protocols, glycerol stock protocols, BHI broth CMM- broth, and S. pasteurii glycerol stock.
               </p>
               </ul></div>
           </div>
-          <h3>Implementation</h3>
+          <h4>Implementation</h4>
           <p>Our team used the protocols, media, S. pasteurii, media protocols, growing protocols, glycerol stock protocols, BHI broth CMM- broth, and S. pasteurii glycerol stock Dr. Defrates provided.</p>
-          <hr/>
+          <hr class="dash"/>
 
           <!--Dr. Brian Ross-->
-          <h2>Dr. Brian Ross</h2>
+          <h3>Dr. Brian Ross</h3>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseBrian" role="button" aria-expanded="false" aria-controls="collapseBrian" aria-label="Toggle additional information about Dr. Brian Ross">
-              Read more Dr. Ross
+              Read more about Dr. Ross
             </a>
           </p>
           <div class="collapse" id="collapseBrian">
@@ -372,20 +398,20 @@
               </b>
               <p>Dr. Ross has a bachelor of science in aerospace, aeronautical, and astronautical engineering from the University of Maryland and a PhD from MIT on physics.  He’s previously worked as a postdoc in computational biology at the University of Washington and the University of Colorado. He currently works as a biophysicist, with experience in programmable modeling.
               </p>
-              <h3>Advice</h3>
+              <h4>Advice</h4>
               <p>We met with Dr. Ross online where he provided us with a lot of background and helpful information guiding our Drylab, mainly making sure our plan for Drylab was on track and would actually be beneficial to the wetlab. Dr. Ross explained that code will not be the main problem; the difficulty is more about implementing the ODE function and finding the proper variables (we would have to get some from literature).
               </p>
             </div>
           </div>
-          <h3>Implementation</h3>
+          <h4>Implementation</h4>
           <p>We used Dr. Ross's advice in drylab in building our ODE function. See <a href="https://2025.igem.wiki/khanlab-bayarea/model">the model page</a> for more information.</p>
-          <hr/>
+          <hr class="dash"/>
 
           <!--Shanna Bonnano-->
-          <h2>Shanna Bonnano</h2>
+          <h3>Shanna Bonnano</h3>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseShanna" role="button" aria-expanded="false" aria-controls="collapseShanna" aria-label="Toggle additional information about Shanna Bonnano">
-              Read more Shanna Bonnano
+              Read more about Shanna Bonnano
             </a>
           </p>
           <div class="collapse" id="collapseShanna">
@@ -397,25 +423,25 @@
               </b>
               <p>Shanna Bonnano is a graduate student at Neel Joshi’s Biologically Fabricated Materials Lab, working on curli secretion and responsive biofilm materials. She has previously investigated secretion trade-offs in E. coli and tunable living composites, and her current research focuses on developing engineered probiotics for targeted delivery and treatment of gastrointestinal diseases.
               </p>
-              <h3>Advice</h3>
+              <h4>Advice</h4>
               <p>Through an email, we got insight on curli quantification methods and got feedback on our synthetically designed plasmid pET-csg-sazCA-amp. We later met Shanna online, where we asked about potentially creating a fusion protein with urease and csgA. Shanna informed us that her team had experience fusing smaller proteins to csgA, and that larger, multi-subunit proteins like urease might present a challenge. Shanna was also a great help in sending us E. coli with the plasmid that would express a fusion protein of csgA and a GFP antibody.
               </p>
-              <h3>Key Feedback</h3>
+              <h4>Key Feedback</h4>
               <ul>
                 <li>The Joshi Lab uses a Congo Red assay to quantify curli fiber expression.</li>
                 <li>Their plasmids use all the natural RBSs. Ours don’t, not for csgB, but it should be fine (according to Shanna)</li>
               </ul>
             </div>
           </div>
-          <h3>Implementation</h3>
+          <h4>Implementation</h4>
           <p>Due to Shanna’s advice, we decided to use a Congo Red assay instead of a Thioflavin T assay for quantification of curli fibers. It was also due to Shanna’s recommendations that we ran a pull down as well as fluorescence based assay for Curli fibers.
-          <hr/>
+          <hr class="dash"/>
 
           <!--Shohreh Vanaei-->
-          <h2>Shohreh Vanaei</h2>
+          <h3>Shohreh Vanaei</h3>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseShohreh" role="button" aria-expanded="false" aria-controls="collapseShohreh" aria-label="Toggle additional information about Shohreh Vanaei">
-              Read more Shohreh Vanaei
+              Read more about Shohreh Vanaei
             </a>
           </p>
           <div class="collapse" id="collapseShohreh">
@@ -427,24 +453,24 @@
               <img src="https://static.igem.wiki/teams/5761/humanpractices/ihp/vanaeicircle.webp" alt="Shohreh Vanaei" class="img-fluid">
               <p>Shohreh Vanaei is a PhD student at  Dr. Neel Joshi’s Biologically Fabricated Materials lab. At Northeastern University, her current research centers on the development of engineered microbial systems for rapid and accessible detection of chemical & biological compounds.
               </p>
-              <h3>Advice</h3>
+              <h4>Advice</h4>
               <p>We met Shohreh when visiting Joshi lab in person at Northeastern University. She prepared and provided us with a E.coli Mach1 strain transformed with pBbB8k-csg-NbGFP, a plasmid which the Joshi lab had confirmed expresses Curli fibers and showed us around the lab. She also brought to our attention the concern of protein aggregate formation when using Congo red assays. While in the lab, Shohreh described how they may use PDMS microfluidic devices, noting that they had to use specialized molds since 3d prints did not have high enough resolution. However, when we mentioned how large our mold was, Shohreh mentioned that should be okay.
               </p>
-              <h3>Key Feedback</h3>
+              <h4>Key Feedback</h4>
               <ul>
                 <li>Congo red can form aggregates with curli fibers leading to inconsistent spec readings.</li>
                 <li>3d printed inverse molds should be sufficient for us to make PDMS devices of the size we are making.
                 </li>
               </ul></div>
           </div>
-          <h3>Implementation</h3>
+          <h4>Implementation</h4>
           <p>We were able to utilize the strain Ms. Vanaei provided us to act as a positive control in our biofilm formation assays. Further, to counteract the issue of aggregate formation, we utilized a strategy Shoreh mentioned was used in Joshi lab—taking a grid of measurements in a plate reader.</p>
-          <hr/>
+          <hr class="dash"/>
 
-          <h2>UC Santa Cruz iGEM Collaboration</h2>
+          <h3>UC Santa Cruz iGEM Collaboration</h3>
           <p class="d-inline-flex gap-1">
             <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseUCSC" role="button" aria-expanded="false" aria-controls="collapseUCSC" aria-label="Toggle additional information about the UCSC iGEM collaboration">
-              Read more UCSC iGEM
+              Read more about UCSC iGEM
             </a>
           </p>
           <div class="collapse" id="collapseUCSC">
@@ -483,7 +509,7 @@
                   </button>
                 </div>
               </div>
-              <h3>Key Feedback</h3>
+              <h4>Key Feedback</h4>
               <p>
                 The UCSC team was very impressed by all the work our team accomplished. 
                 In terms of research, they recommended using RNA sequencing to check if our construct was working correctly. 
@@ -491,12 +517,23 @@
               </p>
             </div>
           </div>
-        <h3>Implementation</h3>
+        <h4>Implementation</h4>
         <p>
           We began working to see if we could use RNA sequencing to confirm our results 
           and made it a point to have a clear goal when working on presentations.
         </p>
         <!--todo add abby-->
+        </div>
+        <div id="references" class="mb-5">
+          <h2>References</h2>
+          <ol>
+            <li>University of Illinois, Illinois Sustainable Technology Center. (2023). Landfills as a Major Point Source for Microplastic Pollution. 
+              <a href="https://www.istc.illinois.edu/research/pollutants/microplastics/landfills">https://www.istc.illinois.edu/research/pollutants/microplastics/landfills.</a>
+            </li>
+            <li>
+              U.S. Geological Survey. (2024, January). Stone (Crushed). <a href="https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-stone-crushed.pdf">https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-stone-crushed.pdf.</a>
+            </li>
+          </ol>
         </div>
       </div>
     </div>
