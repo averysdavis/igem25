@@ -26,6 +26,10 @@ embed{
   border: none;
 }
 
+#underline{
+  text-decoration: underline;
+}
+
 .card-w-info{
   background: grey; /* light gray */
   border-radius: 12px;
