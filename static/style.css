@@ -217,11 +217,11 @@ a {
   font-size:medium;
 }
 
-.btn-primary{
+.btn{
   background-color:#982F44;
   border-color: #000;
 }
-.btn-primary:hover {
+.btn:hover {
   background-color: #AF737C;
   border-color:#000
 }
@@ -499,4 +499,13 @@ footer a:hover { color: white; text-decoration: underline; }
 .push-center-horz{
   padding-left:15%;
   padding-right:15%;
+}
+
+#home-btn .btn{
+  color:white;
+  width:10em;
+}
+#home-btn .row{
+  justify-content: center;
+  margin-top:2%;
 }
