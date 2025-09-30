@@ -453,3 +453,19 @@ footer a:hover { color: white; text-decoration: underline; }
   background-image: url("https://static.igem.wiki/teams/5761/home/rock-background.webp");
 }
 /*todo add header ids urls*/
+
+#excavator {
+  background-image: url(https://static.igem.wiki/teams/5761/home/excavator.webp);
+  background-repeat: no-repeat;
+  background-size: cover;      /* Ensure the image covers the full width and height */
+  background-position: center; /* Center the image within the container */
+  width: 100vw;   
+  height: auto;                   /* Set height to 0 initially */
+  padding-top: 56.25%;          /* This ensures the aspect ratio (16:9 ratio for the image) */
+}
+
+.full-bg {
+  width: 100%;
+  padding:0;
+  margin:0;
+}
