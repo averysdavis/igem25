@@ -110,6 +110,19 @@ text-align: left;
 figcaption{
   text-align:center;
 }
+#results figcaption{
+  padding-left:25%;
+  padding-right:25%;
+}
+#results img{
+  max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;
+}
+
+/*citation hanging indent*/
+#references p{
+  text-indent:-36px;
+  padding-left:36px;
+}
 
 .card {
 background: #e5e6e9; /* light gray */
