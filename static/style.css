@@ -86,8 +86,8 @@ text-align: left;
 
 /* Octagon card */
 .octo{
-  width: 360px;
-  height: 260px;
+  width: 600px;
+  height: 500px;
   background: #d3d3d3;
   clip-path: polygon(
     30% 0%, 70% 0%, 100% 30%, 100% 70%,
@@ -95,6 +95,7 @@ text-align: left;
   );
   box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.25);
   z-index: 1;
+  
 }
 .octo h1 {
 

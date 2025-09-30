@@ -1,39 +1,125 @@
 {% extends "layout.html" %}
 
 {% block title %}Results{% endblock %}
-{% block lead %}
-    <div class="page-header" id="home-header"><!--todo change header id-->
-        <h1>Results</h1>
-    </div>
-{% endblock %}
 
 {% block page_content %}
-<div data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="80" tabindex="0">
-    <div class="container">
-        <div class="row">
-            <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
-                <div class="sticky-lg-top scrollspy-offset">
-                    <nav class="nav nav-pills flex-column" role="navigation">
-                        <a class="nav-link" href="#overview" aria-current="false">Overview</a>
-                    </nav>
-                </div>
-            </nav>
 
-            <!--main content-->
-            <div class="col-12 col-md-9" id="bumper">
-                <div id="overview" class="mb-5">
-                    <h1>Overview</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <hr/>
-            </div>
+<hr/>
+<div data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="80" tabindex="0"></div>
+
+
+  <div class="container">
+    <div class="row">
+      <!-- Scrollspy Sidebar -->
+
+      <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
+        <div class="sticky-lg-top scrollspy-offset">
+          <nav class="nav nav-pills flex-column" role="navigation">
+            <a class="nav-link" href="#verification" aria-current="false">Verification of Transformants</a>
+            <a class="nav-link" href="#production" aria-current="false">Production of Curli Fibers</a>
+            <a class="nav-link" href="#activities" aria-current="false">Enzyme Activity</a>
+            <a class="nav-link" href="#biomineralization" aria-current="false">S. pasteurii biomineralization</a>
+            <a class="nav-link" href="#characterization" aria-current="false">Material Creation and Characterization</a>
+          </nav>
         </div>
+      </nav>
+      
+      <!-- Main Content -->
+      <div class="col-12 col-md-9" id="bumper">
+        <div id="verification" class="mb-5">
+          <h1>Verification of Transformants</h1>
+          <p>We performed chemical transformation on two tubes of wild E. coli K12, one of which we added our plasmid pET-csg-sazCA-amp. This plasmid would express a curli fiber and carbonic anhydrase fusion protein under iPTG induction, and also made our bacteria ampicillin resistant. We plated our recovered transformants onto LB plates and LB/amp plates and let them incubate overnight at 37C. .</p>
+          <img 
+            src="https://static.igem.wiki/teams/5761/results/khanlabbayarea-transformants.webp" 
+            alt="Petri dishes showing LB/amp and LB plates with/without added DNA" 
+            class="img-fluid rounded shadow"
+            style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;"
+          >
+          <small><em>Top left: LB/amp plates, K12 without added DNA 
+            Top right: LB/amp plate, K12 with added DNA 
+            Bottom left: LB plate, K12 without added DNA 
+            Bottom right: LB plate, K12 with added DNA </em>
+          </small>
+          <p>As hypothesized, for our bacteria without plasmid DNA, there was a smear on the LB plate and no bacteria on the LB/amp plate. For our bacteria with plasmid DNA, there was a smear on the LB plate and individual colonies on the LB/amp plate. This confirmed that our ampicillin was working properly, and that our E. coli K12 had likely been transformed. 
+            We also performed Colony PCR as well as sequenced transformants of our part (link to iGEM parts page). Both procedures supported successful transformation of our E. Coli K-12. 
+            </p>
+            <img 
+            src="https://static.igem.wiki/teams/5761/results/khanlab-bayarea-colony-pcr-gel.webp" 
+            alt="Colony PCR results" 
+            class="img-fluid rounded shadow"
+            style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;"
+          >
+          <small><em>From left to right, NEB 1kb+ ladder, NEB fastload 2 ladder, transformant culture 1, transformant culture 2, transformant culture 3. </em>
+          </small>
+        </div>
+        <hr/>
+        <!--Project ideation-->
+        <div id="production" class="mb-5">
+                <h1>Production of Curli Fibers</h1>
+                <p>
+                    Curli fibers are extracellular proteinaceous fibers with amyloid folds that create a biofilm. In total, there are seven curli-specific genes (<em>csg</em>) that form two operons, <em>csgBAC</em> and <em>csgDEFG</em>. <em>csgA</em> and <em>csgB</em> are the structural subunits of curli, wherein <em>csgB</em> anchors to the outer membrane while <em>csgA</em> is the major curli fiber subunit. <em>csgC</em> is a periplasmic chaperone, <em>csgE</em>, <em>csgF</em>, and <em>csgE</em> form the secretion assembly machinery, and <em>csgD</em> a transcriptional activator of the <em>csgBAC</em> operon. Figure 2 from Bhoite et al. (2019) shows the curli secretion pathway. 
+                </p>
+                <img 
+                src="https://static.igem.wiki/teams/5761/results/khanlab-bayarea-curli-biogenesis.webp" 
+                alt="Diagram of Curli Biogenesis" 
+                class="img-fluid rounded shadow"
+                style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;"
+              >
+                <p>To test expression of our modified curli protein (link to igem parts page (or any other pages)), we utilized a congo red fluorescence assay assay inspired by the Joshi lab, as well as a spin down congo red assay from iGEM team Delft-Leiden. Our first step was to test a variety of inducer concentration to find what optimized expression.</p>
+                <img 
+                src="https://static.igem.wiki/teams/5761/results/khanlab-bayareadelta-a480-after-spin-down.webp" 
+                alt="Delta A480 After Spindown" 
+                class="img-fluid rounded shadow"
+                style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;"
+              >
+              <small><em>Comparison of varying iPTG concentrations on absorbance after spin down of transformant culture. More negative absorbance indicates greater presence of Curli fibers. Graph taken from 8/17 curli absorbance assay.
+            </em>
+              </small>
+              <img 
+                src="https://static.igem.wiki/teams/5761/results/khanlab-bayareainduced-cultures-fluorescence.webp" 
+                alt="Induced Cultures Flourescence" 
+                class="img-fluid rounded shadow"
+                style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;"
+              >
+              <small><em>Comparison of varying iPTG concentrations on fluorescence at 625 nm after excitation at 525 nm. Greater fluorescence indicates greater presence of Curli fibers. Graph taken from 8/17 curli fluorescence assay. 
+            </em>
+              </small>
+              <p>From these results, we decided to proceed with an inducer concentration of 0.2 mM, and ran a 96 sample assay in an attempt to gain statistically significant results of protein expression. </p>
+              <img 
+              src="https://static.igem.wiki/teams/5761/results/khanlab-bayarearna-extract-concentration-of-induced-vs-uninduced-samples.webp" 
+              alt="Extract Concentration of Induced vs Uninduced Samples" 
+              class="img-fluid rounded shadow"
+              style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;"
+              <small><em>Graph of induced vs uninduced fluorescence readings of various cultures, with data in quadruplets. 1,2 and 3 are transformant cultures. Joshi is a curli expressing strain we received from the Joshi lab, intended as a positive control. Lb
+                is a negative control of LB broth. 
+                
+            </em>
+              </small>
+              <p>This assay supported our positive control expressing curli, but indicated to us that our transformants were struggling to express curli. Given that our transformants were confirmed by sequencing, we suspected protein folding issues. Using Alphafold 3, we modeled the oligomerization of our modified curli fiber as compared to our positive control, and saw significant differences in folding. 
+            </p>
+            <p>To further support our hypothesis that the issue with our sample occurred in protein folding, we ran RT-PCR to confirm the transcription of our modified gene. </p>
+          
+        </div>
+        <div id="activities" class="mb-5">
+            <h1>Enzyme Activity</h1>
+    
+            <h2>Carbonic Anhydrase</h2>
+            <p>Following the 2023 iGEM team MSP-Maastricht that used sazCA, we performed the Wilbur-Anderson assay to investigate carbonic anhydrase activity. The results indicated that we had limited cabonic anhydrase activity, likely due to protein aggregation as shown in alphafold (Too be updated when we rerun this assay).
+            </p>
+            <h2>Urease Activity</h2>
+            <p>We performed a phenol red assay to assess urealytic activity.</p>
+        </div>
+        <div id="biomineralization" class="mb-5">
+            <h1>S. Pastureii Biomineralization</h1>
+            <p>As biomineralization is a key part of our project, we decided to use naturally biomineralizing S. pasteurii to make a material. S. pasteurii uses the urealytic pathway to biomineralize, turning urea into ammonia and bicarbonate. When Ca2+ is added to the solution, calcium carbonate mineralizes around the bacteria. We confirmed biomineralization by comparing S. pasteurii in CMM- media against CMM- media under a microscope</p>
+        </div>
+        <div id="characterization" class="mb-5">
+            <h1>Material Creation and Characterization</h1>
+            <p>To estimate the strength of our biomineralized material, we created mold following ASTM standards for tensile/compressive strength testing, but scaled all dimensions down. The resulting material had a cross-sectional area of 2 squared, allowing us to estimate tensile strength.</p>
+            <p>Samples were then taken out of molds and sterilized as per our sterilization protocol [link to experiment page, sterilization protocol]. We were able to confirm that our protocol successfully sterilized our samples via a swab test. While the process of removing the samples from our molds broke the mineralized material into multiple pieces rendering us unable to measure strength, we can see that the sand has clearly turned into a much more coarse material. </p>
+        </div>
+        </div>
+      </div>
     </div>
-</div>
-
-
+  </div>
 {% endblock %}
