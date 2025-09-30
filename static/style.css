@@ -455,17 +455,43 @@ footer a:hover { color: white; text-decoration: underline; }
 /*todo add header ids urls*/
 
 #excavator {
-  background-image: url(https://static.igem.wiki/teams/5761/home/excavator.webp);
-  background-repeat: no-repeat;
-  background-size: cover;      /* Ensure the image covers the full width and height */
-  background-position: center; /* Center the image within the container */
-  width: 100vw;   
-  height: auto;                   /* Set height to 0 initially */
-  padding-top: 56.25%;          /* This ensures the aspect ratio (16:9 ratio for the image) */
+  background-image: url(https://static.igem.wiki/teams/5761/home/excavator-crop.webp);
 }
 
 .full-bg {
   width: 100%;
-  padding:0;
-  margin:0;
+  aspect-ratio: 5185/2610; /* Ensures the background image maintains its aspect ratio */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left; /* Ensure the image starts from the top-left corner */
+  display: flex;
+  justify-content: flex-start; /* Align content at the start */
+  align-items: flex-start; /* Align items to the top-left of the container */
+  position: relative; /* This makes the text-block align correctly */
+  padding-bottom: 5%;
+}
+
+.container .text-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255,0.85);
+  color: rgb(0, 0, 0);
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow:hidden;
+}
+.text-block p{
+  display: flex;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  padding-left:10%;
+  padding-right:10%;
+  font-size:3vh;
+  line-height:2em;
 }
