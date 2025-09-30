@@ -454,6 +454,7 @@ footer a:hover { color: white; text-decoration: underline; }
 }
 /*todo add header ids urls*/
 
+/*home page stuff*/
 #excavator {
   background-image: url(https://static.igem.wiki/teams/5761/home/excavator-crop.webp);
 }
@@ -494,4 +495,8 @@ footer a:hover { color: white; text-decoration: underline; }
   padding-right:10%;
   font-size:3vh;
   line-height:2em;
+}
+.push-center-horz{
+  padding-left:15%;
+  padding-right:15%;
 }
