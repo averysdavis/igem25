@@ -438,7 +438,7 @@ blockquote p {
 }
 .full-pdf{
   width:100%;
-  aspect-ratio:216/200;
+  aspect-ratio:216/180;
 }
 
 /* footer */
