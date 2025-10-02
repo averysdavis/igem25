@@ -118,6 +118,10 @@ figcaption{
   max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;
 }
 
+#hp h4{
+  padding-top:2.5%;
+}
+
 /*citation hanging indent*/
 #references p{
   text-indent:-36px;
