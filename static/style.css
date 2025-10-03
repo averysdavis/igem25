@@ -464,6 +464,7 @@ footer a:hover { color: white; text-decoration: underline; }
 .page-header h1{
   font-size: 10vw;
   padding-top:2.5%;
+  color:white;
 }
 
 #home-header{
