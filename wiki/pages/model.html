@@ -2,11 +2,58 @@
 
 {% block title %}Model{% endblock %}
 {% block lead %}
-    <div class="page-header" id="home-header"><!--todo change header id-->
-        <h1>Model</h1>
-    </div>
+  <div class="page-header" id="home-header"><!--todo change header id-->
+    <h1>Model</h1>
+  </div>
 {% endblock %}
 {% block page_content %}
 
-<p>Needs text</p>
+<div data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20" id="results">
+  <div class="container">
+    <div class="row">
+      <!-- Scrollspy Sidebar -->
+      <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
+        <div class="sticky-lg-top scrollspy-offset">
+          <nav class="nav nav-pills flex-column" role="navigation">
+            <a class="nav-link" href="#brainstorm" aria-current="false">Brainstorm</a>
+            <a class="nav-link" href="#implementation" aria-current="false">Implementation</a>
+            <a class="nav-link" href="#product" aria-current="false">Product</a>
+            <a class="nav-link" href="#impact" aria-current="false">Impact</a>
+          </nav>
+      </div>
+    </nav>
+      
+      <!-- Main Content -->
+      <div class="col-12 col-md-9" id="bumper">
+        <div id="brainstorm" class="mb-5">
+          <h1>Brainstorm</h1>
+          <p>This year, we had several different ideas for what our Dry Lab would look like and we went through several different iterations before settling on the final design. Our process included talking to several experts, our Wet Lab team, and doing extensive research from literature.</p>
+          <h2>Ordinary Differential Equation</h2>
+          <p>After being directed to [Alexei talk about Cornell here], we decided to first put our efforts into creating an Ordinary Differential Equation (ODE) to model how fast and how well our Carbonic Anhydrase reaction would occur.
+          </p>
+          <p>We used an ODE model that </p>
+        </div>
+        <hr/>
+        <!--Production-->
+        <div id="implementation" class="mb-5">
+          <h1>Implementation</h1>
+          <p>
+            Once we had completed our extensive research and decided on our model type, we explored the various ways of implementing our idea. 
+          </p>
+        </div>
+        <div id="product" class="mb-5">
+            <h1>Product</h1>
+            <p>ur final product was a terminal-based application that used our ODE code. While our code is published on GitHub, we hope a terminal based model will make it easier for teams to adapt our base code to their own needs, thus providing a tool for other iGEM teams to use in the future.</p>
+        </div>
+        
+        <div id="impact" class="mb-5">
+          <h1>Impact</h1>
+          <p>Our Dry Lab provided critical information for our Wet Lab, and was used extensively in both planning and troubleshooting the execution of our lab.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
+
+
