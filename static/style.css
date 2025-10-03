@@ -501,14 +501,14 @@ footer a:hover { color: white; text-decoration: underline; }
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow:hidden;
+  overflow:auto;
 }
 .text-block p{
   display: flex;
   text-align:center;
   justify-content: center;
   align-items: center;
-  font-size:1em;
+  font-size:2em;
   padding-left:2.5%;
   padding-right:2.5%;
 }
