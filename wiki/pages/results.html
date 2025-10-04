@@ -15,9 +15,9 @@
       <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
         <div class="sticky-lg-top scrollspy-offset">
           <nav class="nav nav-pills flex-column" role="navigation">
+            <a class="nav-link" href="#summary" aria-current="false">Summary</a>
             <a class="nav-link" href="#verification" aria-current="false">Verification of Transformants</a>
             <a class="nav-link" href="#production" aria-current="false">Production of Curli Fibers</a>
-            <a class="nav-link" href="#activities" aria-current="false">Enzyme Activity</a>
             <a class="nav-link" href="#biomineralization" aria-current="false">S. pasteurii biomineralization</a>
             <a class="nav-link" href="#characterization" aria-current="false">Material Creation and Characterization</a>
             <a class="nav-link" href="#references" aria-current="false">References</a>
@@ -27,9 +27,23 @@
       
       <!-- Main Content -->
       <div class="col-12 col-md-9" id="bumper">
+        <div id="summary" class = "mb-5">
+            <ul>
+                <li>
+                    We have achieved production curli fibers validating functionality of part …..
+                </li>
+                <li>
+                    We have pinpointed the issue with our modified Curli-CA construct to protein oligomerization.
+                </li>
+                <li>
+                    We managed to create a material by biomineralizing around sand and microplastic particles, and successfully sterilized said material.
+                </li>
+            </ul>
+        </div>
         <div id="verification" class="mb-5">
           <h1>Verification of Transformants</h1>
-          <p>We performed chemical transformation on two tubes of wild E. coli K12, one of which we added our plasmid pET-csg-sazCA-amp. This plasmid would express a curli fiber and carbonic anhydrase fusion protein under iPTG induction, and also made our bacteria ampicillin resistant. We plated our recovered transformants onto LB plates and LB/amp plates and let them incubate overnight at 37C. .</p>
+          <p>We performed chemical transformation on two tubes of wild E. coli K12, one of which we added our plasmid pET-csg-sazCA-amp. This plasmid would express a curli fiber and carbonic anhydrase fusion protein under iPTG induction, and also made our bacteria ampicillin resistant. We plated our recovered transformants onto LB plates and LB/amp plates and let them incubate overnight at 37C. 
+        </p>
           <figure>
             <img 
               src="https://static.igem.wiki/teams/5761/results/khanlabbayarea-transformants.webp" 
@@ -41,8 +55,10 @@
               Bottom right: LB plate, K12 with added DNA
             </figcaption>
           </figure>
-          <p>As hypothesized, for our bacteria without plasmid DNA, there was a smear on the LB plate and no bacteria on the LB/amp plate. For our bacteria with plasmid DNA, there was a smear on the LB plate and individual colonies on the LB/amp plate. This confirmed that our ampicillin was working properly, and that our E. coli K12 had likely been transformed. 
-            We also performed Colony PCR as well as sequenced transformants of our part (link to iGEM parts page). Both procedures supported successful transformation of our E. Coli K-12. 
+          <p>
+            As hypothesized, for our bacteria without plasmid DNA, there was a smear on the LB plate and no bacteria on the LB/amp plate. For our bacteria with plasmid DNA, there was a smear on the LB plate and individual colonies on the LB/amp plate. This confirmed that our ampicillin was working properly, and that our E. coli K12 had likely been transformed. 
+
+We also performed Colony PCR as well as sequenced transformants of our part (link to iGEM parts page). Both procedures supported successful transformation of our E. Coli K-12. 
           </p>
           <figure>
             <img 
@@ -67,26 +83,8 @@
               alt="Diagram of Curli Biogenesis" 
               class="img-fluid rounded shadow">
           </figure>
-          <p>To test expression of our modified curli protein (link to igem parts page (or any other pages)), we utilized a congo red fluorescence assay assay inspired by the Joshi lab, as well as a spin down congo red assay from iGEM team Delft-Leiden. Our first step was to test a variety of inducer concentration to find what optimized expression.</p>
-          <figure>
-            <img 
-                src="https://static.igem.wiki/teams/5761/results/khanlab-bayareadelta-a480-after-spin-down.webp" 
-                alt="Delta A480 After Spindown, with all numbers negative except 2 (10mM)" 
-                class="img-fluid rounded shadow">
-              <figcaption>
-                Comparison of varying iPTG concentrations on absorbance after spin down of transformant culture. More negative absorbance indicates greater presence of Curli fibers. Graph taken from 8/17 curli absorbance assay.
-              </figcaption>
-          </figure>
-          <figure>
-              <img 
-                src="https://static.igem.wiki/teams/5761/results/khanlab-bayareainduced-cultures-fluorescence.webp" 
-                alt="Induced Cultures Flourescence, with all numbers at or below 10, except J" 
-                class="img-fluid rounded shadow">
-              <figcaption>
-                Comparison of varying iPTG concentrations on fluorescence at 625 nm after excitation at 525 nm. Greater fluorescence indicates greater presence of Curli fibers. Graph taken from 8/17 curli fluorescence assay. 
-              </figcaption>
-          </figure>
-          <p>From these results, we decided to proceed with an inducer concentration of 0.2 mM, and ran a 96 sample assay in an attempt to gain statistically significant results of protein expression. </p>
+          <p>To test expression of our modified curli protein (link to igem parts page (or any other pages)), we utilized a congo red fluorescence assay assay inspired by <a href = "https://neel-joshi.sites.northeastern.edu/">the Joshi lab.</a></p>
+          <p>We ran a 96 sample assay in an attempt to gain statistically significant results of protein expression. </p>
           <figure>
             <img 
               src="https://static.igem.wiki/teams/5761/results/khanlab-bayarearna-extract-concentration-of-induced-vs-uninduced-samples.webp" 
@@ -129,15 +127,6 @@
               alt="chart of induced vs uninduced culture fluorescence"
               class="img-fluid rounded shadow">
           </figure>
-        </div>
-
-        <div id="activities" class="mb-5">
-            <h1>Enzyme Activity</h1>
-            <h2>Carbonic Anhydrase</h2>
-            <p>
-              Following the <a href="https://parts.igem.org/Part:BBa_K4665005">2023 iGEM team MSP-Maastricht</a> that used sazCA, we performed the Wilbur-Anderson assay to investigate carbonic anhydrase activity. The results indicated that we had limited carbonic anhydrase activity, likely due to protein aggregation as shown in alphafold (Too be updated when we rerun this assay).<!--todo update or remove-->
-            </p>
-            <!--todo nonplaceholder image here-->
         </div>
         
         <div id="biomineralization" class="mb-5">
