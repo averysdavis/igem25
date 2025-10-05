@@ -1,7 +1,9 @@
 {% extends "layout.html" %}
 {% block title %}Home{% endblock %}
+
 {% block lead %}
-  <div class="page-header" id="home-header" style="height:45em;">
+<header>
+  <div class="homepage-header" id="home-header" style="height:45em;">
     <div class="container" style="height:100%">
       <div class="row justify-content-center align-items-center" style="height:100%">
         <div class="col-md-9 py-5">
@@ -13,15 +15,15 @@
       </div>
     </div>
   </div>
+</header>
 {% endblock %}
-
 {% block page_content %}
 
 
 <link rel="stylesheet" href="/static/bootstrap.min.css">
 <link rel="stylesheet" href="/static/style.css">
 
-<div class="row" id="header-padding">
+<div class="row pt-5">
   <div class="col">
     <h2 style = "font-size:100px; color: black; text-align: center;">Plastics are a</h2>
     <h2 style = "font-size:100px; color: black; text-align: center;">Big <span style = "color: #982F44">Problem</span></h2>
@@ -151,6 +153,9 @@
     observer.observe(element); // Observe each hidden text element
   });
 });
+</script>
+<script>
+  document.querySelector('header').classList.remove('page-header');
 </script>
 
 {% endblock %}
