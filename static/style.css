@@ -442,7 +442,11 @@ blockquote p {
 }
 .full-pdf{
   width:100%;
-  aspect-ratio:216/180;
+  aspect-ratio:8.5/11;
+}
+
+.nav-pills{
+  padding-bottom:5%;
 }
 
 /* footer */
@@ -457,7 +461,7 @@ footer a:hover { color: white; text-decoration: underline; }
 
 .page-header {
   width: 100%;
-  aspect-ratio: 1680/337; /*todo update aspect ratio*/
+  aspect-ratio: 1680/337;
   background-repeat: no-repeat;
   background-position-y: center;
   justify-content: center;

@@ -7,7 +7,6 @@
     </div>
 {% endblock %}
 {% block page_content %}
-<div  id="header-padding">
     <!--
     <h2>Example experiment</h2>
     <p class="d-inline-flex gap-1">
@@ -22,111 +21,216 @@
     </div>
     -->
 
-    <h2>Carbonic Anhydrase Assay</h2>
-    <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCA" role="button" aria-expanded="false" aria-controls="collapseCA" aria-label="Toggle the carbonic anhydrase assay pdf">
-            Read the protocol
-        </a>
-    </p>
-    <div class="collapse" id="collapseCA">
-        <div class="card card-body">
-            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/carbonic-anhydrase-assay.pdf" aria-label="carbonic anhydrase assay protocol used">
-        </div>
-    </div>
 
-    <h2>Chemical Transformation</h2>
-    <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCT" role="button" aria-expanded="false" aria-controls="collapseCT" aria-label="Toggle the chemical transformation pdf">
-            Read the protocol
-        </a>
-    </p>
-    <div class="collapse" id="collapseCT">
-        <div class="card card-body">
-            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/chemical-transformation.pdf" aria-label="chemical transformation protocol used">
-        </div>
-    </div>
+<div data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="80" tabindex="0" id="header-padding">
+    <div class="container">
+        <div class="row">
+            <!-- Scrollspy Sidebar -->
+            <nav class="col-sm-12 col-md-2 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
+                <div class="sticky-lg-top scrollspy-offset">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#molbio">General Molecular Biology</a>
+                        <a class="nav-link" href="#min">S. pasteurii Mineralization</a>
+                        <a class="nav-link" href="#pro">Protein Expression / Function Assays</a>
+                    </nav>
+                </div>
+            </nav>
+            
+            <!-- Main Content -->
+            <div class="col-sm-12 col-md-10 col-lg-10" id="bumper" style="padding-left:10%;">
+                <div id="molbio" class="mb-5">
+                    <h1 class="pb-3">General Molecular Biology</h1>
+                    <h2>Chemical Transformation</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCT" role="button" aria-expanded="false" aria-controls="collapseCT" aria-label="Toggle the chemical transformation pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseCT">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/chemical-transformation.pdf" aria-label="chemical transformation protocol used">
+                            <p>This protocol was created by Dr. Manish Kushwaha at the Cellular Computing Team at INRAE, and provided to us by our iGEM mentor Shreyas Samir Parkhie.</p>
+                        </div>
+                    </div>
 
-    <h2>Competent Cells Preparation</h2>
-    <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCCP" role="button" aria-expanded="false" aria-controls="collapseCCP" aria-label="Toggle the Competent Cells Preparation pdf">
-            Read the protocol
-        </a>
-    </p>
-    <div class="collapse" id="collapseCCP">
-        <div class="card card-body">
-            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/competent-cells-preparation.pdf" aria-label="Competent Cells Preparation protocol used">
-        </div>
-    </div>
+                    <h2>Competent Cells Preparation</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCCP" role="button" aria-expanded="false" aria-controls="collapseCCP" aria-label="Toggle the Competent Cells Preparation pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseCCP">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/competent-cells-preparation.pdf" aria-label="Competent Cells Preparation protocol used">
+                            <p>This protocol was created by Dr. Manish Kushwaha at the Cellular Computing Team at INRAE, and provided to us by our iGEM mentor Shreyas Samir Parkhie.</p>
+                        </div>
+                    </div>
+                    
+                    <h2>Gel Electrophoresis</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseGel" role="button" aria-expanded="false" aria-controls="collapseGel" aria-label="Toggle the gel electrophoresis pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseGel">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/gel-electrophoresis.pdf" aria-label="gel electrophoresis protocol used">
+                        </div>
+                    </div>
 
-    <h2>Curli Assays</h2>
-    <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCurli" role="button" aria-expanded="false" aria-controls="collapseCurli" aria-label="Toggle the curli assays pdf">
-            Read the protocol
-        </a>
-    </p>
-    <div class="collapse" id="collapseCurli">
-        <div class="card card-body">
-            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/curli-assays.pdf" aria-label="curli assay protocol used">
-        </div>
-    </div>
+                    <h2>Glycerol Stocks</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseGlycerol" role="button" aria-expanded="false" aria-controls="collapseGlycerol" aria-label="Toggle the glycerol stocks pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseGlycerol">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/glycerol-stocks.pdf" aria-label="glycerol stocks protocol used">
+                        </div>
+                    </div>
 
-    <h2>Gel Electrophoresis</h2>
-    <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseGel" role="button" aria-expanded="false" aria-controls="collapseGel" aria-label="Toggle the gel electrophoresis pdf">
-            Read the protocol
-        </a>
-    </p>
-    <div class="collapse" id="collapseGel">
-        <div class="card card-body">
-            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/gel-electrophoresis.pdf" aria-label="gel electrophoresis protocol used">
-        </div>
-    </div>
+                    <h2>PCR</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsePCR" role="button" aria-expanded="false" aria-controls="collapsePCR" aria-label="Toggle the pcr protocol pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapsePCR">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/pcr.pdf" aria-label="pcr protocol used">
+                        </div>
+                    </div>
 
-    <h2>Glycerol Stocks</h2>
-    <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseGlycerol" role="button" aria-expanded="false" aria-controls="collapseGlycerol" aria-label="Toggle the glycerol stocks pdf">
-            Read the protocol
-        </a>
-    </p>
-    <div class="collapse" id="collapseGlycerol">
-        <div class="card card-body">
-            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/glycerol-stocks.pdf" aria-label="glycerol stocks protocol used">
-        </div>
-    </div>
+                    <h2>Reverse Transcription</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseRevTrans" role="button" aria-expanded="false" aria-controls="collapseRevTrans" aria-label="Toggle the reverse transcription pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseRevTrans">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/reverse-transcritpion-protocol-google-docs.pdf" aria-label="reverse transcription protocol used">
+                        </div>
+                    </div>
+                </div>
+                <hr/>
 
-    <h2>Media Recipes</h2>
-    <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseMR" role="button" aria-expanded="false" aria-controls="collapseMR" aria-label="Toggle the media recipes pdf">
-            Read the protocol
-        </a>
-    </p>
-    <div class="collapse" id="collapseMR">
-        <div class="card card-body">
-            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/media-recipes-1-docx.pdf" aria-label="Media recipes protocol used">
-        </div>
-    </div>
+                <div id="min" class="mb-5">
+                    <h1 class="pb-3">S. pasteurii Mineralization</h1>
+                    <h2>Calcium Mineralizing Media Recipes</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCalMin" role="button" aria-expanded="false" aria-controls="collapseCalMin" aria-label="Toggle the calcium mineralizing media recipes pdf">                                
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseCalMin">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/calcium-mineralizing-media-recipes-at.pdf" aria-label="calcium mineralizing media recipes protocol used">
+                        </div>
+                    </div>
 
-    <h2>Manufacturing PDMS Channel-Pore Microfluidic Devices</h2>
-    <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsePDMS" role="button" aria-expanded="false" aria-controls="collapsePDMS" aria-label="Toggle the Manufacturing PDMS Channel-Pore Microfluidic Devices pdf">
-            Read the protocol
-        </a>
-    </p>
-    <div class="collapse" id="collapsePDMS">
-        <div class="card card-body">
-            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/sop-microfluidic-manufacturing-pdms-devices-docx.pdf" aria-label="Manufacturing PDMS Channel-Pore Microfluidic Devices protocol used">
-        </div>
-    </div>
+                    <h2>Media Recipes</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseMR" role="button" aria-expanded="false" aria-controls="collapseMR" aria-label="Toggle the media recipes pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseMR">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/media-recipes-1-docx.pdf" aria-label="Media recipes protocol used">
+                        </div>
+                    </div>
 
-    <h2>PCR</h2>
-    <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsePCR" role="button" aria-expanded="false" aria-controls="collapsePCR" aria-label="Toggle the pcr protocol pdf">
-            Read the protocol
-        </a>
-    </p>
-    <div class="collapse" id="collapsePCR">
-        <div class="card card-body">
-            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/pcr.pdf" aria-label="pcr protocol used">
+                    <h2>Mineralization with S. pasteurii</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseMinSp" role="button" aria-expanded="false" aria-controls="collapseMinSp" aria-label="Toggle the Mineralization with S. pasteurii pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseMinSp">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/mineralization-with-s-pasteurii.pdf" aria-label="Mineralization with S. pasteurii protocol used">
+                        </div>
+                    </div>
+
+                    <h2>S. pasteurii Culture Preparation</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseSpCultPrep" role="button" aria-expanded="false" aria-controls="collapseSpCultPrep" aria-label="Toggle the MS. pasteurii Culture Preparation protocol pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseSpCultPrep">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/s-pasteurii-experimental-culture-preparation.pdf" aria-label="S. pasteurii Culture Preparation protocol used">
+                        </div>
+                    </div>
+
+                    <h2>Manufacturing PDMS Channel-Pore Microfluidic Devices</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsePDMS" role="button" aria-expanded="false" aria-controls="collapsePDMS" aria-label="Toggle the Manufacturing PDMS Channel-Pore Microfluidic Devices pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapsePDMS">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/sop-microfluidic-manufacturing-pdms-devices-docx.pdf" aria-label="Manufacturing PDMS Channel-Pore Microfluidic Devices protocol used">
+                        </div>
+                    </div>
+
+                    <h2>Sterilization</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseSter" role="button" aria-expanded="false" aria-controls="collapseSter" aria-label="Toggle the Sterilization pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseSter">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/sterilization-protocol.pdf" aria-label="Sterilization protocol used">
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+
+                <div id="pro" class="mb-5">
+                    <h1 class="pb-3">Protein Expression / Function Assays</h1>
+                    <h2>Carbonic Anhydrase Assay</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCA" role="button" aria-expanded="false" aria-controls="collapseCA" aria-label="Toggle the carbonic anhydrase assay pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseCA">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/carbonic-anhydrase-assay.pdf" aria-label="carbonic anhydrase assay protocol used">
+                        </div>
+                    </div>
+
+                    <h2>Curli Assay</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCurli" role="button" aria-expanded="false" aria-controls="collapseCurli" aria-label="Toggle the curli assay pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseCurli">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/curli-assays.pdf" aria-label="curli assay protocol used">
+                        </div>
+                    </div>
+
+                    <h2>Phenol Red Assay</h2>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsePhRed" role="button" aria-expanded="false" aria-controls="collapsePhRed" aria-label="Toggle the phenol red assay pdf">
+                            Read the protocol
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapsePhRed">
+                        <div class="card card-body">
+                            <embed type="application/pdf" class="full-pdf" src="https://static.igem.wiki/teams/5761/wetlab/experiments/phenol-red-assays.pdf" aria-label="phenol red assay protocol used">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
