@@ -451,15 +451,20 @@ footer a:hover { color: white; text-decoration: underline; }
 /*end footer*/
 
 /*headers*/
+#header-padding{
+  padding-top:10%;
+}
+
 .page-header {
   width: 100%;
-  aspect-ratio: 16/4; /*todo update aspect ratio*/
-  background-size: cover;
+  aspect-ratio: 1680/337; /*todo update aspect ratio*/
   background-repeat: no-repeat;
   background-position-y: center;
   justify-content: center;
   display:flex;
   padding-bottom:5%;
+  background-position-x:center;
+  margin-bottom:-5%;
 }
 .page-header h1{
   font-size: 10vw;
@@ -469,6 +474,21 @@ footer a:hover { color: white; text-decoration: underline; }
 
 #home-header{
   background-image: url("https://static.igem.wiki/teams/5761/home/concrete.webp");
+}
+#attributions-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/attributions.webp");
+}
+
+#appreciation-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/appreciation.webp");
+}
+
+#description-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/project-description-crop.webp");
+}
+
+#team-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/teamwork-crop.webp");
 }
 /*todo add header ids urls*/
 

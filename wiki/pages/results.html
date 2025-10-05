@@ -7,188 +7,189 @@
   </div>
 {% endblock %}
 {% block page_content %}
-
-<div data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20" id="results">
-  <div class="container">
-    <div class="row">
-      <!-- Scrollspy Sidebar -->
-      <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
-        <div class="sticky-lg-top scrollspy-offset">
-          <nav class="nav nav-pills flex-column" role="navigation">
-            <a class="nav-link" href="#summary" aria-current="false">Summary</a>
-            <a class="nav-link" href="#verification" aria-current="false">Verification of Transformants</a>
-            <a class="nav-link" href="#production" aria-current="false">Production of Curli Fibers</a>
-            <a class="nav-link" href="#biomineralization" aria-current="false">S. pasteurii biomineralization</a>
-            <a class="nav-link" href="#characterization" aria-current="false">Material Creation and Characterization</a>
-            <a class="nav-link" href="#references" aria-current="false">References</a>
-          </nav>
-      </div>
-    </nav>
-      
-      <!-- Main Content -->
-      <div class="col-12 col-md-9" id="bumper">
-        <div id="summary" class = "mb-5">
-          <h1>Summary</h1>
-            <ul>
-                <li>
-                    We have achieved production curli fibers validating functionality of part …..
-                </li>
-                <li>
-                    We have pinpointed the issue with our modified Curli-CA construct to protein oligomerization.
-                </li>
-                <li>
-                    We managed to create a material by biomineralizing around sand and microplastic particles, and successfully sterilized said material.
-                </li>
-            </ul>
+<div  id="header-padding">
+  <div data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="20" id="results">
+    <div class="container">
+      <div class="row">
+        <!-- Scrollspy Sidebar -->
+        <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
+          <div class="sticky-lg-top scrollspy-offset">
+            <nav class="nav nav-pills flex-column" role="navigation">
+              <a class="nav-link" href="#summary" aria-current="false">Summary</a>
+              <a class="nav-link" href="#verification" aria-current="false">Verification of Transformants</a>
+              <a class="nav-link" href="#production" aria-current="false">Production of Curli Fibers</a>
+              <a class="nav-link" href="#biomineralization" aria-current="false">S. pasteurii biomineralization</a>
+              <a class="nav-link" href="#characterization" aria-current="false">Material Creation and Characterization</a>
+              <a class="nav-link" href="#references" aria-current="false">References</a>
+            </nav>
         </div>
-        <div id="verification" class="mb-5">
-          <h1>Verification of Transformants</h1>
-          <p>We performed chemical transformation on two tubes of wild E. coli K12, one of which we added our plasmid pET-csg-sazCA-amp. This plasmid would express a curli fiber and carbonic anhydrase fusion protein under iPTG induction, and also made our bacteria ampicillin resistant. We plated our recovered transformants onto LB plates and LB/amp plates and let them incubate overnight at 37C. 
-        </p>
-          <figure>
-            <img 
-              src="https://static.igem.wiki/teams/5761/results/khanlabbayarea-transformants.webp" 
-              alt="Petri dishes showing LB/amp and LB plates with/without added DNA" 
-              class="img-fluid rounded shadow">
-            <figcaption>Top left: LB/amp plates, K12 without added DNA <br>
-              Top right: LB/amp plate, K12 with added DNA<br> 
-              Bottom left: LB plate, K12 without added DNA <br>
-              Bottom right: LB plate, K12 with added DNA
-            </figcaption>
-          </figure>
-          <p>
-            As hypothesized, for our bacteria without plasmid DNA, there was a smear on the LB plate and no bacteria on the LB/amp plate. For our bacteria with plasmid DNA, there was a smear on the LB plate and individual colonies on the LB/amp plate. This confirmed that our ampicillin was working properly, and that our E. coli K12 had likely been transformed. 
-
-We also performed Colony PCR as well as sequenced transformants of our part (link to iGEM parts page). Both procedures supported successful transformation of our E. Coli K-12. 
-          </p>
-          <figure>
-            <img 
-              src="https://static.igem.wiki/teams/5761/results/khanlab-bayarea-colony-pcr-gel.webp" 
-              alt="Colony PCR results" 
-              class="img-fluid rounded shadow">
-          <figcaption>
-              From left to right, NEB 1kb+ ladder, NEB fastload 2 ladder, transformant culture 1, transformant culture 2, transformant culture 3.
-          </figcaption>
-          </figure>
-        </div>
-        <hr/>
-        <!--Production-->
-        <div id="production" class="mb-5">
-          <h1>Production of Curli Fibers</h1>
-          <p>
-            Curli fibers are extracellular proteinaceous fibers with amyloid folds that create a biofilm. In total, there are seven curli-specific genes (<em>csg</em>) that form two operons, <em>csgBAC</em> and <em>csgDEFG</em>. <em>csgA</em> and <em>csgB</em> are the structural subunits of curli, wherein <em>csgB</em> anchors to the outer membrane while <em>csgA</em> is the major curli fiber subunit. <em>csgC</em> is a periplasmic chaperone, <em>csgE</em>, <em>csgF</em>, and <em>csgE</em> form the secretion assembly machinery, and <em>csgD</em> a transcriptional activator of the <em>csgBAC</em> operon. Figure 2 from Bhoite et al. (2019) shows the curli secretion pathway. 
-          </p>
-          <figure>
-            <img 
-              src="https://static.igem.wiki/teams/5761/results/khanlab-bayarea-curli-biogenesis.webp" 
-              alt="Diagram of Curli Biogenesis" 
-              class="img-fluid rounded shadow">
-          </figure>
-          <p>To test expression of our modified curli protein (link to igem parts page (or any other pages)), we utilized a congo red fluorescence assay assay inspired by <a href = "https://neel-joshi.sites.northeastern.edu/">the Joshi lab.</a></p>
-          <p>We ran a 96 sample assay in an attempt to gain statistically significant results of protein expression. </p>
-          <figure>
-            <img 
-              src="https://static.igem.wiki/teams/5761/results/khanlab-bayarearna-extract-concentration-of-induced-vs-uninduced-samples.webp" 
-              alt="Extract Concentration of Induced vs Uninduced Samples, with all induced vs. uninduced samples having very similar numbers except Joshi's" 
-              class="img-fluid rounded shadow">
-            <figcaption>Graph of induced vs uninduced fluorescence readings of various cultures, with data in quadruplets. 1, 2, and 3 are transformant cultures. Joshi is a curli expressing strain we received from the Joshi lab, intended as a positive control. Lb
-              is a negative control of LB broth. 
-            </figcaption>
-          </figure>
-          <p>
-            This assay supported our positive control expressing curli, but indicated to us that our transformants were struggling to express curli. Given that our transformants were confirmed by sequencing, we suspected protein folding issues. Using Alphafold 3, we modeled the oligomerization of our modified curli fiber as compared to our positive control, and saw significant differences in folding.
-          </p>
-          <figure>
-            <img
-              src="https://static.igem.wiki/teams/5761/results/alphafold-generated-images.webp"
-              alt="alphafold generated models"
-              class="img-fluid rounded shadow">
-              <figcaption>
-                From left to right: Curli fiber monomers polymerizing normally, positive control Joshi lab strain curli fiber polymerization, our modified curli fiber polymerization. Note the pore like structure instead of the expected fiber formation.
-              </figcaption>
-          </figure>
-          <p>
-            To further support our hypothesis that the issue with our sample occurred in protein folding, we ran RT-PCR to confirm the transcription of our modified gene.
-          </p>
-          <figure>
-            <img 
-              src="https://static.igem.wiki/teams/5761/results/rt-pcr-gel-results.webp"
-              alt="gel of RT results"
-              class="img-fluid rounded shadow">
-            <figcaption>
-              Gel of RT results. Ladder, K12, Joshi, Joshi induced, Curli, Curli induced, Curli-CA, Curli-CA induced.
-            </figcaption>
-          </figure>
-          <p>
-            We additionally confirmed that expression of Curli fibers functioned within E.coli K-12 when not modified, through the creation and characterization of a construct involving solely Curli fibers. We used the fluorescence assay described earlier to demonstrate presence of protein expression.
-          </p>
-          <figure>
-            <img 
-              src="https://static.igem.wiki/teams/5761/results/induced-vs-uninduced-culture-fluorescence-curli-construct.svg"
-              alt="chart of induced vs uninduced culture fluorescence"
-              class="img-fluid rounded shadow">
-          </figure>
-        </div>
+      </nav>
         
-        <div id="biomineralization" class="mb-5">
-          <h1>S. Pastureii Biomineralization</h1>
-          <p>
-            As biomineralization is a key part of our project, we decided to use naturally biomineralizing <i>S. pasteurii</i> to make a material. <i>S. pasteurii</i> uses the urealytic pathway to biomineralize, turning urea into ammonia and bicarbonate. When Ca2+ is added to the solution, calcium carbonate mineralizes around the bacteria. We confirmed biomineralization by comparing S. pasteurii in CMM- media against CMM- media under a microscope
+        <!-- Main Content -->
+        <div class="col-12 col-md-9" id="bumper">
+          <div id="summary" class = "mb-5">
+            <h1>Summary</h1>
+              <ul>
+                  <li>
+                      We have achieved production curli fibers validating functionality of part …..
+                  </li>
+                  <li>
+                      We have pinpointed the issue with our modified Curli-CA construct to protein oligomerization.
+                  </li>
+                  <li>
+                      We managed to create a material by biomineralizing around sand and microplastic particles, and successfully sterilized said material.
+                  </li>
+              </ul>
+          </div>
+          <div id="verification" class="mb-5">
+            <h1>Verification of Transformants</h1>
+            <p>We performed chemical transformation on two tubes of wild E. coli K12, one of which we added our plasmid pET-csg-sazCA-amp. This plasmid would express a curli fiber and carbonic anhydrase fusion protein under iPTG induction, and also made our bacteria ampicillin resistant. We plated our recovered transformants onto LB plates and LB/amp plates and let them incubate overnight at 37C. 
           </p>
-          <figure>
-            <img
-              src="https://static.igem.wiki/teams/5761/results/s-pasteurii-in-cmm-100x-magnification.webp"
-              alt="jagged crystal pattern under a microscope with a slight pink and green hue"
-              class="img-fluid rounded shadow">
-            <figcaption><i>S. pasteurii</i> culture in CMM- under 100x magnification</figcaption>
-          </figure>    
-          <figure>
-            <img
-              src="https://static.igem.wiki/teams/5761/results/s-pasteurii-in-cmm-400x-magnification.webp"
-              alt="frost-like crystal pattern under a microscope with a green hue"
-              class="img-fluid rounded shadow">
-            <figcaption><i>S. pasteurii</i> culture in CMM- under 400x magnification</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="https://static.igem.wiki/teams/5761/results/cmm-no-s-pasteurii-no-crystals.webp"
-              alt="a circular shape without crystals"
-              class="img-fluid rounded shadow">
-            <figcaption>CMM- media, with no crystals</figcaption>
-          </figure>
-        </div>
+            <figure>
+              <img 
+                src="https://static.igem.wiki/teams/5761/results/khanlabbayarea-transformants.webp" 
+                alt="Petri dishes showing LB/amp and LB plates with/without added DNA" 
+                class="img-fluid rounded shadow">
+              <figcaption>Top left: LB/amp plates, K12 without added DNA <br>
+                Top right: LB/amp plate, K12 with added DNA<br> 
+                Bottom left: LB plate, K12 without added DNA <br>
+                Bottom right: LB plate, K12 with added DNA
+              </figcaption>
+            </figure>
+            <p>
+              As hypothesized, for our bacteria without plasmid DNA, there was a smear on the LB plate and no bacteria on the LB/amp plate. For our bacteria with plasmid DNA, there was a smear on the LB plate and individual colonies on the LB/amp plate. This confirmed that our ampicillin was working properly, and that our E. coli K12 had likely been transformed. 
 
-        <div id="characterization" class="mb-5">
-          <h1>Material Creation and Characterization</h1>
-          <p>
-            To estimate the strength of our biomineralized material, we created mold following ASTM standards for tensile/compressive strength testing, but scaled all dimensions down. The resulting material had a cross-sectional area of 2 squared, allowing us to estimate tensile strength.
-          </p>
-          <figure>
-            <img
-              src="https://static.igem.wiki/teams/5761/results/pdms-mold-next-to-petg-inverse.webp"
-              alt="ann orange block with an oar shape and a clear block of the same shape but smaller"
-              class="img-fluid rounded shadow">
+  We also performed Colony PCR as well as sequenced transformants of our part (link to iGEM parts page). Both procedures supported successful transformation of our E. Coli K-12. 
+            </p>
+            <figure>
+              <img 
+                src="https://static.igem.wiki/teams/5761/results/khanlab-bayarea-colony-pcr-gel.webp" 
+                alt="Colony PCR results" 
+                class="img-fluid rounded shadow">
             <figcaption>
-              Image of PDMS casted from a 3d printed PETG inverse. The PDMS mold is then used to create a biomineralized sample in the appropriate shape for strength testing. 
+                From left to right, NEB 1kb+ ladder, NEB fastload 2 ladder, transformant culture 1, transformant culture 2, transformant culture 3.
             </figcaption>
-          </figure>
-          <p>
-            Samples were then taken out of molds and sterilized as per our <a href="https://2025.igem.wiki/khanlab-bayarea/experiments">sterilization protocol</a>. We were able to confirm that our protocol successfully sterilized our samples via a swab test. While the process of removing the samples from our molds broke the mineralized material into multiple pieces rendering us unable to measure strength, we can see that the sand has clearly turned into a much more coarse material.
-          </p>
-          <figure>
-            <img
-              src="https://static.igem.wiki/teams/5761/results/khanlabbayarea-sterilized-samples.webp"
-              alt="three containers with minerals decreasing in size"
-              class="img-fluid rounded shadow">
-            <figcaption>
-              Image of our sterilized samples. Note that the right most sample, prepared in a PDMS mold, performed the best, breaking into 3 clean pieces on removal.
-            </figcaption>
-          </figure>
-        </div>
-        <div id="references" class="mb-5">
-          <h1>References</h1>
-          <p>Bhoite, S., Van Gerven, N., Chapman, M. R., & Remaut, H. (2019). Curli biogenesis: bacterial amyloid assembly by the Type VIII secretion pathway. EcoSal Plus, 8(2). https://doi.org/10.1128/ecosalplus.esp-0037-2018</p>
-          <p>Kan, A., Birnbaum, D. P., Praveschotinunt, P., & Joshi, N. S. (2019). Congo Red Fluorescence for Rapid In Situ Characterization of Synthetic Curli Systems. Applied and environmental microbiology, 85(13), e00434-19. https://doi.org/10.1128/AEM.00434-19</p>
+            </figure>
+          </div>
+          <hr/>
+          <!--Production-->
+          <div id="production" class="mb-5">
+            <h1>Production of Curli Fibers</h1>
+            <p>
+              Curli fibers are extracellular proteinaceous fibers with amyloid folds that create a biofilm. In total, there are seven curli-specific genes (<em>csg</em>) that form two operons, <em>csgBAC</em> and <em>csgDEFG</em>. <em>csgA</em> and <em>csgB</em> are the structural subunits of curli, wherein <em>csgB</em> anchors to the outer membrane while <em>csgA</em> is the major curli fiber subunit. <em>csgC</em> is a periplasmic chaperone, <em>csgE</em>, <em>csgF</em>, and <em>csgE</em> form the secretion assembly machinery, and <em>csgD</em> a transcriptional activator of the <em>csgBAC</em> operon. Figure 2 from Bhoite et al. (2019) shows the curli secretion pathway. 
+            </p>
+            <figure>
+              <img 
+                src="https://static.igem.wiki/teams/5761/results/khanlab-bayarea-curli-biogenesis.webp" 
+                alt="Diagram of Curli Biogenesis" 
+                class="img-fluid rounded shadow">
+            </figure>
+            <p>To test expression of our modified curli protein (link to igem parts page (or any other pages)), we utilized a congo red fluorescence assay assay inspired by <a href = "https://neel-joshi.sites.northeastern.edu/">the Joshi lab.</a></p>
+            <p>We ran a 96 sample assay in an attempt to gain statistically significant results of protein expression. </p>
+            <figure>
+              <img 
+                src="https://static.igem.wiki/teams/5761/results/khanlab-bayarearna-extract-concentration-of-induced-vs-uninduced-samples.webp" 
+                alt="Extract Concentration of Induced vs Uninduced Samples, with all induced vs. uninduced samples having very similar numbers except Joshi's" 
+                class="img-fluid rounded shadow">
+              <figcaption>Graph of induced vs uninduced fluorescence readings of various cultures, with data in quadruplets. 1, 2, and 3 are transformant cultures. Joshi is a curli expressing strain we received from the Joshi lab, intended as a positive control. Lb
+                is a negative control of LB broth. 
+              </figcaption>
+            </figure>
+            <p>
+              This assay supported our positive control expressing curli, but indicated to us that our transformants were struggling to express curli. Given that our transformants were confirmed by sequencing, we suspected protein folding issues. Using Alphafold 3, we modeled the oligomerization of our modified curli fiber as compared to our positive control, and saw significant differences in folding.
+            </p>
+            <figure>
+              <img
+                src="https://static.igem.wiki/teams/5761/results/alphafold-generated-images.webp"
+                alt="alphafold generated models"
+                class="img-fluid rounded shadow">
+                <figcaption>
+                  From left to right: Curli fiber monomers polymerizing normally, positive control Joshi lab strain curli fiber polymerization, our modified curli fiber polymerization. Note the pore like structure instead of the expected fiber formation.
+                </figcaption>
+            </figure>
+            <p>
+              To further support our hypothesis that the issue with our sample occurred in protein folding, we ran RT-PCR to confirm the transcription of our modified gene.
+            </p>
+            <figure>
+              <img 
+                src="https://static.igem.wiki/teams/5761/results/rt-pcr-gel-results.webp"
+                alt="gel of RT results"
+                class="img-fluid rounded shadow">
+              <figcaption>
+                Gel of RT results. Ladder, K12, Joshi, Joshi induced, Curli, Curli induced, Curli-CA, Curli-CA induced.
+              </figcaption>
+            </figure>
+            <p>
+              We additionally confirmed that expression of Curli fibers functioned within E.coli K-12 when not modified, through the creation and characterization of a construct involving solely Curli fibers. We used the fluorescence assay described earlier to demonstrate presence of protein expression.
+            </p>
+            <figure>
+              <img 
+                src="https://static.igem.wiki/teams/5761/results/induced-vs-uninduced-culture-fluorescence-curli-construct.svg"
+                alt="chart of induced vs uninduced culture fluorescence"
+                class="img-fluid rounded shadow">
+            </figure>
+          </div>
+          
+          <div id="biomineralization" class="mb-5">
+            <h1>S. Pastureii Biomineralization</h1>
+            <p>
+              As biomineralization is a key part of our project, we decided to use naturally biomineralizing <i>S. pasteurii</i> to make a material. <i>S. pasteurii</i> uses the urealytic pathway to biomineralize, turning urea into ammonia and bicarbonate. When Ca2+ is added to the solution, calcium carbonate mineralizes around the bacteria. We confirmed biomineralization by comparing S. pasteurii in CMM- media against CMM- media under a microscope
+            </p>
+            <figure>
+              <img
+                src="https://static.igem.wiki/teams/5761/results/s-pasteurii-in-cmm-100x-magnification.webp"
+                alt="jagged crystal pattern under a microscope with a slight pink and green hue"
+                class="img-fluid rounded shadow">
+              <figcaption><i>S. pasteurii</i> culture in CMM- under 100x magnification</figcaption>
+            </figure>    
+            <figure>
+              <img
+                src="https://static.igem.wiki/teams/5761/results/s-pasteurii-in-cmm-400x-magnification.webp"
+                alt="frost-like crystal pattern under a microscope with a green hue"
+                class="img-fluid rounded shadow">
+              <figcaption><i>S. pasteurii</i> culture in CMM- under 400x magnification</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://static.igem.wiki/teams/5761/results/cmm-no-s-pasteurii-no-crystals.webp"
+                alt="a circular shape without crystals"
+                class="img-fluid rounded shadow">
+              <figcaption>CMM- media, with no crystals</figcaption>
+            </figure>
+          </div>
+
+          <div id="characterization" class="mb-5">
+            <h1>Material Creation and Characterization</h1>
+            <p>
+              To estimate the strength of our biomineralized material, we created mold following ASTM standards for tensile/compressive strength testing, but scaled all dimensions down. The resulting material had a cross-sectional area of 2 squared, allowing us to estimate tensile strength.
+            </p>
+            <figure>
+              <img
+                src="https://static.igem.wiki/teams/5761/results/pdms-mold-next-to-petg-inverse.webp"
+                alt="ann orange block with an oar shape and a clear block of the same shape but smaller"
+                class="img-fluid rounded shadow">
+              <figcaption>
+                Image of PDMS casted from a 3d printed PETG inverse. The PDMS mold is then used to create a biomineralized sample in the appropriate shape for strength testing. 
+              </figcaption>
+            </figure>
+            <p>
+              Samples were then taken out of molds and sterilized as per our <a href="https://2025.igem.wiki/khanlab-bayarea/experiments">sterilization protocol</a>. We were able to confirm that our protocol successfully sterilized our samples via a swab test. While the process of removing the samples from our molds broke the mineralized material into multiple pieces rendering us unable to measure strength, we can see that the sand has clearly turned into a much more coarse material.
+            </p>
+            <figure>
+              <img
+                src="https://static.igem.wiki/teams/5761/results/khanlabbayarea-sterilized-samples.webp"
+                alt="three containers with minerals decreasing in size"
+                class="img-fluid rounded shadow">
+              <figcaption>
+                Image of our sterilized samples. Note that the right most sample, prepared in a PDMS mold, performed the best, breaking into 3 clean pieces on removal.
+              </figcaption>
+            </figure>
+          </div>
+          <div id="references" class="mb-5">
+            <h1>References</h1>
+            <p>Bhoite, S., Van Gerven, N., Chapman, M. R., & Remaut, H. (2019). Curli biogenesis: bacterial amyloid assembly by the Type VIII secretion pathway. EcoSal Plus, 8(2). https://doi.org/10.1128/ecosalplus.esp-0037-2018</p>
+            <p>Kan, A., Birnbaum, D. P., Praveschotinunt, P., & Joshi, N. S. (2019). Congo Red Fluorescence for Rapid In Situ Characterization of Synthetic Curli Systems. Applied and environmental microbiology, 85(13), e00434-19. https://doi.org/10.1128/AEM.00434-19</p>
+          </div>
         </div>
       </div>
     </div>

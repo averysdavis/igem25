@@ -2,42 +2,42 @@
 
 {% block title %}Attributions{% endblock %}
 {% block lead %}
-    <div class="page-header" id="home-header"><!--todo change header id-->
+    <div class="page-header" id="attributions-header"><!--todo change header id-->
         <h1>Attributions</h1>
     </div>
 {% endblock %}
 {% block page_content %}
 
-
-<!--
-  ======================================================================
-  == VERY IMPORTANT                                                   ==
-  ======================================================================
-  LEAVE THE IFRAME CODE BELOW AS IT IS, THE ATTRIBUTION FORM OF YOUR TEAM
-  WILL BE DISPLAYED ON THIS PAGE. DO NOT REMOVE IT, OTHERWISE YOU RISK OF
-  NOT MEETING BRONZE MEDAL CRITERION #2
--->
-<div class="row mt-4">
-  <script type="text/javascript">
-    // Listen to size change and update form height
-    window.addEventListener("message", function (e) {
-      if (e.origin === "https://teams.igem.org") {
-        const {type, data} = JSON.parse(e.data);
-        if (type === "igem-attribution-form") {
-          const element = document.getElementById("igem-attribution-form");
-          element.style.height = `${data + 100}px`;
+<div  id="header-padding">
+  <!--
+    ======================================================================
+    == VERY IMPORTANT                                                   ==
+    ======================================================================
+    LEAVE THE IFRAME CODE BELOW AS IT IS, THE ATTRIBUTION FORM OF YOUR TEAM
+    WILL BE DISPLAYED ON THIS PAGE. DO NOT REMOVE IT, OTHERWISE YOU RISK OF
+    NOT MEETING BRONZE MEDAL CRITERION #2
+  -->
+  <div class="row mt-4">
+    <script type="text/javascript">
+      // Listen to size change and update form height
+      window.addEventListener("message", function (e) {
+        if (e.origin === "https://teams.igem.org") {
+          const {type, data} = JSON.parse(e.data);
+          if (type === "igem-attribution-form") {
+            const element = document.getElementById("igem-attribution-form");
+            element.style.height = `${data + 100}px`;
+          }
         }
-      }
-    });
-  </script>
-  <iframe
-    style='width: 100%'
-    id="igem-attribution-form"
-    src="https://teams.igem.org/wiki/5761/attributions">
-  >
-  </iframe>
-</div>
-<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
-
+      });
+    </script>
+    <iframe
+      style='width: 100%'
+      id="igem-attribution-form"
+      src="https://teams.igem.org/wiki/5761/attributions">
+    >
+    </iframe>
+  </div>
+  <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+  </div>
 {% endblock %}
 
