@@ -509,6 +509,22 @@ footer a:hover { color: white; text-decoration: underline; }
 #team-header{
   background-image: url("https://static.igem.wiki/teams/5761/other/headers/teamwork-crop.webp");
 }
+
+#engineering-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/engineering.webp");
+}
+
+#results-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/results.webp");
+}
+
+#contribution-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/contributions.webp");
+}
+
+#experiments-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/experiments.webp");
+}
 /*todo add header ids urls*/
 
 /*home page stuff*/
