@@ -548,6 +548,10 @@ footer a:hover { color: white; text-decoration: underline; }
 #safety-header{
   background-image: url("https://static.igem.wiki/teams/5761/other/headers/safetyandsecurity.webp");
 }
+
+#model-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/model.webp");
+}
 /*todo add header ids urls*/
 
 /*home page stuff*/
