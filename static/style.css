@@ -455,10 +455,6 @@ footer a:hover { color: white; text-decoration: underline; }
 /*end footer*/
 
 /*headers*/
-#header-padding{
-  padding-top:0;
-}
-
 .page-header {
   width: 100%;
   aspect-ratio: 1680/415;
