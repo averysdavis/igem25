@@ -456,7 +456,7 @@ footer a:hover { color: white; text-decoration: underline; }
 
 /*headers*/
 #header-padding{
-  padding-top:10%;
+  padding-top:0;
 }
 
 .page-header {
@@ -523,6 +523,30 @@ footer a:hover { color: white; text-decoration: underline; }
 
 #experiments-header{
   background-image: url("https://static.igem.wiki/teams/5761/other/headers/experiments.webp");
+}
+
+#education-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/education.webp");
+}
+
+#hp-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/human-practices-crop.webp");
+}
+
+#inclusivity-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/inclusivity.webp");
+}
+
+#notebook-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/notebook.webp");
+}
+
+#parts-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/parts.webp");
+}
+
+#safety-header{
+  background-image: url("https://static.igem.wiki/teams/5761/other/headers/safetyandsecurity.webp");
 }
 /*todo add header ids urls*/
 
