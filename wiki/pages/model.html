@@ -14,37 +14,101 @@
         <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
           <div class="sticky-lg-top scrollspy-offset">
             <nav class="nav nav-pills flex-column" role="navigation">
-              <a class="nav-link" href="#brainstorm" aria-current="false">Brainstorm</a>
-              <a class="nav-link" href="#implementation" aria-current="false">Implementation</a>
-              <a class="nav-link" href="#product" aria-current="false">Product</a>
-              <a class="nav-link" href="#impact" aria-current="false">Impact</a>
+              <a class="nav-link" href="#summary" aria-current="false">Summary</a>
+              <a class="nav-link" href="#brainstorm" aria-current="false">Brainstorming</a>
+              <a class="nav-link" href="#internal" aria-current="false">Internal</a>
+              <a class="nav-link" href="#external" aria-current="false">External</a>
             </nav>
         </div>
       </nav>
         
         <!-- Main Content -->
         <div class="col-12 col-md-9" id="bumper">
-          <div id="brainstorm" class="mb-5">
-            <h1>Brainstorm</h1>
-            <p>This year, we had several different ideas for what our Dry Lab would look like and we went through several different iterations before settling on the final design. Our process included talking to several experts, our Wet Lab team, and doing extensive research from literature.</p>
-            <h2>Ordinary Differential Equation</h2>
-            <p>After being directed to [Alexei talk about Cornell here], we decided to first put our efforts into creating an Ordinary Differential Equation (ODE) to model how fast and how well our Carbonic Anhydrase reaction would occur.
-            </p>
-            <p>We used an ODE model that </p>
+          <div id="summary" class="mb-5">
+            <h1>Summary</h1>
+            <p>We built a reusable modeling and assay pipeline for biomineralization and demonstrated it on two of the field’s most common enzymes—carbonic anhydrase (CA) and urease. This page serves two purposes. First, it documents the internal modeling and analyses that guided our design choices. Second, it introduces a tool for future teams: a command‑line interface (CLI) pipeline that turns plate‑reader data into kinetic parameters and generates an ordinary differential equation (ODE) simulation to estimate CaCO₃ formation. Together, these components form the foundation of our dry‑lab work.</p>
+            <p>Throughout development, our Human Practices conversations with mentors influenced how we approached modeling. They encouraged us to build something pragmatic and reproducible—a system that complements, not replaces, real experiments. We learned from Brian Ross that plate‑based quantitative data would be far more reliable than trying to predict complex wet‑lab results purely from simulations. As a result, our modeling shifted from an internal design driver to a planning‑grade tool that helps teams reason about experiments before stepping into the lab.</p>
           </div>
           <hr/>
           <!--Production-->
-          <div id="implementation" class="mb-5">
-            <h1>Implementation</h1>
+          <div id="brainstorm" class="mb-5">
+            <h1>Brainstorming/Development Process</h1>
             <p>
-              Once we had completed our extensive research and decided on our model type, we explored the various ways of implementing our idea. 
+              Our Drylab creation process was one filled with constant shifts in ideas. We started the season believing we would be 3D-modeling healing cracks in concrete, as well as exploring finite element modeling (which engineers use to simulate bridges collapsing). Then, with input from one of our mentors, Chirs and his colleague JJ Yeo at Cornell who works on models like these, he advised us to focus on the chemistry on our project first, suggesting an Ordinary Differential Equation (ODE) model first. As such, we adjusted the scope and goals of our Dry Lab to creating the ODE and ensuring we were integrated with and useful to our Wet Lab.
             </p>
           </div>
-          <div id="product" class="mb-5">
-              <h1>Product</h1>
-              <p>ur final product was a terminal-based application that used our ODE code. While our code is published on GitHub, we hope a terminal based model will make it easier for teams to adapt our base code to their own needs, thus providing a tool for other iGEM teams to use in the future.</p>
-          </div>
-          
+          <div id="internal" class="mb-5">
+              <h1>Internal: Project‑Focused Modeling and Tools
+              </h1>
+              <p>Our internal modeling focused on practical decision‑making to guide our project. Each analysis answered a concrete design question and directly influenced what we built or tested.</p>
+              <h2>Protein Candidate Triage
+              </h2>
+              <p>To identify the best biomineralizing proteins, we performed sequence analysis on several candidates. The results revealed that CARP (Coral Acid Rich Proteins) and SM50 are largely intrinsically disordered, with exposed acidic stretches and regions likely to interact with calcium. This flexibility and surface accessibility make them ideal scaffolds for mineral nucleation. By combining these observations with published studies, we focused on a smaller set of constructs that balanced expressibility and mineralization potential.
+              </p>
+              <p>This analysis simplified our build plan. Instead of testing every candidate in parallel, we prioritized CARP and SM50 for further experimentation, expecting them to yield soluble, effective fusion constructs</p>
+              <h2>AlphaFold Visualizations</h2>
+              <p>We used AlphaFold to visualize our selected proteins and evaluate their surface properties. These predicted models highlighted electrostatic regions, acidic patches, and possible calcium‑binding zones. We looked carefully at how these structural motifs might interact with our fusion tags and scaffolds. When visualizations showed potential clashes, we adjusted promoter strengths, linker lengths, and tag placements to preserve functional sites.
+              </p>
+              <p>These visual insights transformed modeling from a theoretical exercise into a design safeguard, ensuring our constructs remained biochemically reasonable before we ever ordered DNA.
+              </p>
+              <h2>Assay Design and Calibration
+              </h2>
+              <p>To convert enzyme activity measured in our Wet Lab to data that could be plugged into our ODE model, we implemented a phenol‑red plate assay for Carbonic Anhydrase and a colorimetric assay for urease. The principle is to turn changes in absorbance into pH, then into initial reaction rates (v₀), and finally into kinetic parameters which could then be plugged into our model.
+              </p>
+              <h3>From absorbance to pH</h3>
+              <p>At wavelengths between 557–560 nm, phenol red shifts its absorbance depending on protonation. We first record A_min (fully acidic) and A_max (fully basic) buffer standards. For each reading A(t) (absorbance over time), we convert absorbance to pH using the Henderson–Hasselbalch equation :
+              </p>
+              <p>pH(t) = pKa + log₁₀((A(t) − A_min)/(A_max − A(t))).</p>
+              <p>This method avoids dependence on extinction coefficients and minimizes error from optical drift. We obtain a continuous pH(t) curve for each well, the first part of which provides us with our v0 number, which can be plugged into our ODE code.</p>
+              <h3>From pH to proton-equivalent rate</h3>
+              <p>Because pH reflects proton concentration, we compute the rate of acid/base generation via the buffer capacity β (mol·L⁻¹·pH⁻¹). The instantaneous proton‑equivalent rate is given by:
+              </p>
+              <p>v_H(t) ≈ β × d(pH)/dt.</p>
+              <p>The sign of v_H indicates whether acid or base is produced. For urease, base production raises pH (negative proton flux). For CA, proton flux depends on the hydration or dehydration direction; we use the magnitude for rate comparisons.
+              </p>
+              <h3>Detecting the v₀ window</h3>
+              <p>Each absorbance trace contains a short linear region before substrate depletion or feedback effects occur. Our script:
+              </p>
+              <ul>
+                <li>Skips the first 10–20 s to avoid mixing artifacts.
+                </li>
+                <li>Applies an optional Savitzky–Golay filter to visualize smooth trends while retaining raw data for fitting.</li>
+                <li>Slides a fixed window (30–60 s) along the trace, performs a linear regression in each segment, and ranks them by R² and slope stability.
+                </li>
+                <li>Chooses the window with highest stability and least curvature to define v₀ = β·(dpH/dt).
+                </li>
+              </ul>
+              <p>This approach is robust even for noisy curves and reproducible across replicates.
+              </p>
+              <h3>From v₀ to Michaelis–Menten parameters</h3>
+              <p>We perform this process for each substrate concentration [S]₀ on a plate. Plotting v₀ vs. [S]₀, we fit the Michaelis–Menten model:</p>
+              <p>v₀ = (Vmax × [S]₀)/(Km + [S]₀).
+              </p>
+              <p>Here Vmax = kcat × [E]total, but we fit Vmax directly without needing to know enzyme concentration. If [E] is later quantified, we calculate kcat = Vmax/[E].
+              </p>
+              <p>Nonlinear least‑squares fitting (Levenberg–Marquardt) gives best‑fit Vmax and Km, with 95% confidence intervals derived from the fit covariance matrix. We avoid Lineweaver–Burk transforms because they overweight low substrate points. Optional bootstrap resampling (1,000 iterations) provides additional error estimates. Weighted fits account for variance in each v₀ measurement.
+              </p>
+              <h3>Linking kinetics to the ODE
+              </h3>
+              <p>Once we obtain Vmax and Km, we feed them into a simplified ODE system that models the enzyme‑driven conversion of carbon species and pH evolution under the measured buffer capacity. The ODE incorporates a precipitation term triggered when carbonate concentration exceeds the Ksp of CaCO₃, allowing quick estimation of precipitation onset. Using the same β value keeps the simulation consistent with assay calibration.
+              </p>
+              <p>What it changed. This standard pipeline—absorbance → pH → v₀ → {Vmax, Km} → ODE—eliminated spreadsheet drift and made replicates directly comparable. It also gave us a transparent and defensible path from raw absorbance data to quantitative kinetic insight.
+              </p>
+              <h3>
+                Math Details
+              </h3>
+              <p>Dual-wavelength ratio: R(t) = A560(t) / A435(t) after mapping the two instrument channels to ~560 nm (base) and ~435 nm (acid) within ±3 nm.
+              </p>
+              <p>Endpoint Henderson–Hasselbalch pH: pH(t) = pKa' + log10( (R(t) − Racid) / (Rbase − R(t)) ). When endpoints are not provided, the script estimates Racid and Rbase from pooled ratios by quantiles (defaults 2% and 98%).</p>
+              <p>Initial slope window (v0): ignore the first t0 seconds (default 5 s), then fit a line on a window of width Δt (default 10 s): pH(t) ≈ m·t + b, where m = d(pH)/dt. Window quality is scored by R² and slope stability.</p>
+              <p>Proton-equivalent rate via buffer capacity: vH = −β · d(pH)/dt = −β·m, where β is buffer capacity (mol·L⁻¹·pH⁻¹). Positive vH implies net acid production; base generation (urease) gives vH < 0. For Michaelis–Menten fitting we typically use |vH| as v0.
+              </p>
+              <p>Michaelis–Menten across a substrate series: v0 = (Vmax · [S]0) / (Km + [S]0). We fit Vmax and Km by nonlinear least squares (Levenberg–Marquardt), treating Vmax as free so [E] is not required. If [E] becomes available later, kcat = Vmax / [E]. Confidence intervals come from the fit covariance.</p>
+              <p>Link to the ODE: the fitted Vmax, Km feed a minimal pH/carbonate ODE using the same β as calibration. Precipitation is triggered when the ion product exceeds Ksp: Ca²⁺ + CO₃²⁻ → CaCO₃(s). We use a lumped precipitation rate kp suitable for planning-grade estimates.</p>
+              <h2>Biomineralization Mold CAD</h2>
+              <p>To validate mineral formation in a repeatable way, we designed and 3D‑printed standardized PDMS molds for biomineralization. Each mold controlled liquid volume, flow paths, and geometry, enabling uniform growth and comparable imaging. This mechanical standardization allowed us to link enzymatic data with measurable deposition outcomes.
+              </p>
+              <p>In summary, these internal models and design tools shaped nearly every major decision—from narrowing protein candidates to defining experimental conditions. They provided the scaffolding for the reproducible, quantitative system that follows.</p>
           <div id="impact" class="mb-5">
             <h1>Impact</h1>
             <p>Our Dry Lab provided critical information for our Wet Lab, and was used extensively in both planning and troubleshooting the execution of our lab.</p>
