@@ -109,9 +109,62 @@
               <p>To validate mineral formation in a repeatable way, we designed and 3D‑printed standardized PDMS molds for biomineralization. Each mold controlled liquid volume, flow paths, and geometry, enabling uniform growth and comparable imaging. This mechanical standardization allowed us to link enzymatic data with measurable deposition outcomes.
               </p>
               <p>In summary, these internal models and design tools shaped nearly every major decision—from narrowing protein candidates to defining experimental conditions. They provided the scaffolding for the reproducible, quantitative system that follows.</p>
-          <div id="impact" class="mb-5">
-            <h1>Impact</h1>
-            <p>Our Dry Lab provided critical information for our Wet Lab, and was used extensively in both planning and troubleshooting the execution of our lab.</p>
+          <div id="external" class="mb-5">
+            <h1>External: Reusable Modeling Pipeline for Future Teams</h1>
+            <h2>Overview</h2>
+            <p>Our external contribution is a Kinetics‑to‑Model Pipeline that integrates assay analysis and ODE simulation. It is designed for iGEM teams studying biomineralization, especially those working with CA or urease, where teams often struggle to connect plate‑reader data with predictive modeling. Using a simple CLI, the pipeline automatically detects linear regions in absorbance curves, calculates kinetic parameters, and runs a short ODE simulation that estimates carbonate conversion and CaCO₃ formation. This helps teams visualize expected mineralization dynamics before committing extensive resources to benchwork.
+            </p>
+            <h2>How it works</h2>
+            <p>The user begins with a plate‑reader CSV file—time vs. absorbance—accompanied by metadata such as pathlength, wavelength, temperature, and buffer composition. After running one command in the terminal, the pipeline performs several automated steps:
+            </p>
+            <ol>
+              <li>Data ingestion and cleaning. The script standardizes formatting, smooths noise, and identifies baseline drift.
+              </li>
+              <li>Initial‑rate detection. It locates the early linear segment of the absorbance curve and fits a regression to compute v₀.
+              </li>
+              <li>Kinetic parameter estimation. Using a Michaelis–Menten framework, the tool fits Vmax and Km (or effective rate constants) with units and confidence intervals.
+              </li>
+              <li>ODE simulation. The model then predicts changes in pH and carbonate concentration, triggering a precipitation event when the ion product exceeds the solubility product (Ksp).</li>
+              <li>Reporting. Finally, it outputs publication‑ready plots, parameter JSON files, and a concise markdown report summarizing assumptions and fit quality.
+              </li>
+            </ol>
+            <p>The entire process—from CSV to simulated output—takes less than a minute. All default parameters are editable, making it easy to adapt for new enzymes or conditions.
+            </p>
+            <h2>What it produces
+            </h2>
+            <p>The pipeline outputs kinetic parameters (JSON with units), diagnostic plots (PNG), simulated trajectories of carbonate and pH, and a markdown report describing the experiment and results. These files can be directly uploaded to wikis or used to compare enzyme efficiencies between teams.</p>
+            <h2>Underlying mathematics
+            </h2>
+            <p>The core kinetic models use Michaelis–Menten equations for urease and CA. The system links enzyme activity to pH through the Henderson–Hasselbalch equation, adding a simple buffer‑capacity term. When carbonate and calcium concentrations reach supersaturation, a lumped precipitation term converts soluble ions into solid CaCO₃. This minimal model is fast, interpretable, and sufficiently accurate for experimental planning.
+            </p>
+            <h2>Human Practices integration
+            </h2>
+            <p>Mentor Brian Ross emphasized the importance of plate‑based measurements and encouraged us to use modeling for planning, not prediction. Abigail Alemayeho guided our inclusion of metabolic burden awareness—reminding us that expression cannot simply be “maxed out.” These conversations grounded our model in realistic biological limits. We present this pipeline as a planning companion rather than a mechanistic authority.</p>
+            <h2>Assumptions and limitations
+            </h2>
+            <p>We assume well‑mixed conditions and uniform optical paths across wells. Ionic strength effects are approximated, and precipitation is modeled as a lumped process without explicit surface nucleation. Whole‑cell metabolic burden is excluded by design. Users should treat all outputs as estimates and confirm them experimentally.</p>
+            <p>Common error cases—such as saturated absorbance or malformed CSVs—are documented in the README with suggested fixes.
+            </p>
+            <h2>Validation</h2>
+            <p>We validated the pipeline by comparing fitted kinetic curves with experimental data from CA and urease assays. Overlay plots show that the model reproduces early‑time behavior accurately and provides reasonable long‑term estimates. We explicitly note that this validation is qualitative: the goal is consistent trends, not perfect replication.</p>
+            <h2>Downloads</h2>
+            <ul>
+              <li>Example datasets: CA and urease plate‑reader CSVs (raw and cleaned).
+              </li>
+              <li>Parameter JSON files: fitted parameters with units.
+              </li>
+              <li>Generated reports: Markdown/PDF containing QA plots and summaries.
+              </li>
+              <li>Mold CAD: standardized STL files for biomineralization tests.
+              </li>
+              <li>Repository: <a href = "https://gitlab.igem.org/2025/software-tools/khanlab-bayarea">https://gitlab.igem.org/2025/software-tools/khanlab-bayarea</a>.
+              </li>
+            </ul>
+          </div>
+          <div id = "conclusion" class = "mb-5">
+            <h1>Conclusion</h1>
+            <p>This modeling pipeline began as a tool for our own measurements but grew into something more general. By combining simple automation with transparent equations, we hope to make kinetic modeling approachable for any iGEM team studying biomineralization. Whether used to estimate carbonate output, compare enzyme variants, or plan plate‑based assays, this tool translates raw absorbance into insight—and makes the dry‑lab accessible to every team.
+            </p>
           </div>
         </div>
       </div>
