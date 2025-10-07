@@ -2,7 +2,7 @@
 
 {% block title %}Engineering Success{% endblock %}
 {% block lead %}
-  <div class="page-header" id="engineering-header">
+  <div class="page-header" id="home-header"><!--todo change header id-->
     <h1>Engineering Success</h1>
   </div>
 {% endblock %}
@@ -17,7 +17,6 @@
   }
   </style>
 
-<div data-bs-spy="scroll" data-bs-target="#myScrollspy"  data-bs-offset="80" tabindex="0">
 <div data-bs-spy="scroll" data-bs-target="#myScrollspy"  data-bs-offset="80" tabindex="0">
   <div class="container">
     <div class="row">
@@ -192,7 +191,90 @@
             <p>As soon as we discovered that there may be potential folding issues with our curli fiber and carbonic anhydrase fusion protein, we switched tracks to design a part with urease instead of carbonic anhydrase. Unfortunately, due to time constraints, we were unable to make it past the design and build stage. </p>
 
         <div id="cyc3">
-          <h1>DBTL Cycle 3</h1>
+          <h1>DBTL Cycle 3: csg + Urease</h1>
+          <h2>Design:</h2>
+          <p>As soon as we discovered that there may be potential folding issues with our curli fiber and carbonic anhydrase fusion protein, we switched tracks to design a part with urease instead of carbonic anhydrase. Unfortunately, due to time constraints, we were unable to make it past the design and build stage. </p>
+          <figure style = "width: 100%; height: auto;">
+            <img 
+              src="https://static.igem.wiki/teams/5761/results/laci-csg-ure-v2-map.webp"
+              alt="Laci csg urease v2 map"
+              class="img-fluid rounded shadow">
+          </figure>
+         <p>This construct attached the urease gene cluster to the sequence after the curli fiber gene cluster. The urease gene cluster was taken from part BBa_K5205014, designed by the 2024 Hangzhou-SDG iGEM team. We planned to create this construct by inserting the urease gene cluster into one of our existing curli plasmids. </p>
+         <p>As we received a grant from Ansa Biotechnology to synthesize a plasmid with less than 10kb of insert, we ended up designing a subsequent construct that used arabinose instead of iPTG to induce expression. </p>
+         <figure style = "width: 100%; height: auto;">
+          <img 
+            src="https://static.igem.wiki/teams/5761/results/arabad-csg-ure-v2-map.webp"
+            alt="Arabad csg urease v2 map"
+            class="img-fluid rounded shadow">
+        </figure>
+        <h2>Build:</h2>
+        <p>We ordered the urease gene cluster in two gene fragments synthesized by IDT, with the plan to ligate them via NEB HiFi DNA Assembly and insert into our plasmid pET_csg_Amp via restriction enzyme digest. At the end of September, we also received our construct from Ansa Biotechnology. Once we had transformed bacteria, we planned to assess curli fiber presence via congo red fluorescence assays and urease activity with a phenol red pH assay (protocol:).</p>
+        <p>Unfortunately, due to time constraints and our focus on characterizing csg-sazCA, we were unable to transform and perform experiments on this particular construct. </p>
+        </div>
+        <div id="spcycle">
+          <h1>DBTL Cycles - S. pasteurii</h1>
+          <h2>Overview: S. pasteurii</h2>
+          <p>In parallel with our main experimental DBTL cycles, we conducted experiments to create a rock-like material and provide a proof of concept. We chose to work with S. pasteurii, a naturally biomineralizing bacteria, as it naturally utilized the urea hydrolysis pathway. We procured S. pasteurii and the necessary protocol from Kelsey De Frates, from the Hernandez Lab at UCSF. </p>
+          <h1>DTBL Cycle 1:</h1>
+          <h2>Design:</h2>
+          <p>To create a biomineralized hard product that could be tested, we designed a mold following ASTM standards for tensile/compressive strength testing with scaled down dimensions. The resulting product had a cross-sectional area of 2 squared, allowing us to later estimate tensile strength.
+          </p>
+          <figure>
+            <img 
+              src="https://static.igem.wiki/teams/5761/results/cad-of-mold.webp"
+              alt="Image of inverse mold that was created in CAD, then 3d printed in PETG. The mold was then used to cast PDMS which after curing became our mold for biomineralization."
+              class="img-fluid rounded shadow">
+              <figcaption>Image of inverse mold that was created in CAD, then 3d printed in PETG. The mold was then used to cast PDMS which after curing became our mold for biomineralization.</figcaption>
+          </figure>
+          <h2>Build:</h2>
+          <p>We then built a PDMS mold from a 3D printed PETG inverse based on our CAD model, following our protocol “Manufacturing PDMS Channel-Pore Microfluidic Devices.”  
+          </p>
+          <figure>
+            <img
+              src="https://static.igem.wiki/teams/5761/results/pdms-mold-next-to-petg-inverse.webp"
+              alt="ann orange block with an oar shape and a clear block of the same shape but smaller"
+              class="img-fluid rounded shadow">
+            <figcaption>
+              Image of PDMS casted from a 3d printed PETG inverse. The PDMS mold is then used to create a biomineralized sample in the appropriate shape for strength testing. 
+            </figcaption>
+          </figure>
+          <p>In parallel, we cultured S. pasteurii from glycerol stocks at 30C. Having acquired the appropriate mold, media, and S. pasteurii culture, we began biomineralization, following protocol from Troyer et al. Our three molds, one which was our PDMS mold and the other two which were normal 3D molds, were filled with sand to act as nucleation sites. For one month, we conducted daily interchange between S. pasteurii culture and precipitation media to induce calcite precipitation. </p>
+          <h2>Test:</h2>
+          <p>Samples were then taken out of molds and sterilized as per our sterilization protocol [link to experiment page, sterilization protocol]. We were able to confirm that our protocol successfully sterilized our samples via a swab test. While the process of removing the samples from our molds broke the mineralized material into multiple pieces rendering us unable to measure strength, we can see that the sand has clearly turned into a much more coarse material. </p>
+          <figure>
+            <img
+              src="https://static.igem.wiki/teams/5761/results/khanlabbayarea-sterilized-samples.webp"
+              alt="three containers with minerals decreasing in size"
+              class="img-fluid rounded shadow">
+            <figcaption>
+              Image of our sterilized samples. Note that the right most sample, prepared in a PDMS mold, performed the best, breaking into 3 clean pieces on removal.
+            </figcaption>
+          </figure>
+          <h2>Learn:</h2>
+          <p>From this process, we learned that fine-grain sand worked best for biomineralization. 
+            [Make note of S. pasteurii slow growth + contamination issues we had here, as well as sterilization techniques and practices we learned over time.] </p>
+        </div>
+        <div id="references">
+          <h1>References</h1>
+          <p class="apa-reference">
+            Birnbaum, D. P., Manjula‐Basavanna, A., Kan, A., Tardy, B. L., & Joshi, N. S. (2021). Hybrid living capsules autonomously produced by engineered bacteria. <em> Advanced Science</em>. 8(11). https://doi.org/10.1002/advs.202004699
+          </p>
+          <p class="apa-reference">
+            Castro-Alonso, M. J., Montañez-Hernandez, L. E., Sanchez-Muñoz, M. A., Franco, M. R. M., Narayanasamy, R., & Balagurusamy, N. (2019). Microbially Induced calcium carbonate precipitation (MICP) and its potential in bioconcrete: Microbiological and Molecular concepts. <em>Frontiers in Materials, 6</em>. https://doi.org/10.3389/fmats.2019.00126 
+          </p>
+          <p class="apa-reference">
+            Kan, A., Birnbaum, D. P., Praveschotinunt, P., & Joshi, N. S. (2019). Congo red fluorescence for rapid in situ characterization of synthetic curli systems. <em>Applied and Environmental Microbiology, 85</em>(13), e00434-19. https://doi.org/10.1128/AEM.00434-19 
+          </p>
+          <p class="apa-reference">
+            Zhang, Y., Wang, A., DeBenedictis, E. P., & Keten, S. (2017). Bending energy penalty enhances the adhesive strength of functional amyloid curli to surfaces. <em>Nanotechnology, 28</em>(46), 464002. https://doi.org/10.1088/1361-6528/aa8f72
+          </p>
+          <p class="apa-reference">
+            Zhu, Y., Liu, Y., Ai, M., & Jia, X. (2021). Surface display of carbonic anhydrase on Escherichia coli for CO2 capture and mineralization. <em>Synthetic and Systems Biotechnology, 7</em>(1), 460–473. https://doi.org/10.1016/j.synbio.2021.11.008
+          </p>
+          <p class="apa-reference">
+            Troyer, E., Berninghaus, A., Gerlach, R., Foreman, C., Joyce, J., West, C., and A. J. Phillips. "Biomineralized Art: Using Microbes and Minds to Make Mountains." Paper presented at the 51st U.S. Rock Mechanics/Geomechanics Symposium, San Francisco, California, USA, June 2017.
+          </p>
         </div>
       </div>
     </div>
