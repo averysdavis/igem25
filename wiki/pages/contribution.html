@@ -27,24 +27,24 @@
                 <div id="overview" class="mb-5">
                     <h1>Overview</h1>
                     <p>
-                      Our team contributed new parts to the iGEM registry, documenting appropriate experimentation for future iGEM teams. Our parts characterization provides valuable insight on potential oligomerization issues for future researchers designing curli fiber fusion proteins. Our team contributed an open-source command-line modeling tool that transforms plate-reader data from biomineralization assays into fitted kinetic parameters and ODE-based simulations of CaCO₃ formation. This contribution enables future iGEM teams to quickly generate reproducible enzyme kinetics and biomineralization models from their own experimental data. Additionally, our team created and translated educational activities in Chinese, English, and Spanish.
+                        Our team contributed new parts to the iGEM registry, documenting appropriate experimentation for future iGEM teams. Our parts characterization provides valuable insight on potential oligomerization issues for future researchers designing curli fiber fusion proteins. Our team contributed an open-source command-line modeling tool that transforms plate-reader data from biomineralization assays into fitted kinetic parameters and ODE-based simulations of CaCO₃ formation. This contribution enables future iGEM teams to quickly generate reproducible enzyme kinetics and biomineralization models from their own experimental data. Additionally, our team created and translated educational activities in Chinese, English, and Spanish.
                     </p>
                 </div>
                 <div id="parts" class="mb-5">
-                  <h1>Parts</h1>
-                  <p>
-                    To support our goal of creating a curli fusion protein, we added basic parts for the N-terminal region of csgA (BBa_25UQFFQ8) and a flexible linker (BBa_25SEZAYP) from Birnbaum et al., 2021. Our new composite part csg-sazCA (BBa_259GV1IH) was constructed from these two basic parts and the carbonic anhydrase sazCA (BBa_K4665120). We successfully transformed E. coli K-12 with our plasmid (BBa_25J7AMCD), as confirmed by colony sequencing. Reverse transcription PCR indicated that our construct was transcribed to mRNA. To assess protein expression and export, we conducted a congo red fluorescence assay designed for curli fiber quantification (Kan et al., 2019) and found no significant csg-sazCA curli fiber above our detection limit. To troubleshoot, we turned to computational modeling, finding that AlphaFold predicts oligomers of our csgA-sazCA fusion protein to assemble differently than oligomers of native curli or oligomers of existing csgA fusion proteins. In the future, researchers and iGEM teams can use our design for curli fusion proteins while being mindful of potential modifications to minimize the chance of oligomerization issues — for example, longer linkers or smaller attached proteins.
-                  </p>
-                  <figure>              
-                    <img src="https://static.igem.wiki/teams/5761/results/csg-sazca-cds-v4-map.webp"
-                     alt="csg-sazca-cds-v4-map" class="img-fluid rounded shadow">
-                    <figcaption>Our part BBa_25A8Q07G, which is intended to produce and export a curli-sazCA fusion protein. Our characterization of this part revealed oligomerization issues as an important consideration for future researchers and iGEM teams. </figcaption>
-                  </figure>
-              </div>
+                    <h1>Parts</h1>
+                    <p>
+                        To support our goal of creating a curli fusion protein, we added basic parts for the N-terminal region of csgA (BBa_25UQFFQ8) and a flexible linker (BBa_25SEZAYP) from Birnbaum et al., 2021. Our new composite part csg-sazCA (BBa_259GV1IH) was constructed from these two basic parts and the carbonic anhydrase sazCA (BBa_K4665120). We successfully transformed E. coli K-12 with our plasmid (BBa_25J7AMCD), as confirmed by colony sequencing. Reverse transcription PCR indicated that our construct was transcribed to mRNA. To assess protein expression and export, we conducted a congo red fluorescence assay designed for curli fiber quantification (Kan et al., 2019) and found no significant csg-sazCA curli fiber above our detection limit. To troubleshoot, we turned to computational modeling, finding that AlphaFold predicts oligomers of our csgA-sazCA fusion protein to assemble differently than oligomers of native curli or oligomers of existing csgA fusion proteins. In the future, researchers and iGEM teams can use our design for curli fusion proteins while being mindful of potential modifications to minimize the chance of oligomerization issues — for example, longer linkers or smaller attached proteins.
+                    </p>
+                    <figure>              
+                        <img src="https://static.igem.wiki/teams/5761/results/csg-sazca-cds-v4-map.webp"
+                            alt="csg-sazca-cds-v4-map" class="img-fluid rounded shadow">
+                        <figcaption>Our part BBa_25A8Q07G, which is intended to produce and export a curli-sazCA fusion protein. Our characterization of this part revealed oligomerization issues as an important consideration for future researchers and iGEM teams. </figcaption>
+                    </figure>
+                </div>
                 <div id = "drylab" class = "mb-6">
-                  <h1>Dry Lab</h1>
-                  <p>We developed a CLI-based ODE modeling tool that we anticipate will be used by many iGEM teams working with biomineralization enzymes carbonic anhydrase and urease. Using simple plate-reader input files, the program automatically converts dual-wavelength phenol-red assays into pH values through the Henderson–Hasselbalch relationship, detects the linear region to calculate v₀, and fits Michaelis–Menten parameters (Vₘₐₓ, Kₘ). These parameters are then used to simulate carbonate dynamics and CaCO₃ formation through an integrated system of ordinary differential equations (ODEs). Each simulation can be personalized by entering a team’s own data and induction levels, with adjustable parameters such as buffer capacity, pKa′, and enzyme type to account for metabolic burden. The command-line interface makes the process fast, transparent, and reproducible, helping teams turn raw absorbance data into realistic kinetic and biomineralization models in minutes.</p>
-                  <p><b>Get the tool: </b><a href =  https://gitlab.igem.org/2025/software-tools/khanlab-bayarea>https://gitlab.igem.org/2025/software-tools/khanlab-bayarea</a></p>
+                    <h1>Dry Lab</h1>
+                    <p>We developed a CLI-based ODE modeling tool that we anticipate will be used by many iGEM teams working with biomineralization enzymes carbonic anhydrase and urease. Using simple plate-reader input files, the program automatically converts dual-wavelength phenol-red assays into pH values through the Henderson–Hasselbalch relationship, detects the linear region to calculate v₀, and fits Michaelis–Menten parameters (Vₘₐₓ, Kₘ). These parameters are then used to simulate carbonate dynamics and CaCO₃ formation through an integrated system of ordinary differential equations (ODEs). Each simulation can be personalized by entering a team’s own data and induction levels, with adjustable parameters such as buffer capacity, pKa′, and enzyme type to account for metabolic burden. The command-line interface makes the process fast, transparent, and reproducible, helping teams turn raw absorbance data into realistic kinetic and biomineralization models in minutes.</p>
+                    <p><b>Get the tool: </b><a href =  https://gitlab.igem.org/2025/software-tools/khanlab-bayarea>https://gitlab.igem.org/2025/software-tools/khanlab-bayarea</a></p>
                 </div>
                 <hr/>
                 <div id="education" class="mb-5">
@@ -93,13 +93,13 @@
 
                 </div>
                 <div id = "references" class = "mb-5">
-                  <h1>References</h1>
-          <p class="apa-reference">
-            Birnbaum, D. P., Manjula‐Basavanna, A., Kan, A., Tardy, B. L., & Joshi, N. S. (2021). Hybrid living capsules autonomously produced by engineered bacteria. <em> Advanced Science</em>. 8(11). https://doi.org/10.1002/advs.202004699
-          </p>
-          <p class="apa-reference">
-            Kan, A., Birnbaum, D. P., Praveschotinunt, P., & Joshi, N. S. (2019). Congo red fluorescence for rapid in situ characterization of synthetic curli systems. <em>Applied and Environmental Microbiology, 85</em>(13), e00434-19. https://doi.org/10.1128/AEM.00434-19 
-          </p>
+                    <h1>References</h1>
+                    <p>
+                        Birnbaum, D. P., Manjula‐Basavanna, A., Kan, A., Tardy, B. L., & Joshi, N. S. (2021). Hybrid living capsules autonomously produced by engineered bacteria. <em> Advanced Science</em>. 8(11). https://doi.org/10.1002/advs.202004699
+                    </p>
+                    <p>
+                        Kan, A., Birnbaum, D. P., Praveschotinunt, P., & Joshi, N. S. (2019). Congo red fluorescence for rapid in situ characterization of synthetic curli systems. <em>Applied and Environmental Microbiology, 85</em>(13), e00434-19. https://doi.org/10.1128/AEM.00434-19 
+                    </p>
                 </div>
             </div>
         </div>
