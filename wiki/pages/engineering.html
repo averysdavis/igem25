@@ -2,7 +2,7 @@
 
 {% block title %}Engineering Success{% endblock %}
 {% block lead %}
-  <div class="page-header" id="engineering-header">
+  <div class="page-header" id="home-header"><!--todo change header id-->
     <h1>Engineering Success</h1>
   </div>
 {% endblock %}
@@ -15,7 +15,7 @@
     width: 50%;
     text-align: center;
   }
-</style>
+  </style>
 
 <div data-bs-spy="scroll" data-bs-target="#myScrollspy"  data-bs-offset="80" tabindex="0">
   <div class="container">
@@ -24,13 +24,15 @@
       <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
         <div class="sticky-lg-top scrollspy-offset">
           <nav class="nav nav-pills flex-column" role="navigation">
-            <a class="nav-link" href="#summary" aria-current="false">Engineering Success</a>
-            <a class="nav-link" href="#considerations" aria-current="false">Initial Considerations</a>
-            <a class="nav-link" href="#cycles" aria-current="false">DBTL Cycles - Curli + MICP</a>
-              <a class="nav-link ms-3" href="#cyc1" aria-current="false">DBTL Cycle 1</a>
-              <a class="nav-link ms-3" href="#cyc2" aria-current="false">DBTL Cycle 2</a>
-              <a class="nav-link ms-3" href="#cyc3" aria-current="false">DBTL Cycle 3</a>
-              <a class="nav-link ms-3" href="#spcycle" aria-current="false">S. Pasteurii Cycle</a>
+            <a class="nav-link" href="#summary">Engineering Success</a>
+            <a class="nav-link" href="#considerations">Initial Considerations</a>
+            <a class="nav-link" href="#cycles">DBTL Cycles - Curli + MICP</a>
+            <nav class="nav flex-column ms-3" id="subNav">
+              <a class="nav-link" href="#cyc1">DBTL Cycle 1</a>
+              <a class="nav-link" href="#cyc2">DBTL Cycle 2</a>
+              <a class="nav-link" href="#cyc3">DBTL Cycle 3</a>
+              <a class="nav-link" href="#spcycle">S. Pasteurii Cycle</a>
+            </nav>
             <a class="nav-link" href="#references" aria-current="false">References</a>
           </nav>
         </div>
@@ -39,20 +41,21 @@
       <!-- Main Content -->
       <div class="col-12 col-md-9" id="bumper">
         <div id="summary" class="mb-5 row">
-          <p>We conducted two parallel sets of DBTL cycles: </p>
-          <ul class="mx-4">
-            <li>We conducted research on bacteria engineered to produce curli fusion proteins, revealing potential oligomerization issues in curli fusion proteins.</li>
-            <li>We successfully created biomineralized samples utilizing S. pasteurii’s natural biomineralization capabilities 
-            </li>
-          </ul>
+         <p>We conducted two parallel sets of DBTL cycles: </p>
+         <ul>
+          <li>We conducted research on bacteria engineered to produce curli fusion proteins, revealing potential oligomerization issues in curli fusion proteins.</li>
+          <li>We successfully created biomineralized samples utilizing S. pasteurii’s natural biomineralization capabilities 
+          </li>
+         </ul>
         </div>
-      <div id="considerations" class="mb-5 row">
-        <h1>Initial Considerations</h1>
-        <p>
-          Our goal was to design bacteria that would simultaneously produce a sticky biofilm and induce biomineralization, capturing microplastics and forming an aggregate usable in construction. We chose to use curli fibers, a key component of E. coli biofilms, because they exhibit high adhesive properties and strong tensile mechanical properties (Zhang et al., 2017). Examining pathways involved in Microbially Induced Calcite Precipitation (MICP), we found that bacterial strains utilizing the urea hydrolysis pathway showed more calcite precipitation (~20–80%) in comparison with other metabolic pathways (Castro-Alonso et al., 2019). This pathway is primarily driven by the enzymes urease and carbonic anhydrase. To simultaneously produce curli fibers and induce biomineralization, we decided to emulate the fusion protein of curli fiber and amylase that Neel Joshi’s Biologically Fabricated Materials Lab designed (Birnbaum et al., 2021). Since carbonic anhydrase is a monomeric enzyme in the urea hydrolysis pathway, it was natural to design and experiment with a curli fiber and carbonic anhydrase fusion protein. We chose to use the strain E. coli K12 to express our fusion protein, as E. coli K12 can, under the right conditions, produce both curli fiber and carbonic anhydrase.             </p>
-        <p>Our second goal was to create concrete biomineralized products. We chose to use S. pasteurii, as it naturally used the urea hydrolysis pathway, which eventually converts urea into ammonia and carbonate </p>
-      </div>
-      <hr/>
+        <div id="considerations" class="mb-5 row">
+          <h1>Initial Considerations</h1>
+            <p>
+              Our goal was to design bacteria that would simultaneously produce a sticky biofilm and induce biomineralization, capturing microplastics and forming an aggregate usable in construction. We chose to use curli fibers, a key component of E. coli biofilms, because they exhibit high adhesive properties and strong tensile mechanical properties (Zhang et al., 2017). Examining pathways involved in Microbially Induced Calcite Precipitation (MICP), we found that bacterial strains utilizing the urea hydrolysis pathway showed more calcite precipitation (~20–80%) in comparison with other metabolic pathways (Castro-Alonso et al., 2019). This pathway is primarily driven by the enzymes urease and carbonic anhydrase. To simultaneously produce curli fibers and induce biomineralization, we decided to emulate the fusion protein of curli fiber and amylase that Neel Joshi’s Biologically Fabricated Materials Lab designed (Birnbaum et al., 2021). Since carbonic anhydrase is a monomeric enzyme in the urea hydrolysis pathway, it was natural to design and experiment with a curli fiber and carbonic anhydrase fusion protein. We chose to use the strain E. coli K12 to express our fusion protein, as E. coli K12 can, under the right conditions, produce both curli fiber and carbonic anhydrase. 
+            </p>
+            <p>Our second goal was to create concrete biomineralized products. We chose to use S. pasteurii, as it naturally used the urea hydrolysis pathway, which eventually converts urea into ammonia and carbonate </p>
+        </div>
+        <hr/>
 
         <div id="cycles" class="mb-5">
           <h1>DBTL Cycles: Curli + MICP</h1>
@@ -60,7 +63,6 @@
           <p>
             The goal of this part was to simultaneously produce curli fiber and induce biomineralization using one fusion protein. The <a href = "https://2023.igem.wiki/msp-maastricht/engineering.html">2023 iGEM team MSP-Maastricht’s</a> biomineralization carbonic anhydrase module inspired us to use sazCA, which is also the fastest carbonic anhydrase to date (Y. Zhu et al., 2021). As such, our final part’s primary goal was to produce a csgA-sazCA fusion protein.
           </p>
-        </div>
         <div id="cyc1" class="mb-5">
           <h1>DBTL Cycle 1</h1>
           <h2>Design:</h2>
@@ -70,8 +72,8 @@
           <h2>Build:</h2>
           <p>
             Once our plasmid was synthesized by Twist, we performed chemical transformation on two tubes of wild E. coli K12, one of which we added our plasmid pET-csg-sazCA-amp. We recovered and plated the transformed cultures on both LB plates and LB/amp plates, letting the plates incubate overnight at 37C. 
-            </p>
-            <figure>
+           </p>
+           <figure>
             <img 
               src="https://static.igem.wiki/teams/5761/results/khanlabbayarea-transformants.webp" 
               alt="Petri dishes showing LB/amp and LB plates with/without added DNA" 
@@ -194,7 +196,6 @@
             <p>Through both expression of unmodified proteins and RT-PCR data, we were able to support our hypothesis that the issue with our modified construct occurs at the protein folding/oligomerization stage.</p>
             <h2>Overview of Part: Curli + Urease</h2>
             <p>As soon as we discovered that there may be potential folding issues with our curli fiber and carbonic anhydrase fusion protein, we switched tracks to design a part with urease instead of carbonic anhydrase. Unfortunately, due to time constraints, we were unable to make it past the design and build stage. </p>
-        </div>
 
         <div id="cyc3">
           <h1>DBTL Cycle 3: csg + Urease</h1>
@@ -206,9 +207,9 @@
               alt="Laci csg urease v2 map"
               class="img-fluid rounded shadow">
           </figure>
-          <p>This construct attached the urease gene cluster to the sequence after the curli fiber gene cluster. The urease gene cluster was taken from part BBa_K5205014, designed by the 2024 Hangzhou-SDG iGEM team. We planned to create this construct by inserting the urease gene cluster into one of our existing curli plasmids. </p>
-          <p>As we received a grant from Ansa Biotechnology to synthesize a plasmid with less than 10kb of insert, we ended up designing a subsequent construct that used arabinose instead of iPTG to induce expression. </p>
-          <figure style = "width: 100%; height: auto;">
+         <p>This construct attached the urease gene cluster to the sequence after the curli fiber gene cluster. The urease gene cluster was taken from part BBa_K5205014, designed by the 2024 Hangzhou-SDG iGEM team. We planned to create this construct by inserting the urease gene cluster into one of our existing curli plasmids. </p>
+         <p>As we received a grant from Ansa Biotechnology to synthesize a plasmid with less than 10kb of insert, we ended up designing a subsequent construct that used arabinose instead of iPTG to induce expression. </p>
+         <figure style = "width: 100%; height: auto;">
           <img 
             src="https://static.igem.wiki/teams/5761/results/arabad-csg-ure-v2-map.webp"
             alt="Arabad csg urease v2 map"
