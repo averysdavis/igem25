@@ -2,7 +2,7 @@
 
 {% block title %}Engineering Success{% endblock %}
 {% block lead %}
-  <div class="page-header" id="home-header"><!--todo change header id-->
+  <div class="page-header" id="engineering-header">
     <h1>Engineering Success</h1>
   </div>
 {% endblock %}
@@ -24,15 +24,13 @@
       <nav class="col-12 col-md-3 col-lg-2" id="myScrollspy" aria-label="Page section navigation">
         <div class="sticky-lg-top scrollspy-offset">
           <nav class="nav nav-pills flex-column" role="navigation">
-            <a class="nav-link" href="#summary">Engineering Success</a>
-            <a class="nav-link" href="#considerations">Initial Considerations</a>
-            <a class="nav-link" href="#cycles">DBTL Cycles - Curli + MICP</a>
-            <nav class="nav flex-column ms-3" id="subNav">
-              <a class="nav-link" href="#cyc1">DBTL Cycle 1</a>
-              <a class="nav-link" href="#cyc2">DBTL Cycle 2</a>
-              <a class="nav-link" href="#cyc3">DBTL Cycle 3</a>
-              <a class="nav-link" href="#spcycle">S. Pasteurii Cycle</a>
-            </nav>
+            <a class="nav-link" href="#summary" aria-current="false">Engineering Success</a>
+            <a class="nav-link" href="#considerations" aria-current="false">Initial Considerations</a>
+            <a class="nav-link" href="#cycles" aria-current="false">DBTL Cycles - Curli + MICP</a>
+              <a class="nav-link ms-3" href="#cyc1" aria-current="false">DBTL Cycle 1</a>
+              <a class="nav-link ms-3" href="#cyc2" aria-current="false">DBTL Cycle 2</a>
+              <a class="nav-link ms-3" href="#cyc3" aria-current="false">DBTL Cycle 3</a>
+              <a class="nav-link ms-3" href="#spcycle" aria-current="false">S. Pasteurii Cycle</a>
             <a class="nav-link" href="#references" aria-current="false">References</a>
           </nav>
         </div>
@@ -42,7 +40,7 @@
       <div class="col-12 col-md-9" id="bumper">
         <div id="summary" class="mb-5 row">
          <p>We conducted two parallel sets of DBTL cycles: </p>
-         <ul>
+         <ul class="mx-5">
           <li>We conducted research on bacteria engineered to produce curli fusion proteins, revealing potential oligomerization issues in curli fusion proteins.</li>
           <li>We successfully created biomineralized samples utilizing S. pasteurii’s natural biomineralization capabilities 
           </li>
