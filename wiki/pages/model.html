@@ -90,7 +90,7 @@
                   Output from the pipeline's assay stage .Dual-λ phenol-red measurements are mapped to pH; the early linear portion (shaded) gives () with (). These rates become the inputs for Stage 2 Michaelis–Menten fitting.
                 </figcaption>
               </figure>
-              <p>Methods (dual-λ → pH → ())</p>
+              <p>Methods (dual-λ → pH → (\( v_{0} \)))</p>
               <p>Ratio: \( R = \dfrac{A_{560}}{A_{435}} \) with endpoints \( (R_{\text{acid}}, R_{\text{base}}) \).</p>
 
 <p>pH transform: \( \mathrm{pH} = pK_a' + \log_{10}\!\left(\dfrac{R - R_{\text{acid}}}{R_{\text{base}} - R}\right) \).</p>
@@ -146,7 +146,7 @@
             <h2>Breaking down each component
             </h2>
             <ol>
-              <li>Carbonate Production
+              <li>Carbonate Production \( r_{\text{prod}} \)
               </li>
               <p> The rate of dissolved carbonate production is driven by our engineered enzyme and is modeled using the Michaelis–Menten equation:
               </p>
@@ -157,7 +157,7 @@
                 </p>
               <p> The parameters \( V_{\max} \) – the maximum reaction rate – and \( K_{m} \) (the substrate affinity) are not assumed; they are derived directly from our wet lab data in the fit stage of the pipeline.
               </p>
-              <li>CaCO₃ Precipitation \( r_{\text{prod}} \):
+              <li>CaCO₃ Precipitation \( r_{\text{precip}} \):
               <p> The precipitation of calcium carbonate from solution is modeled using second-order kinetics, dependent on the concentration of both the dissolved carbonate and the available free calcium ions in the media:
               </p>
               <p>\( r_{\text{precip}} = k_{\text{precip}} \cdot [\text{Ca}^{2+}] \cdot C_{\text{carb}} \)</p>
