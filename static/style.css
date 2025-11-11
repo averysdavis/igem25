@@ -604,3 +604,8 @@ footer a:hover { color: white; text-decoration: underline; }
   justify-content: center;
   margin-top:2%;
 }
+
+#awards-text{
+  font-style:bold;
+  font-size:xx-large;
+}
