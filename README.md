@@ -1,5 +1,9 @@
 # Team KhanLab-BayArea 2025 Wiki
 
+This is a copy of the KhanLab-BayArea 2025 iGEM wiki  
+The original repository is on the [iGEM Gitlab](https://gitlab.igem.org/2025/khanlab-bayarea)  
+The site is avaliable at [https://2025.igem.wiki/khanlab-bayarea/](https://2025.igem.wiki/khanlab-bayarea/)  
+
 This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).
 
 Images, photos, icons and fonts **MUST** be stored on `static.igem.wiki` using [tools.igem.org](https://tools.igem.org), and Videos **must** be embedded from [iGEM Video Universe](https://video.igem.org).
